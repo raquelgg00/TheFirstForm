@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<niveles>
+    <!--<nivel idn="0" source="mapas/grande.tmx"/>-->
+    <nivel idn="0" source="mapas/1_0.tmx"/>
+    <nivel idn="1" source="mapas/1_1.tmx"/>
+    <nivel idn="2" source="mapas/1_2.tmx"/>
+    <nivel idn="3" source="mapas/1_3.tmx"/>
+    <nivel idn="4" source="mapas/1_4.tmx"/>
+    <nivel idn="5" source="mapas/1_5.tmx"/>
+    <nivel idn="6" source="mapas/2_1.tmx"/>
+    <nivel idn="7" source="mapas/2_2.tmx"/>
+    <nivel idn="8" source="mapas/2_3.tmx"/>
+    <nivel idn="9" source="mapas/2_4.tmx"/>
+    <nivel idn="10" source="mapas/2_5.tmx"/>
+    <nivel idn="11" source="mapas/3_1.tmx"/>
+    <nivel idn="12" source="mapas/3_2.tmx"/>
+    <nivel idn="13" source="mapas/3_3.tmx"/>
+    <nivel idn="14" source="mapas/3_4.tmx"/>
+    <nivel idn="15" source="mapas/3_5.tmx"/>
+</niveles>

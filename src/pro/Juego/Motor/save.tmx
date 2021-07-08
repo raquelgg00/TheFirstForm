@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opciones>
+    <musica volumen="40"/>
+    <sonido volumen="40"/>
+    <resolucion tam="720"/>
+</opciones>
+
+<partida>
+    <nivel max="0"/>
+    <monedas max="0"/>
+    <habilidades max="0"/>
+</partida>

@@ -1,0 +1,8 @@
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/rebuild_cache.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/edit_cache.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/MiJuego.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/libModulos.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/ej_modulos/CMakeFiles/edit_cache.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/ej_modulos/CMakeFiles/rebuild_cache.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/Motor/CMakeFiles/edit_cache.dir
+/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/Motor/CMakeFiles/rebuild_cache.dir
