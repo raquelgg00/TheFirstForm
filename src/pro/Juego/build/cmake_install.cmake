@@ -1,4 +1,4 @@
-# Install script for directory: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego
+# Install script for directory: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/ej_modulos/cmake_install.cmake")
-  include("/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/Motor/cmake_install.cmake")
+  include("/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/ej_modulos/cmake_install.cmake")
+  include("/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/Motor/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

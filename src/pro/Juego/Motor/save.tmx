@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opciones>
-    <musica volumen="40"/>
-    <sonido volumen="40"/>
+    <musica volumen="0"/>
+    <sonido volumen="20"/>
     <resolucion tam="720"/>
 </opciones>
 
