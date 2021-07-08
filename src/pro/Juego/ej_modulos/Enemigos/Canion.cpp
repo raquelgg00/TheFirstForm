@@ -94,7 +94,7 @@ void Canion::updatemover(){
     //float distance = std::sqrt((dx * dx) + (dy * dy));
     float distance = pow((dx * dx) + (dy * dy),0.5); 
     float alpha = asin((dx)/(distance));
-    alpha = -1 * alpha * 360 / (2*M_PI);
+    alpha = -1 * alpha * 360 / (2*3.1416);
 
    
     // Posicion de la bala

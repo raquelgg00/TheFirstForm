@@ -95,6 +95,7 @@ class Motor{
         void new_ventana(int, int, sf::String);
         void setFramerateLimit(int);
     private:
+        sf::Image favicon;
         static Motor* pinstance;
         sf::RenderWindow *ventana1 = NULL;
         sf::View *camara;
