@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is Clang, found in "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is Clang, found in "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/clang++-3.8 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is Clang, found in "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is Clang, found in "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0e2f1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0e2f1.dir/build.make CMakeFiles/cmTC_0e2f1.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0e2f1.dir/testCCompiler.c.o
-/usr/bin/clang-3.8     -o CMakeFiles/cmTC_0e2f1.dir/testCCompiler.c.o   -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_0e2f1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e2f1.dir/link.txt --verbose=1
-/usr/bin/clang-3.8       CMakeFiles/cmTC_0e2f1.dir/testCCompiler.c.o  -o cmTC_0e2f1 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0ad5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ad5d.dir/build.make CMakeFiles/cmTC_0ad5d.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ad5d.dir/testCCompiler.c.o
+/usr/bin/clang-3.8     -o CMakeFiles/cmTC_0ad5d.dir/testCCompiler.c.o   -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_0ad5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ad5d.dir/link.txt --verbose=1
+/usr/bin/clang-3.8       CMakeFiles/cmTC_0ad5d.dir/testCCompiler.c.o  -o cmTC_0ad5d -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f33f6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f33f6.dir/build.make CMakeFiles/cmTC_f33f6.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o
-/usr/bin/clang-3.8     -o CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f33f6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f33f6.dir/link.txt --verbose=1
-/usr/bin/clang-3.8      -v CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o  -o cmTC_f33f6 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_71d97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71d97.dir/build.make CMakeFiles/cmTC_71d97.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o
+/usr/bin/clang-3.8     -o CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_71d97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71d97.dir/link.txt --verbose=1
+/usr/bin/clang-3.8      -v CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o  -o cmTC_71d97 -rdynamic  
 clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -61,22 +61,22 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0
 Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f33f6 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_71d97 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f33f6/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f33f6.dir/build.make CMakeFiles/cmTC_f33f6.dir/build]
-  ignore line: [make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/clang-3.8     -o CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f33f6]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f33f6.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/clang-3.8      -v CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o  -o cmTC_f33f6 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_71d97/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_71d97.dir/build.make CMakeFiles/cmTC_71d97.dir/build]
+  ignore line: [make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/clang-3.8     -o CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_71d97]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71d97.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/clang-3.8      -v CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o  -o cmTC_71d97 -rdynamic  ]
   ignore line: [clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -90,7 +90,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f33f6 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_71d97 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/bin/ld] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-zrelro] ==> ignore
@@ -102,7 +102,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f33f6] ==> ignore
+    arg [cmTC_71d97] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/llvm-3.8/bin/../lib] ==> dir [/usr/lib/llvm-3.8/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_f33f6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_71d97.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -148,17 +148,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_62028/fast"
-/usr/bin/make -f CMakeFiles/cmTC_62028.dir/build.make CMakeFiles/cmTC_62028.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_62028.dir/feature_tests.c.o
-/usr/bin/clang-3.8    -std=c11 -o CMakeFiles/cmTC_62028.dir/feature_tests.c.o   -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_62028
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62028.dir/link.txt --verbose=1
-/usr/bin/clang-3.8       CMakeFiles/cmTC_62028.dir/feature_tests.c.o  -o cmTC_62028 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_afd46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afd46.dir/build.make CMakeFiles/cmTC_afd46.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afd46.dir/feature_tests.c.o
+/usr/bin/clang-3.8    -std=c11 -o CMakeFiles/cmTC_afd46.dir/feature_tests.c.o   -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_afd46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afd46.dir/link.txt --verbose=1
+/usr/bin/clang-3.8       CMakeFiles/cmTC_afd46.dir/feature_tests.c.o  -o cmTC_afd46 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -168,17 +168,17 @@ make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/sr
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0e28b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0e28b.dir/build.make CMakeFiles/cmTC_0e28b.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0e28b.dir/feature_tests.c.o
-/usr/bin/clang-3.8    -std=c99 -o CMakeFiles/cmTC_0e28b.dir/feature_tests.c.o   -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0e28b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e28b.dir/link.txt --verbose=1
-/usr/bin/clang-3.8       CMakeFiles/cmTC_0e28b.dir/feature_tests.c.o  -o cmTC_0e28b -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_65eb3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65eb3.dir/build.make CMakeFiles/cmTC_65eb3.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65eb3.dir/feature_tests.c.o
+/usr/bin/clang-3.8    -std=c99 -o CMakeFiles/cmTC_65eb3.dir/feature_tests.c.o   -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_65eb3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65eb3.dir/link.txt --verbose=1
+/usr/bin/clang-3.8       CMakeFiles/cmTC_65eb3.dir/feature_tests.c.o  -o cmTC_65eb3 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -188,17 +188,17 @@ make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/sr
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_57110/fast"
-/usr/bin/make -f CMakeFiles/cmTC_57110.dir/build.make CMakeFiles/cmTC_57110.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_57110.dir/feature_tests.c.o
-/usr/bin/clang-3.8    -std=c90 -o CMakeFiles/cmTC_57110.dir/feature_tests.c.o   -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_57110
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57110.dir/link.txt --verbose=1
-/usr/bin/clang-3.8       CMakeFiles/cmTC_57110.dir/feature_tests.c.o  -o cmTC_57110 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bf1c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf1c6.dir/build.make CMakeFiles/cmTC_bf1c6.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf1c6.dir/feature_tests.c.o
+/usr/bin/clang-3.8    -std=c90 -o CMakeFiles/cmTC_bf1c6.dir/feature_tests.c.o   -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bf1c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf1c6.dir/link.txt --verbose=1
+/usr/bin/clang-3.8       CMakeFiles/cmTC_bf1c6.dir/feature_tests.c.o  -o cmTC_bf1c6 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -206,30 +206,30 @@ make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/sr
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_12ec3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_12ec3.dir/build.make CMakeFiles/cmTC_12ec3.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_12ec3.dir/testCXXCompiler.cxx.o
-/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_12ec3.dir/testCXXCompiler.cxx.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_12ec3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12ec3.dir/link.txt --verbose=1
-/usr/bin/clang++-3.8        CMakeFiles/cmTC_12ec3.dir/testCXXCompiler.cxx.o  -o cmTC_12ec3 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_70b95/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70b95.dir/build.make CMakeFiles/cmTC_70b95.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_70b95.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_70b95.dir/testCXXCompiler.cxx.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_70b95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70b95.dir/link.txt --verbose=1
+/usr/bin/clang++-3.8        CMakeFiles/cmTC_70b95.dir/testCXXCompiler.cxx.o  -o cmTC_70b95 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cda00/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cda00.dir/build.make CMakeFiles/cmTC_cda00.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_cda00
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cda00.dir/link.txt --verbose=1
-/usr/bin/clang++-3.8       -v CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cda00 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_81527/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81527.dir/build.make CMakeFiles/cmTC_81527.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_81527
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81527.dir/link.txt --verbose=1
+/usr/bin/clang++-3.8       -v CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_81527 -rdynamic  
 clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -241,22 +241,22 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0
 Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cda00 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_81527 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cda00/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cda00.dir/build.make CMakeFiles/cmTC_cda00.dir/build]
-  ignore line: [make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_cda00]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cda00.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/clang++-3.8       -v CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cda00 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_81527/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_81527.dir/build.make CMakeFiles/cmTC_81527.dir/build]
+  ignore line: [make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/clang++-3.8      -o CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_81527]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81527.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/clang++-3.8       -v CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_81527 -rdynamic  ]
   ignore line: [clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -270,7 +270,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cda00 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_81527 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/bin/ld] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-zrelro] ==> ignore
@@ -282,7 +282,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cda00] ==> ignore
+    arg [cmTC_81527] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o] ==> ignore
@@ -295,7 +295,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/llvm-3.8/bin/../lib] ==> dir [/usr/lib/llvm-3.8/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_cda00.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_81527.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -326,17 +326,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8011e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8011e.dir/build.make CMakeFiles/cmTC_8011e.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8011e.dir/feature_tests.cxx.o
-/usr/bin/clang++-3.8     -std=c++14 -o CMakeFiles/cmTC_8011e.dir/feature_tests.cxx.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8011e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8011e.dir/link.txt --verbose=1
-/usr/bin/clang++-3.8        CMakeFiles/cmTC_8011e.dir/feature_tests.cxx.o  -o cmTC_8011e -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9d655/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d655.dir/build.make CMakeFiles/cmTC_9d655.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9d655.dir/feature_tests.cxx.o
+/usr/bin/clang++-3.8     -std=c++14 -o CMakeFiles/cmTC_9d655.dir/feature_tests.cxx.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9d655
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d655.dir/link.txt --verbose=1
+/usr/bin/clang++-3.8        CMakeFiles/cmTC_9d655.dir/feature_tests.cxx.o  -o cmTC_9d655 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -399,17 +399,17 @@ make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/sr
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_09206/fast"
-/usr/bin/make -f CMakeFiles/cmTC_09206.dir/build.make CMakeFiles/cmTC_09206.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_09206.dir/feature_tests.cxx.o
-/usr/bin/clang++-3.8     -std=c++11 -o CMakeFiles/cmTC_09206.dir/feature_tests.cxx.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_09206
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09206.dir/link.txt --verbose=1
-/usr/bin/clang++-3.8        CMakeFiles/cmTC_09206.dir/feature_tests.cxx.o  -o cmTC_09206 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6b4e0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6b4e0.dir/build.make CMakeFiles/cmTC_6b4e0.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6b4e0.dir/feature_tests.cxx.o
+/usr/bin/clang++-3.8     -std=c++11 -o CMakeFiles/cmTC_6b4e0.dir/feature_tests.cxx.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6b4e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b4e0.dir/link.txt --verbose=1
+/usr/bin/clang++-3.8        CMakeFiles/cmTC_6b4e0.dir/feature_tests.cxx.o  -o cmTC_6b4e0 -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -472,17 +472,17 @@ make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/sr
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp
+Change Dir: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_881a4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_881a4.dir/build.make CMakeFiles/cmTC_881a4.dir/build
-make[1]: se entra en el directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_881a4.dir/feature_tests.cxx.o
-/usr/bin/clang++-3.8     -std=c++98 -o CMakeFiles/cmTC_881a4.dir/feature_tests.cxx.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_881a4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_881a4.dir/link.txt --verbose=1
-/usr/bin/clang++-3.8        CMakeFiles/cmTC_881a4.dir/feature_tests.cxx.o  -o cmTC_881a4 -rdynamic 
-make[1]: se sale del directorio '/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_1723f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1723f.dir/build.make CMakeFiles/cmTC_1723f.dir/build
+make[1]: se entra en el directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1723f.dir/feature_tests.cxx.o
+/usr/bin/clang++-3.8     -std=c++98 -o CMakeFiles/cmTC_1723f.dir/feature_tests.cxx.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1723f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1723f.dir/link.txt --verbose=1
+/usr/bin/clang++-3.8        CMakeFiles/cmTC_1723f.dir/feature_tests.cxx.o  -o cmTC_1723f -rdynamic 
+make[1]: se sale del directorio '/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

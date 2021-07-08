@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego
+CMAKE_SOURCE_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build
+CMAKE_BINARY_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/ej_modulos/CMakeFiles/progress.marks
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles 0
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/ej_modulos/CMakeFiles/progress.marks
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/clean
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/preinstall
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/preinstall
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(MAKE) -f CMakeFiles/Makefile2 ej_modulos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

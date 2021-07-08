@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego
+CMAKE_SOURCE_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build
+CMAKE_BINARY_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libModulos.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/libModulos.dir/flags.make
 
 CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o: ../ej_modulos/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Player.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Player.cpp > CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Player.cpp > CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Player.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Player.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o.provides.build: CMakeFiles/lib
 
 CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o: ../ej_modulos/Partida.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Partida.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Partida.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Partida.cpp > CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Partida.cpp > CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Partida.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Partida.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o: ../ej_modulos/Hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Hud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Hud.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Hud.cpp > CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Hud.cpp > CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Hud.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Hud.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o.provides.build: CMakeFiles/libMod
 
 CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o: ../ej_modulos/CampoGravedad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/CampoGravedad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/CampoGravedad.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/CampoGravedad.cpp > CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/CampoGravedad.cpp > CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/CampoGravedad.cpp -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/CampoGravedad.cpp -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o: ../ej_modulos/ObjetoMundo2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp > CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp > CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o: ../ej_modulos/Ayuda.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Ayuda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Ayuda.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Ayuda.cpp > CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Ayuda.cpp > CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Ayuda.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Ayuda.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o.provides.build: CMakeFiles/libM
 
 CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o: ../ej_modulos/AnimacionInicial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/AnimacionInicial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/AnimacionInicial.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/AnimacionInicial.cpp > CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/AnimacionInicial.cpp > CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/AnimacionInicial.cpp -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/AnimacionInicial.cpp -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o.provides.build: CMak
 
 CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o: ../ej_modulos/InGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/InGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/InGame.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/InGame.cpp > CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/InGame.cpp > CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/InGame.cpp -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/InGame.cpp -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o.provides.build: CMakeFiles/lib
 
 CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o: ../ej_modulos/Nivel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Nivel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Nivel.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Nivel.cpp > CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Nivel.cpp > CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Nivel.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Nivel.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o.provides.build: CMakeFiles/libM
 
 CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o: ../ej_modulos/Mapa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Mapa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Mapa.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Mapa.cpp > CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Mapa.cpp > CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Mapa.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Mapa.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o.provides.build: CMakeFiles/libMo
 
 CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o: ../ej_modulos/FlotanteInterpolado.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp > CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp > CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o.provides.build: C
 
 CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o: ../ej_modulos/tinyxml2/tinyxml2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp > CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp > CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o.provides.build: CMa
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o: ../ej_modulos/Menus/MenuMundo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o: ../ej_modulos/Menus/MenuPrincipal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o.provides.build: C
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o: ../ej_modulos/Menus/Opciones.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Opciones.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Opciones.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Opciones.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Opciones.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Opciones.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Opciones.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o.provides.build: CMakeF
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o: ../ej_modulos/Menus/Creditos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Creditos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Creditos.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Creditos.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Creditos.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Creditos.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Creditos.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o.provides.build: CMakeF
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o: ../ej_modulos/Menus/Controles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Controles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Controles.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Controles.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Controles.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Controles.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Controles.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o: ../ej_modulos/Menus/Pausa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Pausa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Pausa.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Pausa.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Pausa.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Pausa.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Pausa.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o: ../ej_modulos/Menus/InicioJuego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o.provides.build: CMa
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o: ../ej_modulos/Menus/CambioResolucion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp > CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o.provides.build
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o: ../ej_modulos/Enemigos/Bolita.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o: ../ej_modulos/Enemigos/Canion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o: ../ej_modulos/Enemigos/Molino.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o: ../ej_modulos/Enemigos/PinchoPared.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o.provides.build: 
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o: ../ej_modulos/Enemigos/Bala.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp > CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o: ../ej_modulos/Entidades/Plataforma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o.provides.build: 
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o: ../ej_modulos/Entidades/Arista.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Arista.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Arista.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Arista.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Arista.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Arista.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Arista.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o.requires:
 
@@ -707,16 +707,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o.provides.build: CMak
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o: ../ej_modulos/Entidades/Cubo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o.requires:
 
@@ -731,16 +731,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o.provides.build: CMakeF
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o: ../ej_modulos/Entidades/Sensor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o.requires:
 
@@ -755,16 +755,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o.provides.build: CMak
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o: ../ej_modulos/Entidades/Pared.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Pared.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Pared.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Pared.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Pared.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Pared.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Pared.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o.requires:
 
@@ -779,16 +779,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o.provides.build: CMake
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o: ../ej_modulos/Entidades/Puerta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp > CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o.requires:
 
@@ -803,16 +803,16 @@ CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o.provides.build: CMak
 
 CMakeFiles/libModulos.dir/Motor/Audio.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Audio.cpp.o: ../Motor/Audio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libModulos.dir/Motor/Audio.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Audio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libModulos.dir/Motor/Audio.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Audio.cpp
 
 CMakeFiles/libModulos.dir/Motor/Audio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Audio.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Audio.cpp > CMakeFiles/libModulos.dir/Motor/Audio.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Audio.cpp > CMakeFiles/libModulos.dir/Motor/Audio.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Audio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Audio.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Audio.cpp -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Audio.cpp -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Audio.cpp.o.requires:
 
@@ -827,16 +827,16 @@ CMakeFiles/libModulos.dir/Motor/Audio.cpp.o.provides.build: CMakeFiles/libModulo
 
 CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o: ../Motor/Sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Sprite.cpp
 
 CMakeFiles/libModulos.dir/Motor/Sprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Sprite.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Sprite.cpp > CMakeFiles/libModulos.dir/Motor/Sprite.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Sprite.cpp > CMakeFiles/libModulos.dir/Motor/Sprite.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Sprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Sprite.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Sprite.cpp -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Sprite.cpp -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o.requires:
 
@@ -851,16 +851,16 @@ CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o.provides.build: CMakeFiles/libModul
 
 CMakeFiles/libModulos.dir/Motor/Motor.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/libModulos.dir/Motor/Motor.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/libModulos.dir/Motor/Motor.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Motor.cpp
 
 CMakeFiles/libModulos.dir/Motor/Motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Motor.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Motor.cpp > CMakeFiles/libModulos.dir/Motor/Motor.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Motor.cpp > CMakeFiles/libModulos.dir/Motor/Motor.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Motor.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Motor.cpp -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Motor.cpp -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Motor.cpp.o.requires:
 
@@ -875,16 +875,16 @@ CMakeFiles/libModulos.dir/Motor/Motor.cpp.o.provides.build: CMakeFiles/libModulo
 
 CMakeFiles/libModulos.dir/Motor/Circle.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Circle.cpp.o: ../Motor/Circle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/libModulos.dir/Motor/Circle.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/libModulos.dir/Motor/Circle.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Circle.cpp
 
 CMakeFiles/libModulos.dir/Motor/Circle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Circle.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Circle.cpp > CMakeFiles/libModulos.dir/Motor/Circle.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Circle.cpp > CMakeFiles/libModulos.dir/Motor/Circle.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Circle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Circle.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Circle.cpp -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Circle.cpp -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Circle.cpp.o.requires:
 
@@ -899,16 +899,16 @@ CMakeFiles/libModulos.dir/Motor/Circle.cpp.o.provides.build: CMakeFiles/libModul
 
 CMakeFiles/libModulos.dir/Motor/Convex.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Convex.cpp.o: ../Motor/Convex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/libModulos.dir/Motor/Convex.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Convex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/libModulos.dir/Motor/Convex.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Convex.cpp
 
 CMakeFiles/libModulos.dir/Motor/Convex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Convex.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Convex.cpp > CMakeFiles/libModulos.dir/Motor/Convex.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Convex.cpp > CMakeFiles/libModulos.dir/Motor/Convex.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Convex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Convex.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Convex.cpp -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Convex.cpp -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Convex.cpp.o.requires:
 
@@ -923,16 +923,16 @@ CMakeFiles/libModulos.dir/Motor/Convex.cpp.o.provides.build: CMakeFiles/libModul
 
 CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o: ../Motor/Rectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Rectangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Rectangle.cpp
 
 CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Rectangle.cpp > CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Rectangle.cpp > CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Rectangle.cpp -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Rectangle.cpp -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o.requires:
 
@@ -947,16 +947,16 @@ CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o.provides.build: CMakeFiles/libMo
 
 CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o: ../Motor/Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Triangle.cpp
 
 CMakeFiles/libModulos.dir/Motor/Triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Triangle.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Triangle.cpp > CMakeFiles/libModulos.dir/Motor/Triangle.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Triangle.cpp > CMakeFiles/libModulos.dir/Motor/Triangle.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Triangle.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Triangle.cpp -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Triangle.cpp -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o.requires:
 
@@ -971,16 +971,16 @@ CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o.provides.build: CMakeFiles/libMod
 
 CMakeFiles/libModulos.dir/Motor/Shape.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Shape.cpp.o: ../Motor/Shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/libModulos.dir/Motor/Shape.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Shape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/libModulos.dir/Motor/Shape.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Shape.cpp
 
 CMakeFiles/libModulos.dir/Motor/Shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Shape.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Shape.cpp > CMakeFiles/libModulos.dir/Motor/Shape.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Shape.cpp > CMakeFiles/libModulos.dir/Motor/Shape.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Shape.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Shape.cpp -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Shape.cpp -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Shape.cpp.o.requires:
 
@@ -995,16 +995,16 @@ CMakeFiles/libModulos.dir/Motor/Shape.cpp.o.provides.build: CMakeFiles/libModulo
 
 CMakeFiles/libModulos.dir/Motor/Texto.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Texto.cpp.o: ../Motor/Texto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/libModulos.dir/Motor/Texto.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Texto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/libModulos.dir/Motor/Texto.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Texto.cpp
 
 CMakeFiles/libModulos.dir/Motor/Texto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Texto.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Texto.cpp > CMakeFiles/libModulos.dir/Motor/Texto.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Texto.cpp > CMakeFiles/libModulos.dir/Motor/Texto.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Texto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Texto.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Texto.cpp -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Texto.cpp -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Texto.cpp.o.requires:
 
@@ -1019,16 +1019,16 @@ CMakeFiles/libModulos.dir/Motor/Texto.cpp.o.provides.build: CMakeFiles/libModulo
 
 CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o: ../Motor/Guardar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Guardar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Guardar.cpp
 
 CMakeFiles/libModulos.dir/Motor/Guardar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Guardar.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Guardar.cpp > CMakeFiles/libModulos.dir/Motor/Guardar.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Guardar.cpp > CMakeFiles/libModulos.dir/Motor/Guardar.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Guardar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Guardar.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Guardar.cpp -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Guardar.cpp -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o.requires:
 
@@ -1043,16 +1043,16 @@ CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o.provides.build: CMakeFiles/libModu
 
 CMakeFiles/libModulos.dir/Motor/Collision.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/Motor/Collision.cpp.o: ../Motor/Collision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/libModulos.dir/Motor/Collision.cpp.o"
-	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Collision.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/libModulos.dir/Motor/Collision.cpp.o"
+	/usr/bin/clang++-3.8   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Collision.cpp
 
 CMakeFiles/libModulos.dir/Motor/Collision.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/Motor/Collision.cpp.i"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Collision.cpp > CMakeFiles/libModulos.dir/Motor/Collision.cpp.i
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Collision.cpp > CMakeFiles/libModulos.dir/Motor/Collision.cpp.i
 
 CMakeFiles/libModulos.dir/Motor/Collision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/Motor/Collision.cpp.s"
-	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Collision.cpp -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.s
+	/usr/bin/clang++-3.8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Collision.cpp -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.s
 
 CMakeFiles/libModulos.dir/Motor/Collision.cpp.o.requires:
 
@@ -1157,7 +1157,7 @@ liblibModulos.a: CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o
 liblibModulos.a: CMakeFiles/libModulos.dir/Motor/Collision.cpp.o
 liblibModulos.a: CMakeFiles/libModulos.dir/build.make
 liblibModulos.a: CMakeFiles/libModulos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX static library liblibModulos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX static library liblibModulos.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libModulos.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libModulos.dir/link.txt --verbose=$(VERBOSE)
 
@@ -1216,6 +1216,6 @@ CMakeFiles/libModulos.dir/clean:
 .PHONY : CMakeFiles/libModulos.dir/clean
 
 CMakeFiles/libModulos.dir/depend:
-	cd /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles/libModulos.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles/libModulos.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libModulos.dir/depend
 

@@ -1,217 +1,217 @@
 [
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/MiJuego.dir/main.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/main.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/main.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/MiJuego.dir/main.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/main.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/main.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Player.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Player.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Player.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Player.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Player.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Partida.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Partida.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Partida.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Partida.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Partida.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Hud.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Hud.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Hud.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Hud.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Hud.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/CampoGravedad.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/CampoGravedad.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/CampoGravedad.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/CampoGravedad.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/CampoGravedad.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/ObjetoMundo2.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/ObjetoMundo2.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Ayuda.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Ayuda.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Ayuda.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Ayuda.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Ayuda.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/AnimacionInicial.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/AnimacionInicial.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/AnimacionInicial.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/AnimacionInicial.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/AnimacionInicial.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/InGame.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/InGame.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/InGame.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/InGame.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/InGame.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Nivel.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Nivel.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Nivel.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Nivel.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Nivel.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Mapa.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Mapa.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Mapa.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Mapa.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Mapa.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/FlotanteInterpolado.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/FlotanteInterpolado.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/tinyxml2/tinyxml2.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/tinyxml2/tinyxml2.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuMundo.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuMundo.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/MenuPrincipal.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/MenuPrincipal.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Opciones.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Opciones.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Opciones.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Opciones.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Opciones.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Creditos.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Creditos.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Creditos.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Creditos.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Creditos.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Controles.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Controles.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Controles.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Controles.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Controles.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Pausa.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/Pausa.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/Pausa.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Pausa.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/Pausa.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/InicioJuego.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/InicioJuego.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Menus/CambioResolucion.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Menus/CambioResolucion.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bolita.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bolita.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Canion.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Canion.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Molino.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Molino.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/PinchoPared.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/PinchoPared.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Enemigos/Bala.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Enemigos/Bala.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Plataforma.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Plataforma.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Arista.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Arista.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Arista.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Arista.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Arista.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Cubo.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Cubo.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Sensor.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Sensor.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Pared.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Pared.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Pared.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Pared.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Pared.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/Entidades/Puerta.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos/Entidades/Puerta.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Audio.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Audio.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Audio.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Audio.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Audio.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Sprite.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Sprite.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Sprite.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Sprite.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Sprite.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Motor.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Motor.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Motor.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Motor.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Motor.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Circle.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Circle.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Circle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Circle.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Circle.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Convex.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Convex.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Convex.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Convex.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Convex.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Rectangle.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Rectangle.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Rectangle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Rectangle.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Rectangle.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Triangle.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Triangle.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Triangle.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Triangle.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Triangle.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Shape.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Shape.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Shape.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Shape.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Shape.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Texto.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Texto.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Texto.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Texto.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Texto.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Guardar.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Guardar.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Guardar.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Guardar.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Guardar.cpp"
 },
 {
-  "directory": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build",
-  "command": "/usr/bin/clang++-3.8    -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.o -c /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Collision.cpp",
-  "file": "/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor/Collision.cpp"
+  "directory": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build",
+  "command": "/usr/bin/clang++-3.8    -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/Motor/Collision.cpp.o -c /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Collision.cpp",
+  "file": "/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor/Collision.cpp"
 }
 ]

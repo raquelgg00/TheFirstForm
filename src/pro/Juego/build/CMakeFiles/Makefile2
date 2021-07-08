@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego
+CMAKE_SOURCE_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build
+CMAKE_BINARY_DIR = /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/MiJuego.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/bu
 CMakeFiles/MiJuego.dir/all: CMakeFiles/libModulos.dir/all
 	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/depend
 	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=1,2 "Built target MiJuego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=1,2 "Built target MiJuego"
 .PHONY : CMakeFiles/MiJuego.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/MiJuego.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MiJuego.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MiJuego.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles 0
 .PHONY : CMakeFiles/MiJuego.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/MiJuego.dir/clean
 CMakeFiles/libModulos.dir/all:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/depend
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target libModulos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target libModulos"
 .PHONY : CMakeFiles/libModulos.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/libModulos.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libModulos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libModulos.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/build/CMakeFiles 0
 .PHONY : CMakeFiles/libModulos.dir/rule
 
 # Convenience name for target.

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos -I/home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/Motor 
+CXX_INCLUDES = -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos -I/home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/Motor 
 

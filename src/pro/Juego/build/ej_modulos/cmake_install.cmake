@@ -1,4 +1,4 @@
-# Install script for directory: /home/raquel/Escritorio/proyectoabp-grupo-d3/src/pro/Juego/ej_modulos
+# Install script for directory: /home/gasparmr6/Escritorio/TheFirstForm/src/pro/Juego/ej_modulos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
