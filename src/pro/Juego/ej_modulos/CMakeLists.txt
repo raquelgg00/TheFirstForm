@@ -12,6 +12,7 @@ target_sources(libModulos PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Mapa.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/FlotanteInterpolado.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/tinyxml2/tinyxml2.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/mysql/mysql.cpp"
 
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/MenuMundo.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/MenuPrincipal.cpp"
