@@ -11,6 +11,7 @@
 #include "Opciones.h"
 #include "Ranking.h"
 #include "AnimacionInicial.h"
+#include "PreguntarNombre.h"
 
 #include <iostream>
 

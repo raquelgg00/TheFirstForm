@@ -142,7 +142,7 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
     else if(selectedItem==1){//Nueva partida
         Guardar::Instance()->reiniciarPartida();
         Nivel::Instance()->cambiarNivel(0);
-        Partida::setEstado(AnimacionInicial::Instance());
+        Partida::setEstado(PreguntarNombre::Instance());
         motor->getMusicaMenu()->pause();
         //motor->getMusicaAnimacion()->Play();
 

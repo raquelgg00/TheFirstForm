@@ -72,7 +72,7 @@ Ranking::Ranking(){
 
     if(conectar){
         std::cout<<"Conexión establecida con la BD\n";
-        std::string consulta = "select * from usuario order by muertes";
+        std::string consulta = "select * from usuario order by monedas desc, muertes";
         const char* c = consulta.c_str();
         int q_estado;
         int cont = 0;

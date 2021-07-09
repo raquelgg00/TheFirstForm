@@ -53,6 +53,7 @@ class Motor{
         bool isKeyPressedF() {return sf::Keyboard::isKeyPressed(sf::Keyboard::F);};
         bool isKeyPressedG() {return sf::Keyboard::isKeyPressed(sf::Keyboard::G);};
         bool isKeyPressedQ() {return sf::Keyboard::isKeyPressed(sf::Keyboard::Q);};
+        bool isKeyBorrar() {return sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace);};
 
         // Camara
         void setCameraCenter(float, float);
