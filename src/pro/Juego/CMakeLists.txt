@@ -27,3 +27,5 @@ if (SFML_FOUND)
     target_link_libraries(MiJuego ${SFML_LIBRARIES})
 endif()
 
+target_link_libraries(MiJuego mysqlclient)
+
