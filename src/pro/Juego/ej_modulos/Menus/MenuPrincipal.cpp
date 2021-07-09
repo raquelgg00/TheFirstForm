@@ -51,7 +51,7 @@ MenuPrincipal::MenuPrincipal(){
     opciones[1].setString("Nueva partida");
     opciones[2].setString("Opciones");
     opciones[3].setString("Controles");
-    opciones[4].setString("Creditos");
+    opciones[4].setString("Ranking");
     opciones[5].setString("Salir");
 
     for(int i=0;i<num_items;i++){
@@ -155,8 +155,8 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
         Controles::Instance()->setEstadoAnterior(0);
         Partida::setEstado(Controles::Instance());
     }
-    else if(selectedItem==4){//Creditos
-        Partida::setEstado(Creditos::Instance());
+    else if(selectedItem==4){//Ranking
+        Partida::setEstado(Ranking::Instance());
     }
 }
 

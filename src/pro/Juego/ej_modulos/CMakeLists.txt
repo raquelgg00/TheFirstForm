@@ -21,6 +21,7 @@ target_sources(libModulos PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/Pausa.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/InicioJuego.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/CambioResolucion.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Menus/Ranking.cpp"
 
     "${CMAKE_CURRENT_SOURCE_DIR}/Enemigos/Bolita.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Enemigos/Canion.cpp"
@@ -30,6 +31,7 @@ target_sources(libModulos PRIVATE
 
     "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Plataforma.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Arista.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Secreto.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Cubo.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Sensor.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Entidades/Pared.cpp"

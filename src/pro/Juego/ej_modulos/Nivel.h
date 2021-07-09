@@ -16,6 +16,7 @@
 #include "Ayuda.h"
 #include "CampoGravedad.h"
 #include "Entidades/Puerta.h"
+#include "Entidades/Secreto.h"
 #include "ObjetoMundo2.h"
 
 class Nivel{

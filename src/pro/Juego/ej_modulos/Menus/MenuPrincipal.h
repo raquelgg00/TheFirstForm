@@ -9,6 +9,7 @@
 #include "Creditos.h"
 #include "Controles.h"
 #include "Opciones.h"
+#include "Ranking.h"
 #include "AnimacionInicial.h"
 
 #include <iostream>

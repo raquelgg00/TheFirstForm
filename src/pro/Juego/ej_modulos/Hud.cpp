@@ -15,12 +15,18 @@ Hud::Hud(){
     posicion = new FlotanteInterpolado();//habilidades
     posicion2 = new FlotanteInterpolado();//nivel
     posicion3 = new FlotanteInterpolado();//reloj
+    posicion_moneda = new FlotanteInterpolado();//monedas
     
     motor=Motor::Instance();
 
     habilidades=new Sprite();
     habilidades->setTexture("HudHab","png");
     habilidades->setFrameSprite(0,0,320,64);
+
+    monedas=new Sprite();
+    monedas->setTexture("HudHab","png");
+    monedas->setFrameSprite(0,0,64*3,64);
+
     x=motor->getCamaraCenter().x-motor->getTamWidth()/2.f;
     y=motor->getCamaraCenter().y-motor->getTamHeight()/2.f;
     if(motor->getTamHeight()==720){
@@ -33,6 +39,8 @@ Hud::Hud(){
     }
     habilidades->setPosition(x,y);
     posicion->setPositionXY(x, y);
+    monedas->setPosition(motor->getTamWidth()/4, y);
+    posicion_moneda->setPositionXY(motor->getTamWidth()/4, y);
     
     texto=new Texto("Nivel");
     texto->setSize(67);
@@ -70,6 +78,10 @@ Hud::~Hud(){
         delete habilidades;
         habilidades=NULL;
     }
+    if(monedas!=NULL){
+        delete monedas;
+        monedas=NULL;
+    }
     if(reloj!=NULL){
         delete reloj;
         reloj=NULL;
@@ -91,6 +103,10 @@ Hud::~Hud(){
     if(posicion3!=NULL){
         delete posicion3;
         posicion3=NULL;
+    }
+    if(posicion_moneda!=NULL){
+        delete posicion_moneda;
+        posicion_moneda=NULL;
     }
     if(texto!=NULL){
         delete texto;
@@ -138,9 +154,13 @@ void Hud::update(int item, int gravedad){
     cont_segundos->setTexto(text2);
 
 
-    //Sprite
+    // Sprite de habilidades
     int hab=Guardar::Instance()->getHabilidades();
     habilidades->setFrameSprite(0,hab*64,320,64);
+
+    // Sprite de Monedas
+    int secretos=Guardar::Instance()->getMonedas();
+    monedas->setFrameSprite(0,secretos*64,64*3,64);
 
     x=motor->getCamaraCenter().x;
     y=motor->getCamaraCenter().y;
@@ -149,7 +169,9 @@ void Hud::update(int item, int gravedad){
     float x2=0.f;
     float y1=0.f;
     float y2=0.f;
-    
+    float x3=0.f;
+    float y3=0.f;
+
     if(gravedad==0){
         
         if(motor->getTamHeight()==720){
@@ -163,6 +185,7 @@ void Hud::update(int item, int gravedad){
         
         x2=x+motor->getTamWidth()/4.f;
         y2=y1-20;
+
         
     }
     else if(gravedad==1){
@@ -205,8 +228,12 @@ void Hud::update(int item, int gravedad){
         x2=x1-20;
     }
 
+    x3=x1+500;
+    y3=y1;
+
     posicion->setPositionXY(x1, y1);
     posicion2->setPositionXY(x2, y2);
+    posicion_moneda->setPositionXY(x3,y3);
     
     if(motor->getTamHeight()==720)
         posicion3->setPositionXY(x+motor->getTamWidth()/2.f, y+motor->getTamHeight()/2.f);
@@ -231,7 +258,9 @@ void Hud::render(float factor, bool mostrarNivel,bool cambiandoGravedad){
         float interX3 = (posicion3->getX()-posicion3->getPrevX()) * factor + posicion3->getPrevX();
         float interY3 = (posicion3->getY()-posicion3->getPrevY()) * factor + posicion3->getPrevY();
         
-        
+        float interX4 = (posicion_moneda->getX()-posicion_moneda->getPrevX()) * factor + posicion_moneda->getPrevX();
+        float interY4 = (posicion_moneda->getY()-posicion_moneda->getPrevY()) * factor + posicion_moneda->getPrevY();
+
         if(habilidades!=NULL){
             habilidades->setPosition(interX,interY);
             motor->ventanaDibujaSinShader(habilidades->getSprite());
@@ -243,6 +272,16 @@ void Hud::render(float factor, bool mostrarNivel,bool cambiandoGravedad){
                 
             }
         }
+   
+        if(monedas!=NULL){
+            monedas->setPosition(interX4,interY4);
+            motor->ventanaDibujaSinShader(monedas->getSprite());
+            if(!mostrarNivel){//si se muestra la animacion no se renderiza
+            
+                
+            }
+        }
+
         if(reloj!=NULL && nivel>5 && nivel<11){//falta añadir condicion de si la q esta activada
             if(Player::Instance()->getAtravesarObj()){
                 reloj->setPosition(interX3,interY3);
