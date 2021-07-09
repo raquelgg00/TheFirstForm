@@ -72,7 +72,7 @@ Ranking::Ranking(){
 
     if(conectar){
         std::cout<<"Conexión establecida con la BD\n";
-        std::string consulta = "select * from usuario order by monedas desc, muertes";
+        std::string consulta = "select * from usuario order by niveles desc, monedas desc, muertes";
         const char* c = consulta.c_str();
         int q_estado;
         int cont = 0;
@@ -86,7 +86,7 @@ Ranking::Ranking(){
                 stringstream ss;  
                 ss << cont+1;  
                 ss >> pos_ranking;
-                pos_ranking = pos_ranking + ". "+fila[0]+"   ----   "+fila[1]+" muertes"+"   ----   "+fila[2]+" monedas";
+                pos_ranking = pos_ranking + ". "+fila[0]+"            "+fila[3]+" niveles"+"   ----   "+fila[2]+" monedas "+"   ----   "+fila[1]+" muertes ";
 
                 std::cout<<fila[0]<<" --> "<<fila[1]<<std::endl;
                 nombres[cont]->setTexto(pos_ranking);
@@ -98,9 +98,6 @@ Ranking::Ranking(){
         std::cout<<"No se pudo conectar con la BD\n";
     }
 }
-
-
-
 
 
 // Destructor
