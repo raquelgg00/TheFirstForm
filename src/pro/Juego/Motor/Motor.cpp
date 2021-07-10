@@ -25,6 +25,11 @@ Motor::Motor(){
     }
 
     new_ventana(tamWidth,tamHeight,"The First Shape");
+
+    //añadimos favicon
+    favicon.loadFromFile("resources/texturas/Favicon.png");
+    ventana1->setIcon(favicon.getSize().x,favicon.getSize().y,favicon.getPixelsPtr());
+
     setFramerateLimit(60);
     //camara = new sf::View(sf::Vector2f(0,0), sf::Vector2f(1920,1080));
 
