@@ -24,7 +24,7 @@ Motor::Motor(){
         tamHeight = 1080;
     }
 
-    new_ventana(tamWidth,tamHeight,"The First Form");
+    new_ventana(tamWidth,tamHeight,"The First Shape");
     setFramerateLimit(60);
     //camara = new sf::View(sf::Vector2f(0,0), sf::Vector2f(1920,1080));
 
