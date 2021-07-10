@@ -59,7 +59,19 @@ PreguntarNombre::PreguntarNombre(){
     playerText->setColor(36,207,253);
     playerText->setSize(80);
 
+    // Texto de disponibilidad
+    disponibilidad = new Texto("");
+    disponibilidad->setSize(60);
+    disponibilidad->setOrigin(disponibilidad->getWidthBounds()/2.f, disponibilidad->getHeightBounds()/2.f);
+    disponibilidad->setPosition(motor->getTamWidth()/3.f, (motor->getTamHeight()/2+100));
+    disponibilidad->setColor(255,0,0);
+    
+
+
     borrar = false;
+    insert = false;
+    compruebaNombre = false;
+    nombre_disponible = false;
 }
 
 // Destructor
@@ -109,6 +121,10 @@ void PreguntarNombre::render(float tick){
     }
     playerText->drawText();
 
+    if(playerInput.getSize() > 0){
+        disponibilidad->drawText();
+    }
+
     motor->ventanaDisplay();
 }
 
@@ -118,10 +134,40 @@ void PreguntarNombre::update(){
         playerInput.erase(playerInput.getSize()-1, 1);
     }
     playerText->setTexto(playerInput);
+
+    string consult;
+
+    
+
+    if(compruebaNombre && playerInput.getSize() > 0){
+        consult = "SELECT * FROM usuario WHERE nombre='"+playerInput+"'";
+        string** select_nombres = Conexion::Instance()->select_bd(consult, 1);
+        if(select_nombres[0][0] == playerInput){
+            disponibilidad->setTexto("Nombre no disponible");
+            disponibilidad->setColor(255,0,0);
+            nombre_disponible = false;
+        }
+        else {
+            disponibilidad->setTexto("Nombre disponible");
+            disponibilidad->setColor(0,255,0);
+            nombre_disponible = true;
+
+        }
+    }
+    if(insert && nombre_disponible){
+        consult = "INSERT INTO `usuario`(`nombre`, `muertes`, `monedas`, `niveles`) VALUES ('"+playerInput+"',0,0,0)";
+                          
+        Conexion::Instance()->insert_bd(consult);
+        Guardar::Instance()->setNombre(playerInput);
+        CambiarEstado();
+    }
 }
 
 void PreguntarNombre::input(){
     borrar = false;
+    insert = false;
+    compruebaNombre = false;
+
     while(motor->ventanaPollEvent()) {
         if(motor->eventTypeClosed()){
             motor->ventanaClose();
@@ -130,12 +176,14 @@ void PreguntarNombre::input(){
 
         if(motor->isKeyPressedEnter()){
             if(playerInput != ""){
-                CambiarEstado();
+                insert = true;
+               
             }
         }
         else if(motor->isKeyBorrar()){
             if(playerInput != ""){
                 borrar = true;
+                compruebaNombre = true;
             }
         }
         else if(motor->isKeyPressedEscape()){
@@ -144,11 +192,9 @@ void PreguntarNombre::input(){
         else if (motor->getEvent()->type == sf::Event::TextEntered){
             if(playerInput.getSize() < 10){
                 playerInput += motor->getEvent()->text.unicode;
+                compruebaNombre = true;
             }
         }
     }
-
-    
-     
 }
 

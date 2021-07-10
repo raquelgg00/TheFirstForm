@@ -17,7 +17,8 @@ class Guardar{
         int getNivel(){return nivelMax;};
         int getMonedas(){return numMonedas;};
         int getHabilidades(){return habilidades;};
-        
+        std::string getNombre(){return nombre;};
+
         //setters
         void setMusica(int vol);
         void setSonido(int vol);
@@ -29,6 +30,7 @@ class Guardar{
         void setHabilidades(int hab);
         //void setHabilidReinicio();
         void setHabilidadesAtrib(int hab);
+        void setNombre(std::string);
 
         void reiniciarPartida();
 
@@ -41,6 +43,7 @@ class Guardar{
         int nivelMax;
         int numMonedas;
         int habilidades;
+        std::string nombre;
         XMLDocument doc;
 };
 

@@ -23,10 +23,14 @@ class PreguntarNombre : public JuegoState {
         Sprite *logo;
         sf::String playerInput;
         Texto *playerText;
+        Texto *disponibilidad;
         
         void CambiarEstado() override;
         bool borrar; // para el input, me dice si se ha presionado backspace
-        
+        bool insert; //para cuando se envie el nombre, me dice si ha presionado Enter
+        bool compruebaNombre;
+        bool reiniciar;
+        bool nombre_disponible = false;
 
     public:
         static PreguntarNombre* Instance(); 

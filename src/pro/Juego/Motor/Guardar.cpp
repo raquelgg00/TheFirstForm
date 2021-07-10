@@ -140,3 +140,13 @@ void Guardar::reiniciarPartida(){
         habilidades = 0;
     }
 }
+
+void Guardar::setNombre(std::string nom){
+    XMLElement* partida=doc.FirstChildElement("partida");
+
+    if(partida!=NULL){
+        XMLElement* nivel=partida->FirstChildElement("nombre");
+        nivel->SetText(nom.c_str());
+        doc.SaveFile("Motor/save.tmx");
+    }
+}

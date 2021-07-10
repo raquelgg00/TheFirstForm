@@ -61,8 +61,26 @@ string** Conexion::select_bd(string consulta, int filas){
             i++;
         }
     }
+
     return res;
 }
 
 
         
+bool Conexion::insert_bd(string consulta){
+
+    const char* c = consulta.c_str();
+    int q_estado;
+   
+    q_estado = mysql_query(conectar, c);
+    if(!q_estado){
+        resultado = mysql_store_result(conectar);
+        return true;
+    }
+
+    if(mysql_error(conectar)){
+        cout<<"ERROR AL HACER EL INSERT: "<<mysql_error(conectar)<<"\n";
+    }
+
+    return false;
+}

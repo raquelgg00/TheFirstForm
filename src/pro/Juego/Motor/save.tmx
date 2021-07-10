@@ -9,4 +9,5 @@
     <nivel max="0"/>
     <monedas max="5"/>
     <habilidades max="0"/>
+    <nombre>bubub</nombre>
 </partida>
