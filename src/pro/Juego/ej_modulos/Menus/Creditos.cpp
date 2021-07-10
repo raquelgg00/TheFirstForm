@@ -36,12 +36,33 @@ Creditos::Creditos(){
    
 
     //Inicializamos los textos de las opciones
-    nombres[0]=new Texto("Raquel Garcia Guillem");
+    nombres[0]=new Texto("Programacion");
+    nombres[0]->setStyle("Underlined");
     nombres[1]=new Texto("Gaspar Mora Rico");
-    nombres[2]=new Texto("Diego Valero Bueno");
-    nombres[3]=new Texto("Laura Gil Lopez");
-    nombres[4]=new Texto("Vanessa Davo Parreno");
-    nombres[5]=new Texto("Guillermo Novelda Mortes");
+    nombres[2]=new Texto("Raquel Garcia Guillem");
+    nombres[3]=new Texto("Diego Valero Bueno");
+    nombres[4]=new Texto("Laura Gil Lopez");
+    nombres[5]=new Texto("Vanessa Davo Parreno");
+    nombres[6]=new Texto("Guillermo Novelda Mortes");
+    
+    nombres[7]=new Texto(" ");
+    nombres[8]=new Texto("Diseno de niveles");
+    nombres[8]->setStyle("Underlined");
+    nombres[9]=new Texto("Gaspar Mora Rico");
+    nombres[10]=new Texto("Raquel Garcia Guillem");
+    
+    nombres[11]=new Texto(" ");
+    nombres[12]=new Texto("Graficos");
+    nombres[12]->setStyle("Underlined");
+    nombres[13]=new Texto("Vanessa Davo Parreno");
+    nombres[14]=new Texto("Laura Gil Lopez");
+    
+    
+    nombres[15]=new Texto(" ");
+    nombres[16]=new Texto("Sonido");
+    nombres[16]->setStyle("Underlined");
+    nombres[17]=new Texto("Guillermo Monino Canovas");
+
 
     for(int i=0;i<num_items;i++){
         if(motor->getTamHeight()==720){
@@ -109,7 +130,7 @@ void Creditos::update(){
     for(int i=0;i<num_items;i++){
         nombres[i]->setPosition(nombres[i]->getXPosition(),nombres[i]->getYPosition()-2);
     }
-    if(nombres[5]->getYPosition()<-45){
+    if(nombres[14]->getYPosition()<-45){
         CambiarEstado();
     }
 }

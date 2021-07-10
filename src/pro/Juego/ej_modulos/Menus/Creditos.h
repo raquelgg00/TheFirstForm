@@ -16,9 +16,9 @@ class Creditos : public JuegoState {
         Creditos(const Creditos & );
         Creditos &operator= (const Creditos & );
 
-        int num_items=6;
+        int num_items=18;
         Motor *motor=NULL;
-        Texto *nombres[6];  // casillas opciones
+        Texto *nombres[18];  // casillas opciones
         Sprite *fondo;
         Sprite *logo;
         
