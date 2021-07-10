@@ -101,6 +101,7 @@ class Motor{
         sf::View *camara;
         sf::View *camara2;
         sf::Event *event;
+        sf::Image favicon;
         Audio *musica;
         Audio *musicaMenu;
         Audio *musicaAnimacion;
