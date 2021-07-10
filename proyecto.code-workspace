@@ -67,7 +67,10 @@
 			"memory_resource": "cpp",
 			"random": "cpp",
 			"set": "cpp",
-			"string": "cpp"
+			"string": "cpp",
+			"codecvt": "cpp",
+			"filesystem": "cpp",
+			"cinttypes": "cpp"
 		}
 	}
 }

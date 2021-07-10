@@ -50,13 +50,13 @@ PreguntarNombre::PreguntarNombre(){
         nombres[i]->setPosition(motor->getTamWidth()/2, 200+(i*75));
         nombres[i]->setColor(255,255,255);
     }
-    nombres[0]->setColor(36,207,253);
+    
     
     // Texto del input
     playerText = new Texto("");
     playerText->setOrigin(playerText->getWidthBounds()/2.f, playerText->getHeightBounds()/2.f);
     playerText->setPosition(motor->getTamWidth()/2.5, (motor->getTamHeight()/2));
-    playerText->setColor(255,255,255);
+    playerText->setColor(36,207,253);
     playerText->setSize(80);
 
     borrar = false;
@@ -138,8 +138,13 @@ void PreguntarNombre::input(){
                 borrar = true;
             }
         }
+        else if(motor->isKeyPressedEscape()){
+            Partida::setEstado(MenuPrincipal::Instance());
+        }
         else if (motor->getEvent()->type == sf::Event::TextEntered){
-            playerInput += motor->getEvent()->text.unicode;
+            if(playerInput.getSize() < 10){
+                playerInput += motor->getEvent()->text.unicode;
+            }
         }
     }
 

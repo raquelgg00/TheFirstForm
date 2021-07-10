@@ -4,6 +4,7 @@
 
 #include "JuegoState.h"
 #include "Motor.h"
+#include "Conexion.h"
 #include "Texto.h"
 #include "Sprite.h"
 #include "Partida.h"
