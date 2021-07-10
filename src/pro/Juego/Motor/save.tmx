@@ -6,7 +6,7 @@
 </opciones>
 
 <partida>
-    <nivel max="15"/>
+    <nivel max="0"/>
     <monedas max="5"/>
-    <habilidades max="5"/>
+    <habilidades max="0"/>
 </partida>

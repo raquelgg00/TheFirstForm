@@ -64,38 +64,19 @@ Ranking::Ranking(){
     }
 
 
-    // Conexion BD
-    MYSQL* conectar = mysql_init(0);
-    conectar = mysql_real_connect(conectar, "sql11.freesqldatabase.com", "sql11423929", "YJhMdyzuXx", "sql11423929", 3306, NULL, 0);
-    MYSQL_ROW fila;
-    MYSQL_RES* resultado;
+    std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes limit 10";
+    std::string** res = Conexion::Instance()->select_bd(consult, 10);    
+    for(int i=0; i<10; i++){
+        
+        string pos_ranking;
+        stringstream ss;  
+        ss << i+1;  
+        ss >> pos_ranking;
+        pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" monedas "+"   ----   "+res[i][1]+" muertes ";
 
-    if(conectar){
-        std::cout<<"Conexión establecida con la BD\n";
-        std::string consulta = "select * from usuario order by niveles desc, monedas desc, muertes";
-        const char* c = consulta.c_str();
-        int q_estado;
-        int cont = 0;
-
-        q_estado = mysql_query(conectar, c);
-        if(!q_estado){
-            resultado = mysql_store_result(conectar);
-            while((fila = mysql_fetch_row(resultado))){
-
-                string pos_ranking;
-                stringstream ss;  
-                ss << cont+1;  
-                ss >> pos_ranking;
-                pos_ranking = pos_ranking + ". "+fila[0]+"            "+fila[3]+" niveles"+"   ----   "+fila[2]+" monedas "+"   ----   "+fila[1]+" muertes ";
-
-                std::cout<<fila[0]<<" --> "<<fila[1]<<std::endl;
-                nombres[cont]->setTexto(pos_ranking);
-                cont++;
-            }
-        }
-    }
-    else {
-        std::cout<<"No se pudo conectar con la BD\n";
+        std::cout<<res[i][0]<<" --> "<<res[i][1]<<std::endl;
+        nombres[i]->setTexto(pos_ranking);
+            
     }
 }
 
@@ -158,11 +139,14 @@ void Ranking::update(){
 
 void Ranking::input(){
   
-    while(motor->ventanaPollEvent()) {
+      while(motor->ventanaPollEvent()) {
         if(motor->eventTypeClosed()){
             motor->ventanaClose();
+        } 
+       
+        if (motor->getEvent()->type == sf::Event::TextEntered){
+            Partida::setEstado(MenuPrincipal::Instance());
         }
-    }
-     
+    }    
 }
 
