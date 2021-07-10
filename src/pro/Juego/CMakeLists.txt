@@ -19,8 +19,10 @@ add_executable(TheFirstShape main.cpp icono.rc)
 #aportaran código
 target_link_libraries(TheFirstShape libModulos)
 
+
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 #Para usar SFML
+set(SFML_ROOT "C:\\SFML")
 find_package(SFML REQUIRED system window graphics network audio)
 if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
