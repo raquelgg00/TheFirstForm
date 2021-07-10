@@ -186,6 +186,35 @@ void InGame::update(){
             Guardar::Instance()->setNivel(nivel->getNumNivel()+1);//guardo partida
             motor->setShader(false);
 
+
+
+            // Al completar el  nivel se hacen los updates en la BD con los nuevos datos
+            int nivel_actual = Guardar::Instance()->getNivel();
+            int monedas_actual = Guardar::Instance()->getMonedas();
+            std::string nombre_actual = Guardar::Instance()->getNombre();
+            int muertes_actual = Guardar::Instance()->getMuertes();
+            
+            // Pasamos a string lo que obtenemos de save.xml
+            std::string moneda;
+            stringstream ss;  
+            ss << monedas_actual;  
+            ss >> moneda;
+
+            std::string muertes;
+            stringstream ss2;  
+            ss2 << muertes_actual;  
+            ss2 >> muertes;
+
+            std::string nivel;
+            stringstream ss3; 
+            ss3 << nivel_actual;
+            ss3 >> nivel;
+
+            // Hacemos la consulta
+            std::string consult = "UPDATE `usuario` SET `muertes`="+muertes+",`monedas`="+moneda+",`niveles`="+nivel+" WHERE nombre = '"+nombre_actual+"'";
+            Conexion::Instance()->update_bd(consult);
+
+
             CambiarEstado();
         } else {
             nivel->update(dir_gravedad);

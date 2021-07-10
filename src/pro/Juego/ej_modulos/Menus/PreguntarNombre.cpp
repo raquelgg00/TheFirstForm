@@ -142,6 +142,8 @@ void PreguntarNombre::update(){
     if(compruebaNombre && playerInput.getSize() > 0){
         consult = "SELECT * FROM usuario WHERE nombre='"+playerInput+"'";
         string** select_nombres = Conexion::Instance()->select_bd(consult, 1);
+
+
         if(select_nombres[0][0] == playerInput){
             disponibilidad->setTexto("Nombre no disponible");
             disponibilidad->setColor(255,0,0);
@@ -191,7 +193,13 @@ void PreguntarNombre::input(){
         }
         else if (motor->getEvent()->type == sf::Event::TextEntered){
             if(playerInput.getSize() < 10){
-                playerInput += motor->getEvent()->text.unicode;
+
+                sf::Uint32 unicode = motor->getEvent()->text.unicode;
+                if(motor->getEvent()->text.unicode >= 65 && motor->getEvent()->text.unicode <= 90){
+                    unicode += 32;
+                }
+
+                playerInput += unicode;
                 compruebaNombre = true;
             }
         }

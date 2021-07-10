@@ -1206,7 +1206,8 @@ bool Nivel::getColisionRigth(int **datos, bool cambia_margen){
 //reinicio del nivel cuando muere el personaje
 void Nivel::morision(){
     Motor::Instance()->getSonidoMorision()->Play();
-   
+    
+    Guardar::Instance()->setMuertes(Guardar::Instance()->getMuertes()+1);
     if(dentro_portal){
         player->setPosition(inicioPortal[0], inicioPortal[1]);
     }

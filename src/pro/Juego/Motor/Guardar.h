@@ -17,7 +17,8 @@ class Guardar{
         int getNivel(){return nivelMax;};
         int getMonedas(){return numMonedas;};
         int getHabilidades(){return habilidades;};
-        std::string getNombre(){return nombre;};
+        int getMuertes(){return num_muertes;};
+        std::string getNombre();
 
         int getTerminado(){return terminado;};
         
@@ -28,6 +29,7 @@ class Guardar{
         void setResolucionAtr(int res);
         void setNivel(int niv);
         void setTerminado(int fin);
+        void setMuertes(int muertes);
         //void setNivelReinicio();
         void setMonedas(int mon);
         void setHabilidades(int hab);
@@ -46,6 +48,7 @@ class Guardar{
         int nivelMax;
         int numMonedas;
         int habilidades;
+        int num_muertes;
         std::string nombre;
         int terminado;
         XMLDocument doc;

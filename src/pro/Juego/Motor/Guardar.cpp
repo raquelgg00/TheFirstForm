@@ -16,6 +16,8 @@ Guardar::Guardar(){
     resolucion=0;
     nivelMax=0;
     numMonedas=0;
+    terminado=0;
+    num_muertes = 0;
 
     // Cargo tmx
     doc.LoadFile("Motor/save.xml");
@@ -46,6 +48,9 @@ Guardar::Guardar(){
 
         XMLElement* fin=partida->FirstChildElement("terminado");
         fin->QueryIntAttribute("fin", &terminado);
+
+        XMLElement* muertes=partida->FirstChildElement("muertes");
+        muertes->QueryIntAttribute("max", &num_muertes);
     }
 }
 
@@ -138,6 +143,18 @@ void Guardar::setHabilidades(int hab){
     }
 }
 
+
+void Guardar::setMuertes(int hab){
+    XMLElement* partida=doc.FirstChildElement("partida");
+
+    if(partida!=NULL){
+        XMLElement* habilid=partida->FirstChildElement("muertes");
+        habilid->SetAttribute("max",hab);
+        doc.SaveFile("Motor/save.xml");
+        num_muertes = hab;
+    }
+}
+
 void Guardar::setHabilidadesAtrib(int hab){
     habilidades = hab;
 }
@@ -166,4 +183,17 @@ void Guardar::setNombre(std::string nom){
         nivel->SetText(nom.c_str());
         doc.SaveFile("Motor/save.xml");
     }
+}
+
+std::string Guardar::getNombre(){
+    // Cargo tmx
+    doc.LoadFile("Motor/save.xml");
+    // apuntamos a partida
+    XMLElement* partida=doc.FirstChildElement("partida");
+
+    if(partida!=NULL){
+        XMLElement* nombre=partida->FirstChildElement("nombre");
+        return nombre->GetText();
+    }
+    return "";
 }

@@ -33,10 +33,12 @@ class Hud {
         FlotanteInterpolado *posicion2;//nivel
         FlotanteInterpolado *posicion3;//reloj
         FlotanteInterpolado *posicion_moneda;
+        FlotanteInterpolado *posicion_muertes;
         Texto* texto;
         Texto* textoFondo;
         Texto* cont_segundos;
         Motor* motor;
+        Texto* muertes;
         int nivel;
         float x,y;
 

@@ -10,7 +10,7 @@ class Conexion{
     public:
         static Conexion* Instance();
         bool insert_bd(std::string);
-        void update_bd(std::string);
+        bool update_bd(std::string);
         void delete_bd(std::string);
         std::string** select_bd(std::string, int);
 

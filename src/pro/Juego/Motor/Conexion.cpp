@@ -84,3 +84,23 @@ bool Conexion::insert_bd(string consulta){
 
     return false;
 }
+
+
+        
+bool Conexion::update_bd(string consulta){
+
+    const char* c = consulta.c_str();
+    int q_estado;
+   
+    q_estado = mysql_query(conectar, c);
+    if(!q_estado){
+        resultado = mysql_store_result(conectar);
+        return true;
+    }
+
+    if(mysql_error(conectar)){
+        cout<<"ERROR AL HACER EL UPDATE/DELETE: "<<mysql_error(conectar)<<"\n";
+    }
+
+    return false;
+}

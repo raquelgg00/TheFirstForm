@@ -140,6 +140,11 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
         motor->getMusica()->Play();
     }
     else if(selectedItem==1){//Nueva partida
+
+        // Borramos de la BD los datos de la persona anterior
+        std::string consult = "DELETE FROM `usuario` WHERE nombre='"+Guardar::Instance()->getNombre()+"'";
+        Conexion::Instance()->update_bd(consult);
+
         Guardar::Instance()->reiniciarPartida();
         Nivel::Instance()->cambiarNivel(0);
         Partida::setEstado(PreguntarNombre::Instance());

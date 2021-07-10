@@ -6,9 +6,10 @@
 </opciones>
 
 <partida>
-    <nivel max="0"/>
-    <monedas max="5"/>
-    <habilidades max="0"/>
-    <nombre>pieees</nombre>
+    <nivel max="15"/>
+    <monedas max="2"/>
+    <habilidades max="5"/>
+    <muertes max="2"/>
+    <nombre>gaspii</nombre>
     <terminado fin="0"/>
 </partida>

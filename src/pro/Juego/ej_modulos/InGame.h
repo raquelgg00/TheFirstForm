@@ -4,11 +4,14 @@
 #include "JuegoState.h"
 #include "Menus/MenuMundo.h"
 #include "Partida.h"
+#include "Conexion.h"
 #include "Player.h"
 #include "Motor.h"
 #include "Hud.h"
 #include "Nivel.h"
 #include <iostream>
+#include <string>
+#include <sstream>
 
 class InGame : public JuegoState {
     private:
