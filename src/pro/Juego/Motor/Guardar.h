@@ -19,12 +19,15 @@ class Guardar{
         int getHabilidades(){return habilidades;};
         std::string getNombre(){return nombre;};
 
+        int getTerminado(){return terminado;};
+        
         //setters
         void setMusica(int vol);
         void setSonido(int vol);
         void setResolucion(int res);
         void setResolucionAtr(int res);
         void setNivel(int niv);
+        void setTerminado(int fin);
         //void setNivelReinicio();
         void setMonedas(int mon);
         void setHabilidades(int hab);
@@ -44,6 +47,7 @@ class Guardar{
         int numMonedas;
         int habilidades;
         std::string nombre;
+        int terminado;
         XMLDocument doc;
 };
 

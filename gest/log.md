@@ -325,7 +325,7 @@ He buscado información sobre cómo introducir un vídeo en el juego (podemos le
 También he empezado la animación inicial para el juego y tráiler
 
 ## 20210426 raquelgg00 @(1h)
-He creado la clase Guardar para que controle la lectura y escritura del fichero save.tmx que contiene los datos guardados del juego.
+He creado la clase Guardar para que controle la lectura y escritura del fichero save.xml que contiene los datos guardados del juego.
 
 ## 20210426 GaspiMr6 @(2h)
 La animación ya está acabada e integrada en el juego (el problema es que se muestra demasiado lento y va a una velocidad distinta con respecto al sonido).

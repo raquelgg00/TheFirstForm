@@ -18,7 +18,7 @@ Guardar::Guardar(){
     numMonedas=0;
 
     // Cargo tmx
-    doc.LoadFile("Motor/save.tmx");
+    doc.LoadFile("Motor/save.xml");
 
     // apuntamos a opciones y partida
     XMLElement* opciones=doc.FirstChildElement("opciones");
@@ -43,6 +43,9 @@ Guardar::Guardar(){
 
         XMLElement* hab=partida->FirstChildElement("habilidades");
         hab->QueryIntAttribute("max", &habilidades);
+
+        XMLElement* fin=partida->FirstChildElement("terminado");
+        fin->QueryIntAttribute("fin", &terminado);
     }
 }
 
@@ -59,7 +62,7 @@ void Guardar::setMusica(int vol){
     if(opciones!=NULL){
         XMLElement* volMusica=opciones->FirstChildElement("musica");
         volMusica->SetAttribute("volumen",vol);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         musica = vol;
     }
 }
@@ -70,7 +73,7 @@ void Guardar::setSonido(int vol){
     if(opciones!=NULL){
         XMLElement* volSonido=opciones->FirstChildElement("sonido");
         volSonido->SetAttribute("volumen",vol);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         sonido = vol;
     }
 }
@@ -81,7 +84,7 @@ void Guardar::setResolucion(int res){
     if(opciones!=NULL){
         XMLElement* resPantalla=opciones->FirstChildElement("resolucion");
         resPantalla->SetAttribute("tam",res);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         resolucion = res;
     }
 }
@@ -96,8 +99,19 @@ void Guardar::setNivel(int niv){
     if(partida!=NULL&&niv>nivelMax){
         XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->SetAttribute("max",niv);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         nivelMax = niv;
+    }
+}
+
+void Guardar::setTerminado(int fin){
+    XMLElement* partida=doc.FirstChildElement("partida");
+
+    if(partida!=NULL){
+        XMLElement* term=partida->FirstChildElement("terminado");
+        term->SetAttribute("fin",fin);
+        doc.SaveFile("Motor/save.xml");
+        terminado = fin;
     }
 }
 
@@ -107,7 +121,7 @@ void Guardar::setMonedas(int mon){
     if(partida!=NULL){
         XMLElement* monedas=partida->FirstChildElement("monedas");
         monedas->SetAttribute("max",mon);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         numMonedas = mon;
     }
 }
@@ -119,7 +133,7 @@ void Guardar::setHabilidades(int hab){
     if(partida!=NULL&&hab>=habilidades){
         XMLElement* habilid=partida->FirstChildElement("habilidades");
         habilid->SetAttribute("max",hab);
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
         habilidades = hab;
     }
 }
@@ -135,9 +149,12 @@ void Guardar::reiniciarPartida(){
         habilid->SetAttribute("max",0);
         XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->SetAttribute("max",0);
-        doc.SaveFile("Motor/save.tmx");
+        XMLElement* fin=partida->FirstChildElement("terminado");
+        fin->SetAttribute("fin",0);
+        doc.SaveFile("Motor/save.xml");
         nivelMax = 0;
         habilidades = 0;
+        terminado=0;
     }
 }
 

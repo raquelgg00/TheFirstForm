@@ -65,7 +65,12 @@ void InGame::CambiarEstado(){
 
     MenuMundo::Instance()->actualiza_colores();
 
-    Partida::setEstado(MenuMundo::Instance());
+    if(nivel->getNumNivel()==15&&Guardar::Instance()->getTerminado()==0){
+        Guardar::Instance()->setTerminado(1);//juego terminado
+        Partida::setEstado(Creditos::Instance());
+    }
+    else
+        Partida::setEstado(MenuMundo::Instance());
 }
 
 
@@ -180,6 +185,7 @@ void InGame::update(){
         if(nivel->getCompletado()){
             Guardar::Instance()->setNivel(nivel->getNumNivel()+1);//guardo partida
             motor->setShader(false);
+
             CambiarEstado();
         } else {
             nivel->update(dir_gravedad);
