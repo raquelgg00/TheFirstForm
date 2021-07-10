@@ -164,6 +164,6 @@ void Guardar::setNombre(std::string nom){
     if(partida!=NULL){
         XMLElement* nivel=partida->FirstChildElement("nombre");
         nivel->SetText(nom.c_str());
-        doc.SaveFile("Motor/save.tmx");
+        doc.SaveFile("Motor/save.xml");
     }
 }
