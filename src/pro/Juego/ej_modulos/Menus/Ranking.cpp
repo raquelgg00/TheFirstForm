@@ -123,7 +123,7 @@ void Ranking::render(float tick){
     for(int i=0;i<num_items;i++){
         nombres[i]->drawText();
     }
-
+    motor->setView(0);
     motor->ventanaDisplay();
 }
 

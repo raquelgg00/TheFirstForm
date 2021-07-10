@@ -12,7 +12,7 @@ Creditos* Creditos::Instance(){
 
 // Constructor
 Creditos::Creditos(){
-
+    std::cout<<"contruyo\n";
     // Motor
     motor = Motor::Instance();
     
@@ -121,7 +121,7 @@ void Creditos::render(float tick){
     for(int i=0;i<num_items;i++){
         nombres[i]->drawText();
     }
-
+    motor->setView(0);
     motor->ventanaDisplay();
 }
 

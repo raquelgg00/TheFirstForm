@@ -17,6 +17,7 @@ class Guardar{
         int getNivel(){return nivelMax;};
         int getMonedas(){return numMonedas;};
         int getHabilidades(){return habilidades;};
+        int getTerminado(){return terminado;};
         
         //setters
         void setMusica(int vol);
@@ -24,6 +25,7 @@ class Guardar{
         void setResolucion(int res);
         void setResolucionAtr(int res);
         void setNivel(int niv);
+        void setTerminado(int fin);
         //void setNivelReinicio();
         void setMonedas(int mon);
         void setHabilidades(int hab);
@@ -41,6 +43,7 @@ class Guardar{
         int nivelMax;
         int numMonedas;
         int habilidades;
+        int terminado;
         XMLDocument doc;
 };
 
