@@ -48,8 +48,6 @@ Ranking::Ranking(){
     nombres[8]=new Texto("Bot");
     nombres[9]=new Texto("Bot");
     
-    
-
     for(int i=0;i<num_items;i++){
         if(motor->getTamHeight()==720){
             nombres[i]->setSize(45);
@@ -62,22 +60,7 @@ Ranking::Ranking(){
         nombres[i]->setPosition(motor->getTamWidth()/3.5, (motor->getTamHeight()/5) + i*50);
         nombres[i]->setColor(255,255,255);
     }
-
-
-    std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes limit 10";
-    std::string** res = Conexion::Instance()->select_bd(consult, 10);    
-    for(int i=0; i<10; i++){
-        
-        string pos_ranking;
-        stringstream ss;  
-        ss << i+1;  
-        ss >> pos_ranking;
-        pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" monedas "+"   ----   "+res[i][1]+" muertes ";
-
-        std::cout<<res[i][0]<<" --> "<<res[i][1]<<std::endl;
-        nombres[i]->setTexto(pos_ranking);
-            
-    }
+    actualiza_ranking();
 }
 
 
@@ -148,5 +131,27 @@ void Ranking::input(){
             Partida::setEstado(MenuPrincipal::Instance());
         }
     }    
+}
+
+void Ranking::actualiza_ranking(){
+
+    std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes limit 10";
+    std::string** res = Conexion::Instance()->select_bd(consult, 10);    
+    for(int i=0; i<10; i++){
+        
+        string pos_ranking;
+        stringstream ss;  
+        ss << i+1;  
+        ss >> pos_ranking;
+        pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
+
+        std::cout<<res[i][0]<<" --> "<<res[i][1]<<std::endl;
+        nombres[i]->setTexto(pos_ranking);
+
+        if(res[i][0] == Guardar::Instance()->getNombre()){
+            nombres[i]->setColor(255,230,0);
+        }
+            
+    }
 }
 
