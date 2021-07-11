@@ -30,7 +30,6 @@ MenuMundo::MenuMundo(){
         sstream << i;
         std::string numero_del_nivel = sstream.str();
         sprite[i]->setTexture(numero_del_nivel,"png");
-        sprite[i]->setScale(0.09,0.09);
         
      
         if(i==0){//nivel 0
@@ -208,7 +207,6 @@ void MenuMundo::actualiza_colores(){
             sstream << i;
             std::string numero_del_nivel = sstream.str();
             sprite[i]->setTexture(numero_del_nivel,"png");
-            sprite[i]->setScale(0.09,0.09);
         }
 
 
