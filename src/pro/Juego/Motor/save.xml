@@ -6,7 +6,7 @@
 </opciones>
 
 <partida>
-    <nivel max="15"/>
+    <nivel max="1"/>
     <secreto1 max="1"/>
     <secreto2 max="1"/>
     <secreto3 max="1"/>

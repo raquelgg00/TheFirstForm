@@ -200,13 +200,16 @@ void MenuMundo::actualiza_colores(){
 
         if(i>Guardar::Instance()->getNivel()){
             sprite[i]->setTexture("nivelBloqueado","png");
-            sprite[i]->setScale(0.5,0.5);
+
+            sprite[i]->setFrameSprite(0,0,sprite[i]->getBounds("global").width,sprite[i]->getBounds("global").height);
         }
         else {
             std::stringstream sstream;
             sstream << i;
             std::string numero_del_nivel = sstream.str();
             sprite[i]->setTexture(numero_del_nivel,"png");
+
+            sprite[i]->setFrameSprite(0,0,sprite[i]->getBounds("global").width,sprite[i]->getBounds("global").height);
         }
 
 
