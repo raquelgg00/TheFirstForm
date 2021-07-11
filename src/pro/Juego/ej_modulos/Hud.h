@@ -32,6 +32,7 @@ class Hud {
         Sprite* bloqueo;
         Sprite* reloj;
         Sprite *fondo;
+        Sprite *calavera;
         FlotanteInterpolado *posicion;//habilidades
         FlotanteInterpolado *posicion2;//nivel
         FlotanteInterpolado *posicion3;//reloj
@@ -39,6 +40,7 @@ class Hud {
         FlotanteInterpolado *posicion_moneda2;
         FlotanteInterpolado *posicion_moneda3;
         FlotanteInterpolado *posicion_muertes;
+        FlotanteInterpolado *posicion_calavera;
         FlotanteInterpolado *posicion_fondo;
         Texto* texto;
         Texto* cont_segundos;
