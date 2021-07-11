@@ -7,9 +7,9 @@
 
 <partida>
     <nivel max="1"/>
-    <monedas max="2"/>
+    <monedas max="0"/>
     <habilidades max="0"/>
-    <muertes max="3"/>
-    <nombre>prueba</nombre>
+    <muertes max="0"/>
+    <nombre>aaaaa</nombre>
     <terminado fin="0"/>
 </partida>
