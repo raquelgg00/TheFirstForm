@@ -18,54 +18,34 @@ PreguntarNombre::PreguntarNombre(){
     
     //Fondo del menu
     fondo=new Sprite();
-    fondo->setTexture("Creditos","png");
+    fondo->setTexture("Nombre","png");
     if(motor->getTamHeight()==720){
         fondo->setScale(0.67,0.67);
     }
-
-    //Fondo del menu
-    logo=new Sprite();
-    logo->setTexture("Logo1","png");
-    logo->setOrigin(logo->getBounds("global").width/2.f, logo->getBounds("global").height/2.f);
-    logo->setPosition(motor->getTamWidth()/2, 150);
-
-    if(motor->getTamHeight()==720)
-        logo->setScale(0.15,0.15);
-    else
-        logo->setScale(0.22,0.22);
-   
-
-    //Inicializamos los textos de las opciones
-    nombres[0]=new Texto("Introduce tu nombre");
-    nombres[1]=new Texto("(se mostrara publicamente en el Ranking si estas entre los mejores)");
-    
-    for(int i=0;i<num_items;i++){
-        if(motor->getTamHeight()==720){
-            nombres[i]->setSize(75 - (i*30));
-        }
-        else
-            nombres[i]->setSize(100 - (i*30));
-
-        nombres[i]->setOrigin(nombres[i]->getWidthBounds()/2.f, nombres[i]->getHeightBounds()/2.f);
-        nombres[i]->setPosition(motor->getTamWidth()/2, 200+(i*75));
-        nombres[i]->setColor(255,255,255);
-    }
-    
     
     // Texto del input
     playerText = new Texto("");
     playerText->setOrigin(playerText->getWidthBounds()/2.f, playerText->getHeightBounds()/2.f);
-    playerText->setPosition(motor->getTamWidth()/2.5, (motor->getTamHeight()/2));
+    playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+50);
     playerText->setColor(36,207,253);
-    playerText->setSize(80);
+ 
 
+    
     // Texto de disponibilidad
     disponibilidad = new Texto("");
     disponibilidad->setSize(60);
     disponibilidad->setOrigin(disponibilidad->getWidthBounds()/2.f, disponibilidad->getHeightBounds()/2.f);
-    disponibilidad->setPosition(motor->getTamWidth()/3.f, (motor->getTamHeight()/2+100));
+    disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+150));
     disponibilidad->setColor(255,0,0);
     
+    if(Guardar::Instance()->getResolucion() == 720){
+            playerText->setSize(60);
+            disponibilidad->setSize(60);
+        }
+        else {
+            playerText->setSize(90);
+            disponibilidad->setSize(90);
+        }
 
 
     borrar = false;
@@ -84,16 +64,7 @@ PreguntarNombre::~PreguntarNombre(){
         delete fondo;
         fondo=NULL;
     }
-    if(logo!=NULL){
-        delete logo;
-        logo=NULL;
-    }
-    for(int i=0;i<num_items;i++){
-        if(nombres[i]!=NULL){
-            delete nombres[i];
-            nombres[i]=NULL;
-        }
-    }
+
     if(playerText!=NULL){
         delete playerText;
         playerText=NULL;
@@ -103,11 +74,6 @@ PreguntarNombre::~PreguntarNombre(){
 
 void PreguntarNombre::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiamos a InGame.cpp
 //reseteo creditos y luego cambio
-    logo->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/10)*(10));
-
-    for(int i=0;i<num_items;i++){
-        nombres[i]->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/10)*(i+12));
-    }
     Partida::setEstado(AnimacionInicial::Instance());
 }
 
@@ -116,9 +82,6 @@ void PreguntarNombre::render(float tick){
     motor->ventanaClear(140,140,140);
     motor->ventanaDibuja(fondo->getSprite());
 
-    for(int i=0;i<num_items;i++){
-        nombres[i]->drawText();
-    }
     playerText->drawText();
 
     if(playerInput.getSize() > 0){
@@ -140,6 +103,14 @@ void PreguntarNombre::update(){
     
 
     if(compruebaNombre && playerInput.getSize() > 0){
+        //centramos nombre
+        playerText->setOrigin(playerText->getWidthBounds()/2.f, playerText->getHeightBounds()/2.f);
+        if(motor->getTamHeight()==720)
+            playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+25);
+        else
+            playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+50);
+
+
         consult = "SELECT * FROM usuario WHERE nombre='"+playerInput+"'";
         string** select_nombres = Conexion::Instance()->select_bd(consult, 1);
 
@@ -155,6 +126,12 @@ void PreguntarNombre::update(){
             nombre_disponible = true;
 
         }
+        disponibilidad->setOrigin(disponibilidad->getWidthBounds()/2.f, disponibilidad->getHeightBounds()/2.f);
+        if(motor->getTamHeight()==720)
+            disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+120));
+        else
+            disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+160));
+
     }
     if(insert && nombre_disponible){
         consult = "INSERT INTO `usuario`(`nombre`, `muertes`, `monedas`, `niveles`) VALUES ('"+playerInput+"',0,0,0)";

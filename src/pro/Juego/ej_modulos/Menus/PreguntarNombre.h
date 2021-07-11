@@ -16,11 +16,8 @@ class PreguntarNombre : public JuegoState {
         PreguntarNombre(const PreguntarNombre & );
         PreguntarNombre &operator= (const PreguntarNombre & );
 
-        int num_items=2;
         Motor *motor=NULL;
-        Texto *nombres[2];  // casillas opciones
         Sprite *fondo;
-        Sprite *logo;
         sf::String playerInput;
         Texto *playerText;
         Texto *disponibilidad;
