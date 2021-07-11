@@ -6,12 +6,10 @@
 </opciones>
 
 <partida>
-    <nivel max="15"/>
-    <secreto1 max="0"/>
-    <secreto2 max="0"/>
-    <secreto3 max="0"/>
-    <habilidades max="5"/>
-    <muertes max="0"/>
-    <nombre>aaa</nombre>
+    <nivel max="1"/>
+    <monedas max="2"/>
+    <habilidades max="0"/>
+    <muertes max="5"/>
+    <nombre>diegooo</nombre>
     <terminado fin="0"/>
 </partida>

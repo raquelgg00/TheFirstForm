@@ -161,6 +161,7 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
         Partida::setEstado(Controles::Instance());
     }
     else if(selectedItem==4){//Ranking
+        Ranking::Instance()->actualiza_ranking();
         Partida::setEstado(Ranking::Instance());
     }
 }

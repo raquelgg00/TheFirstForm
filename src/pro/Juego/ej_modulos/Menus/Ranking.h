@@ -36,6 +36,7 @@ class Ranking : public JuegoState {
         void render(float ) override;
         void update() override;
         void input() override; 
+        void actualiza_ranking();
 
 };
 #endif
