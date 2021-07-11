@@ -879,7 +879,7 @@ bool Nivel::getColisionDown(int **datos, bool cambia_margen){
                         }
                         
                         if(datos[i][0]==3){//fin
-                            if(evolucionBuena()){
+                            if(evolucionBuena() && dir_gravedad==0){
                                 completado=true;
                                 motor->getSonidoNivelCompleto()->Play();
                             }
@@ -978,7 +978,7 @@ bool Nivel::getColisionTop(int **datos, bool cambia_margen){
                                 player->setContactoVerdeIzq(true);
                         }
                         if(datos[i][0]==3){//fin
-                            if(evolucionBuena()){
+                            if(evolucionBuena() && dir_gravedad==0){
                                 completado=true;
                                 motor->getSonidoNivelCompleto()->Play();
                             }
@@ -1078,7 +1078,7 @@ bool Nivel::getColisionLeft(int **datos, bool cambia_margen){
                         }
                         
                         if(datos[i][0]==3){//fin
-                            if(evolucionBuena()){
+                            if(evolucionBuena() && dir_gravedad==0){
                                 completado=true;
                                 motor->getSonidoNivelCompleto()->Play();
                             }
@@ -1179,7 +1179,7 @@ bool Nivel::getColisionRigth(int **datos, bool cambia_margen){
                         }
                         
                         if(datos[i][0]==3){//fin
-                            if(evolucionBuena()){
+                            if(evolucionBuena() && dir_gravedad==0){
                                 completado=true;
                                 motor->getSonidoNivelCompleto()->Play();
                             }
