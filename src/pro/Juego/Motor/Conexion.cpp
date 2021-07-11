@@ -50,18 +50,19 @@ string** Conexion::select_bd(string consulta, int filas){
         res[k] = new std::string[filas_tabla_usuario]; // para cada fila, usamos 4 columnas (nombre, niveles, monedas, muertes)
     }
 
-    q_estado = mysql_query(conectar, c);
-    if(!q_estado){
-        resultado = mysql_store_result(conectar);
-        int i = 0;
-        while((fila = mysql_fetch_row(resultado)) && i<filas){
-            for(int j=0; j<filas_tabla_usuario; j++){
-                res[i][j] = std::string(fila[j]);
+    if(conectar){
+        q_estado = mysql_query(conectar, c);
+        if(!q_estado){
+            resultado = mysql_store_result(conectar);
+            int i = 0;
+            while((fila = mysql_fetch_row(resultado)) && i<filas){
+                for(int j=0; j<filas_tabla_usuario; j++){
+                    res[i][j] = std::string(fila[j]);
+                }
+                i++;
             }
-            i++;
         }
     }
-
     return res;
 }
 

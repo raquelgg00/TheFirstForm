@@ -28,12 +28,14 @@ class PreguntarNombre : public JuegoState {
         bool compruebaNombre;
         bool reiniciar;
         bool nombre_disponible = false;
+        bool conect=false;
 
     public:
         static PreguntarNombre* Instance(); 
         void render(float ) override;
         void update() override;
-        void input() override;  
+        void input() override;
+        void setConnect(bool b){conect=b;}
 };
 
 #endif

@@ -6,12 +6,12 @@
 </opciones>
 
 <partida>
-    <nivel max="0"/>
+    <nivel max="5"/>
     <secreto1 max="0"/>
     <secreto2 max="0"/>
     <secreto3 max="0"/>
     <habilidades max="0"/>
     <muertes max="0"/>
-    <nombre>unicornioo</nombre>
+    <nombre>unicornio</nombre>
     <terminado fin="0"/>
 </partida>

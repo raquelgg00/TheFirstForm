@@ -80,66 +80,71 @@ void PreguntarNombre::CambiarEstado(){ // Cuando seleccionamos una opcion, cambi
 void PreguntarNombre::render(float tick){
     tick = 0.f;
     motor->ventanaClear(140,140,140);
-    motor->ventanaDibuja(fondo->getSprite());
+    if(conect){
+        motor->ventanaDibuja(fondo->getSprite());
 
-    playerText->drawText();
+        playerText->drawText();
 
-    if(playerInput.getSize() > 0){
-        disponibilidad->drawText();
+        if(playerInput.getSize() > 0){
+            disponibilidad->drawText();
+        } 
     }
+    
 
     motor->ventanaDisplay();
 }
 
 void PreguntarNombre::update(){
+    if(conect){
+        if (borrar){
+            playerInput.erase(playerInput.getSize()-1, 1);
+        }
+        playerText->setTexto(playerInput);
 
-    if (borrar){
-        playerInput.erase(playerInput.getSize()-1, 1);
+        string consult;
+
+        
+
+        if(compruebaNombre && playerInput.getSize() > 0){
+            //centramos nombre
+            playerText->setOrigin(playerText->getWidthBounds()/2.f, playerText->getHeightBounds()/2.f);
+            if(motor->getTamHeight()==720)
+                playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+25);
+            else
+                playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+50);
+
+
+            consult = "SELECT * FROM usuario WHERE nombre='"+playerInput+"'";
+            string** select_nombres = Conexion::Instance()->select_bd(consult, 1);
+
+
+            if(select_nombres[0][0] == playerInput){
+                disponibilidad->setTexto("Nombre no disponible");
+                disponibilidad->setColor(255,0,0);
+                nombre_disponible = false;
+            }
+            else {
+                disponibilidad->setTexto("Nombre disponible");
+                disponibilidad->setColor(0,255,0);
+                nombre_disponible = true;
+
+            }
+            disponibilidad->setOrigin(disponibilidad->getWidthBounds()/2.f, disponibilidad->getHeightBounds()/2.f);
+            if(motor->getTamHeight()==720)
+                disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+120));
+            else
+                disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+160));
+
+        }
+        if(insert && nombre_disponible){
+            consult = "INSERT INTO `usuario`(`nombre`, `muertes`, `monedas`, `niveles`) VALUES ('"+playerInput+"',0,0,0)";
+                            
+            Conexion::Instance()->insert_bd(consult);
+            Guardar::Instance()->setNombre(playerInput);
+            CambiarEstado();
+        }
     }
-    playerText->setTexto(playerInput);
-
-    string consult;
-
     
-
-    if(compruebaNombre && playerInput.getSize() > 0){
-        //centramos nombre
-        playerText->setOrigin(playerText->getWidthBounds()/2.f, playerText->getHeightBounds()/2.f);
-        if(motor->getTamHeight()==720)
-            playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+25);
-        else
-            playerText->setPosition(motor->getTamWidth()/2, (motor->getTamHeight()/2)+50);
-
-
-        consult = "SELECT * FROM usuario WHERE nombre='"+playerInput+"'";
-        string** select_nombres = Conexion::Instance()->select_bd(consult, 1);
-
-
-        if(select_nombres[0][0] == playerInput){
-            disponibilidad->setTexto("Nombre no disponible");
-            disponibilidad->setColor(255,0,0);
-            nombre_disponible = false;
-        }
-        else {
-            disponibilidad->setTexto("Nombre disponible");
-            disponibilidad->setColor(0,255,0);
-            nombre_disponible = true;
-
-        }
-        disponibilidad->setOrigin(disponibilidad->getWidthBounds()/2.f, disponibilidad->getHeightBounds()/2.f);
-        if(motor->getTamHeight()==720)
-            disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+120));
-        else
-            disponibilidad->setPosition(motor->getTamWidth()/2.f, (motor->getTamHeight()/2+160));
-
-    }
-    if(insert && nombre_disponible){
-        consult = "INSERT INTO `usuario`(`nombre`, `muertes`, `monedas`, `niveles`) VALUES ('"+playerInput+"',0,0,0)";
-                          
-        Conexion::Instance()->insert_bd(consult);
-        Guardar::Instance()->setNombre(playerInput);
-        CambiarEstado();
-    }
 }
 
 void PreguntarNombre::input(){
@@ -154,9 +159,15 @@ void PreguntarNombre::input(){
        
 
         if(motor->isKeyPressedEnter()){
-            if(playerInput != ""){
-                insert = true;
-               
+            if(conect){
+                if(playerInput != ""){
+                    insert = true;
+                
+                }
+            }
+            else{
+                Partida::setEstado(MenuPrincipal::Instance());
+
             }
         }
         else if(motor->isKeyBorrar()){

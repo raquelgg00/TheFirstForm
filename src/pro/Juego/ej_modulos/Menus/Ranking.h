@@ -26,8 +26,11 @@ class Ranking : public JuegoState {
 
         Motor *motor=NULL;
         Texto *nombres[10];  // casillas opciones
+        Texto *niveles[10];  // casillas opciones
+        Texto *monedas[10];  // casillas opciones
+        Texto *muertes[10];  // casillas opciones
+        Texto *miResult;
         Sprite *fondo;
-        Sprite *logo;
         int num_items = 10;
 
 
