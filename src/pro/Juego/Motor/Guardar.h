@@ -15,7 +15,9 @@ class Guardar{
         int getSonido(){return sonido;};
         int getResolucion(){return resolucion;};
         int getNivel(){return nivelMax;};
-        int getMonedas(){return numMonedas;};
+        int getSecreto1(){return secreto1;};
+        int getSecreto2(){return secreto2;};
+        int getSecreto3(){return secreto3;};
         int getHabilidades(){return habilidades;};
         int getMuertes(){return num_muertes;};
         std::string getNombre();
@@ -46,7 +48,9 @@ class Guardar{
         int sonido;
         int resolucion;
         int nivelMax;
-        int numMonedas;
+        int secreto1;
+        int secreto2;
+        int secreto3;
         int habilidades;
         int num_muertes;
         std::string nombre;

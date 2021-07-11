@@ -16,20 +16,38 @@ Hud::Hud(){
     posicion2 = new FlotanteInterpolado();//nivel
     posicion3 = new FlotanteInterpolado();//reloj
     posicion_moneda = new FlotanteInterpolado();//monedas
+    posicion_moneda2 = new FlotanteInterpolado();//monedas
+    posicion_moneda3 = new FlotanteInterpolado();//monedas
     posicion_muertes = new FlotanteInterpolado();//muertes
+    posicion_calavera = new FlotanteInterpolado();//muertes
+    posicion_fondo = new FlotanteInterpolado();//muertes
     
     motor=Motor::Instance();
+
+    fondo=new Sprite();
+    fondo->setTexture("FondoHud","png");
 
     habilidades=new Sprite();
     habilidades->setTexture("HudHab","png");
     habilidades->setFrameSprite(0,0,320,64);
 
-    monedas=new Sprite();
-    monedas->setTexture("HudHab","png");
-    monedas->setFrameSprite(0,0,64*3,64);
+    secreto1=new Sprite();
+    secreto1->setTexture("Secreto1","png");
+    secreto1->setScale(0.8,0.8);
+    secreto2=new Sprite();
+    secreto2->setTexture("Secreto2","png");
+    secreto2->setScale(0.8,0.8);
+    secreto3=new Sprite();
+    secreto3->setTexture("Secreto5","png");
+    secreto3->setScale(0.8,0.8);
+
+    calavera=new Sprite();
+    calavera->setTexture("Muertes","png");
+    calavera->setScale(0.9,0.9);
+
 
     muertes=new Texto("0");
-    muertes->setSize(75);
+    muertes->setSize(67);
     muertes->setColor(0,0,0);
    
     x=motor->getCamaraCenter().x-motor->getTamWidth()/2.f;
@@ -42,14 +60,22 @@ Hud::Hud(){
         x=x+20;
         y=y+20;
     }
+
+    fondo->setPosition(x,y);
+    posicion_fondo->setPositionXY(x, y);
+
     habilidades->setPosition(x,y);
     posicion->setPositionXY(x, y);
 
-    monedas->setPosition(motor->getTamWidth()/4, y);
+    secreto1->setPosition(motor->getTamWidth()/4, y);
+    secreto2->setPosition(motor->getTamWidth()/4, y);
+    secreto3->setPosition(motor->getTamWidth()/4, y);
     posicion_moneda->setPositionXY(motor->getTamWidth()/4, y);
 
-    muertes->setPosition(10,y);
-    posicion_muertes->setPositionXY(motor->getTamWidth()/4, y);
+    calavera->setPosition(x,y);
+    muertes->setPosition(x,y);
+    posicion_muertes->setPositionXY(x, y);
+    posicion_calavera->setPositionXY(x, y);
 
     
     texto=new Texto("Nivel");
@@ -57,10 +83,6 @@ Hud::Hud(){
     texto->setColor(0,0,0);
     texto->setPosition(x-motor->getTamWidth()/4.f,y-20);
     posicion2->setPositionXY(x-motor->getTamWidth()/4.f, y-20);
-    textoFondo=new Texto("Nivel");
-    textoFondo->setSize(70);
-    textoFondo->setColor(255,255,255);
-    textoFondo->setPosition(x-motor->getTamWidth()/4.f,y-20);
 
     bloqueo=new Sprite();
     bloqueo->setTexture("bloqueo","png");
@@ -92,13 +114,29 @@ Hud::~Hud(){
         delete habilidades;
         habilidades=NULL;
     }
-    if(monedas!=NULL){
-        delete monedas;
-        monedas=NULL;
+    if(fondo!=NULL){
+        delete fondo;
+        fondo=NULL;
+    }
+    if(secreto1!=NULL){
+        delete secreto1;
+        secreto1=NULL;
+    }
+    if(secreto2!=NULL){
+        delete secreto2;
+        secreto2=NULL;
+    }
+    if(secreto3!=NULL){
+        delete secreto3;
+        secreto3=NULL;
     }
     if(reloj!=NULL){
         delete reloj;
         reloj=NULL;
+    }
+    if(calavera!=NULL){
+        delete calavera;
+        calavera=NULL;
     }
     if(bloqueo!=NULL){
         delete bloqueo;
@@ -109,7 +147,10 @@ Hud::~Hud(){
         delete posicion;
         posicion=NULL;
     }
-
+    if(posicion_fondo!=NULL){
+        delete posicion_fondo;
+        posicion_fondo=NULL;
+    }
     if(posicion2!=NULL){
         delete posicion2;
         posicion2=NULL;
@@ -122,17 +163,25 @@ Hud::~Hud(){
         delete posicion_moneda;
         posicion_moneda=NULL;
     }
+    if(posicion_moneda2!=NULL){
+        delete posicion_moneda2;
+        posicion_moneda2=NULL;
+    }
+    if(posicion_moneda3!=NULL){
+        delete posicion_moneda3;
+        posicion_moneda3=NULL;
+    }
     if(posicion_muertes!=NULL){
         delete posicion_muertes;
         posicion_muertes=NULL;
     }
+    if(posicion_calavera!=NULL){
+        delete posicion_calavera;
+        posicion_calavera=NULL;
+    }
     if(texto!=NULL){
         delete texto;
         texto=NULL;
-    }
-    if(textoFondo!=NULL){
-        delete textoFondo;
-        textoFondo=NULL;
     }
     if(cont_segundos!=NULL){
         delete cont_segundos;
@@ -167,7 +216,6 @@ void Hud::update(int item, int gravedad){
     std::string text = sstream.str();
 
     texto->setTexto("Mundo "+mon+" - Nivel "+text);
-    textoFondo->setTexto("Mundo "+mon+" - Nivel "+text);
 
     int tiempo = Player::Instance()->getTiempo_q_activa();
     std::stringstream sstream2;
@@ -189,98 +237,203 @@ void Hud::update(int item, int gravedad){
     int hab=Guardar::Instance()->getHabilidades();
     habilidades->setFrameSprite(0,hab*64,320,64);
 
-    // Sprite de Monedas
-    int secretos=Guardar::Instance()->getMonedas();
-    monedas->setFrameSprite(0,secretos*64,64*3,64);
+    // Sprite de Secretos
+    
 
     x=motor->getCamaraCenter().x;
     y=motor->getCamaraCenter().y;
 
+    //habilidades y texto
     float x1=0.f;
     float x2=0.f;
     float y1=0.f;
     float y2=0.f;
+    //secretos
     float x3=0.f;
     float y3=0.f;
+    float x32=0.f;
+    float y32=0.f;
+    float x33=0.f;
+    float y33=0.f;
+    //muertes
     float x4=0.f;
     float y4=0.f;
+    float x42=0.f;
+    float y42=0.f;
+    //fondo
+    float x5=0.f;
+    float y5=0.f;
 
     if(gravedad==0){
         
         if(motor->getTamHeight()==720){
             x1=x-128-motor->getTamWidth()/2.f;
-            y1=y-51-motor->getTamHeight()/2.f;
-            x4=x-50-motor->getTamWidth()/2.f;
-            y4=y-51+motor->getTamHeight()/2.f;
-          
+            y1=y-70-motor->getTamHeight()/2.f;
+            x3=x-motor->getTamWidth()/4.f;
+            y3=y1-10;
+            x32=x3+100;
+            x33=x3+200;
+            y32=y3;
+            y33=y3;
+
+            x5=x1-70;
+            y5=y1-20;
+
+            
+
         }
         else{
             x1=x+100-motor->getTamWidth()/2.f;
             y1=y+20-motor->getTamHeight()/2.f;
-            x4=x+100-motor->getTamWidth()/2.f;
-            y4=y-200+motor->getTamHeight()/2.f;
+            x3=x+100-motor->getTamWidth()/4.f;
+            y3=y1-10;
+            x32=x3+100;
+            x33=x3+200;
+            y32=y3;
+            y33=y3;
+
+            x5=x1-110;
+            y5=y1-20;
         }
         
         x2=x+motor->getTamWidth()/4.f;
         y2=y1-20;
+
+        x4=x2-210;
+        y4=y2;
+        
+        x42=x4-75;
+        y42=y4+20;
+
   
     }
     else if(gravedad==1){
         if(motor->getTamHeight()==720){
             y1=y-128-motor->getTamWidth()/2.f;
-            x1=x+51+motor->getTamHeight()/2.f;
+            x1=x+70+motor->getTamHeight()/2.f;
+            x5=x1+20;
+            y5=y1-70;
+
+            y3=y-motor->getTamWidth()/4.f;
+            x3=x1+10;
+            y32=y3+100;
+            y33=y3+200;
+            x32=x3;
+            x33=x3;
         }
         else{
             y1=y+100-motor->getTamWidth()/2.f;
             x1=x-20+motor->getTamHeight()/2.f;
+            x5=x1+20;
+            y5=y1-110;
+
+            y3=y+100-motor->getTamWidth()/4.f;
+            x3=x1+10;
+            y32=y3+100;
+            y33=y3+200;
+            x32=x3;
+            x33=x3;
         }
 
         y2=y+motor->getTamWidth()/4.f;
         x2=x1+20;
-        x4=x1;
-        y4=1;
+
+        x4=x2;
+        y4=y2-210;
+
+        x42=x4-20;
+        y42=y4-75;
     }
     else if(gravedad==2){
         if(motor->getTamHeight()==720){
             x1=x+128+motor->getTamWidth()/2.f;
-            y1=y+51+motor->getTamHeight()/2.f;
+            y1=y+70+motor->getTamHeight()/2.f;
+            x3=x+motor->getTamWidth()/4.f;
+            y3=y1+10;
+            x32=x3-100;
+            x33=x3-200;
+            y32=y3;
+            y33=y3;
+            x5=x1+70;
+            y5=y1+20;
         }
         else{
             x1=x-100+motor->getTamWidth()/2.f;
             y1=y-20+motor->getTamHeight()/2.f;
+            x5=x1+110;
+            y5=y1+20;
+
+            x3=x-100+motor->getTamWidth()/4.f;
+            y3=y1+10;
+            x32=x3-100;
+            x33=x3-200;
+            y32=y3;
+            y33=y3;
         }
 
         x2=x-motor->getTamWidth()/4.f;
         y2=y1+20;
-        x4=x1;
-        y4=1;
+
+        x4=x2+210;
+        y4=y2;
+
+        x42=x4+75;
+        y42=y4-20;
+        
     }
     else if(gravedad==3){
         if(motor->getTamHeight()==720){
             y1=y+128+motor->getTamWidth()/2.f;
-            x1=x-51-motor->getTamHeight()/2.f;
-            y4=y-128+motor->getTamWidth()/2.f;
+            x1=x-70-motor->getTamHeight()/2.f;
+
+            x5=x1-20;
+            y5=y1+70;
+            y3=y+motor->getTamWidth()/4.f;
+            x3=x1-10;
+            y32=y3-100;
+            y33=y3-200;
+            x32=x3;
+            x33=x3;
         }
         else{
             y1=y-100+motor->getTamWidth()/2.f;
             x1=x+20-motor->getTamHeight()/2.f;
-            y4=y-100+motor->getTamWidth()/2.f;
+
+            x5=x1-20;
+            y5=y1+110;
+
+            y3=y-100+motor->getTamWidth()/4.f;
+            x3=x1-10;
+            y32=y3-100;
+            y33=y3-200;
+            x32=x3;
+            x33=x3;
+
         }
 
         y2=y-motor->getTamWidth()/4.f;
         x2=x1-20;
-        x4=x1;
+
+        x4=x2;
+        y4=y2+210;
+
+        x42=x4+20;
+        y42=y4+75;
     }
 
-    x3=x1+500;
-    y3=y1;
-
+    
+    
    
 
     posicion->setPositionXY(x1, y1);
     posicion2->setPositionXY(x2, y2);
     posicion_moneda->setPositionXY(x3,y3);
+    posicion_moneda2->setPositionXY(x32,y32);
+    posicion_moneda3->setPositionXY(x33,y33);
     posicion_muertes->setPositionXY(x4,y4);
+    posicion_calavera->setPositionXY(x42,y42);
+    posicion_fondo->setPositionXY(x5, y5);
+
     
     if(motor->getTamHeight()==720)
         posicion3->setPositionXY(x+motor->getTamWidth()/2.f, y+motor->getTamHeight()/2.f);
@@ -311,21 +464,42 @@ void Hud::render(float factor, bool mostrarNivel,bool cambiandoGravedad){
         float interX5 = (posicion_muertes->getX()-posicion_muertes->getPrevX()) * factor + posicion_muertes->getPrevX();
         float interY5 = (posicion_muertes->getY()-posicion_muertes->getPrevY()) * factor + posicion_muertes->getPrevY();
 
+        float interX6 = (posicion_moneda2->getX()-posicion_moneda2->getPrevX()) * factor + posicion_moneda2->getPrevX();
+        float interY6 = (posicion_moneda2->getY()-posicion_moneda2->getPrevY()) * factor + posicion_moneda2->getPrevY();
+
+        float interX7 = (posicion_moneda3->getX()-posicion_moneda3->getPrevX()) * factor + posicion_moneda3->getPrevX();
+        float interY7 = (posicion_moneda3->getY()-posicion_moneda3->getPrevY()) * factor + posicion_moneda3->getPrevY();
+
+        float interX8 = (posicion_fondo->getX()-posicion_fondo->getPrevX()) * factor + posicion_fondo->getPrevX();
+        float interY8 = (posicion_fondo->getY()-posicion_fondo->getPrevY()) * factor + posicion_fondo->getPrevY();
+
+        float interX9 = (posicion_calavera->getX()-posicion_calavera->getPrevX()) * factor + posicion_calavera->getPrevX();
+        float interY9 = (posicion_calavera->getY()-posicion_calavera->getPrevY()) * factor + posicion_calavera->getPrevY();
+
+        if(fondo!=NULL){
+            fondo->setPosition(interX8,interY8);
+            motor->ventanaDibujaSinShader(fondo->getSprite());
+        }
         if(habilidades!=NULL){
             habilidades->setPosition(interX,interY);
             motor->ventanaDibujaSinShader(habilidades->getSprite());
             if(!mostrarNivel){//si se muestra la animacion no se renderiza
-                textoFondo->setPosition(interX2-7,interY2-5);
-                textoFondo->drawText();
                 texto->setPosition(interX2,interY2);
                 texto->drawText();
-                
             }
         }
    
-        if(monedas!=NULL){
-            monedas->setPosition(interX4,interY4);
-            motor->ventanaDibujaSinShader(monedas->getSprite());
+        if(secreto1!=NULL){
+            secreto1->setPosition(interX4,interY4);
+            motor->ventanaDibujaSinShader(secreto1->getSprite());
+        }
+        if(secreto2!=NULL){
+            secreto2->setPosition(interX6,interY6);
+            motor->ventanaDibujaSinShader(secreto2->getSprite());
+        }
+        if(secreto3!=NULL){
+            secreto3->setPosition(interX7,interY7);
+            motor->ventanaDibujaSinShader(secreto3->getSprite());
         }
 
         if(reloj!=NULL && nivel>5 && nivel<11){//falta añadir condicion de si la q esta activada
@@ -340,6 +514,10 @@ void Hud::render(float factor, bool mostrarNivel,bool cambiandoGravedad){
             muertes->setPosition(interX5,interY5);
             muertes->drawText();
         }
+        if(calavera!=NULL){
+            calavera->setPosition(interX9,interY9);
+            motor->ventanaDibujaSinShader(calavera->getSprite());
+        }
     }
     else{
         if(bloqueo!=NULL)
@@ -352,7 +530,12 @@ void Hud::setRotacion(float rot){
     if(habilidades!=NULL){
         habilidades->setRotation(rot);
         texto->setRotation(rot);
-        textoFondo->setRotation(rot);
+        secreto1->setRotation(rot);
+        secreto2->setRotation(rot);
+        secreto3->setRotation(rot);
+        fondo->setRotation(rot);
+        muertes->setRotation(rot);
+        calavera->setRotation(rot);
     }
     
 }

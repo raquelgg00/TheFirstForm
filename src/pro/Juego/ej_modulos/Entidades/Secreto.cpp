@@ -16,8 +16,8 @@ Secreto::Secreto(){
 Secreto::Secreto(int x_ini, int y_ini){
 
     sprite = new Sprite();
-    sprite->setTexture("Logo1", "png");
-    sprite->setScale(0.1, 0.1);
+    sprite->setTexture("Secreto1", "png");
+    //sprite->setScale(0.1, 0.1);
     //sprite->setFrameSprite(0,0,60,60);
 
     x = x_ini;
@@ -63,7 +63,7 @@ void Secreto::onCollisionPlayer(int g){
     if(sprite != NULL){
         if(sprite->getBounds("global").intersects(player->getSprite()->getBounds("global"))){
             motor->getSonidoEvolucion()->Play(); //* cambiar sonido misterio
-            Guardar::Instance()->setMonedas(Guardar::Instance()->getMonedas()+1);
+            Guardar::Instance()->setMonedas(1);
             this->~Secreto(); 
         }
     }

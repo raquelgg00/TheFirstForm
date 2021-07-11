@@ -190,14 +190,21 @@ void InGame::update(){
 
             // Al completar el  nivel se hacen los updates en la BD con los nuevos datos
             int nivel_actual = Guardar::Instance()->getNivel();
-            int monedas_actual = Guardar::Instance()->getMonedas();
+            int num_secretos=0;
+            if(Guardar::Instance()->getSecreto1()==1)
+                num_secretos++;
+            if(Guardar::Instance()->getSecreto2()==1)
+                num_secretos++;
+            if(Guardar::Instance()->getSecreto3()==1)
+                num_secretos++;
+
             std::string nombre_actual = Guardar::Instance()->getNombre();
             int muertes_actual = Guardar::Instance()->getMuertes();
             
             // Pasamos a string lo que obtenemos de save.xml
             std::string moneda;
             stringstream ss;  
-            ss << monedas_actual;  
+            ss << num_secretos;  
             ss >> moneda;
 
             std::string muertes;
