@@ -26,16 +26,21 @@ class Hud {
     private:
         static Hud* pinstance;
         Sprite* habilidades;
-        Sprite* monedas;
+        Sprite* secreto1;
+        Sprite* secreto2;
+        Sprite* secreto3;
         Sprite* bloqueo;
         Sprite* reloj;
+        Sprite *fondo;
         FlotanteInterpolado *posicion;//habilidades
         FlotanteInterpolado *posicion2;//nivel
         FlotanteInterpolado *posicion3;//reloj
         FlotanteInterpolado *posicion_moneda;
+        FlotanteInterpolado *posicion_moneda2;
+        FlotanteInterpolado *posicion_moneda3;
         FlotanteInterpolado *posicion_muertes;
+        FlotanteInterpolado *posicion_fondo;
         Texto* texto;
-        Texto* textoFondo;
         Texto* cont_segundos;
         Motor* motor;
         Texto* muertes;

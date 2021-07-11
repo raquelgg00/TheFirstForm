@@ -15,7 +15,9 @@ Guardar::Guardar(){
     sonido=0;
     resolucion=0;
     nivelMax=0;
-    numMonedas=0;
+    secreto1=0;
+    secreto2=0;
+    secreto3=0;
     terminado=0;
     num_muertes = 0;
 
@@ -40,8 +42,14 @@ Guardar::Guardar(){
         XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->QueryIntAttribute("max", &nivelMax);
 
-        XMLElement* monedas=partida->FirstChildElement("monedas");
-        monedas->QueryIntAttribute("max", &numMonedas);
+        XMLElement* sec1=partida->FirstChildElement("secreto1");
+        sec1->QueryIntAttribute("max", &secreto1);
+
+        XMLElement* sec2=partida->FirstChildElement("secreto2");
+        sec2->QueryIntAttribute("max", &secreto2);
+
+        XMLElement* sec3=partida->FirstChildElement("secreto3");
+        sec3->QueryIntAttribute("max", &secreto3);
 
         XMLElement* hab=partida->FirstChildElement("habilidades");
         hab->QueryIntAttribute("max", &habilidades);
@@ -124,10 +132,21 @@ void Guardar::setMonedas(int mon){
     XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* monedas=partida->FirstChildElement("monedas");
+        XMLElement* monedas=NULL;
+        if(mon==1){
+            monedas=partida->FirstChildElement("secreto1");
+            secreto1=1;
+        }
+        else if(mon==2){
+            monedas=partida->FirstChildElement("secreto2");
+            secreto2=1;
+        }
+        else{
+            monedas=partida->FirstChildElement("secreto3");
+            secreto3=1;
+        }
         monedas->SetAttribute("max",mon);
         doc.SaveFile("Motor/save.xml");
-        numMonedas = mon;
     }
 }
 
@@ -170,14 +189,21 @@ void Guardar::reiniciarPartida(){
         fin->SetAttribute("fin",0);
         XMLElement* muertes=partida->FirstChildElement("muertes");
         muertes->SetAttribute("max",0);
-        XMLElement* monedas=partida->FirstChildElement("monedas");
-        monedas->SetAttribute("max",0);
+        XMLElement* sec1=partida->FirstChildElement("secreto1");
+        sec1->SetAttribute("max",0);
+        XMLElement* sec2=partida->FirstChildElement("secreto2");
+        sec2->SetAttribute("max",0);
+        XMLElement* sec3=partida->FirstChildElement("secreto3");
+        sec3->SetAttribute("max",0);
+
         doc.SaveFile("Motor/save.xml");
         nivelMax = 0;
         habilidades = 0;
         terminado=0;
         num_muertes=0;
-        numMonedas=0;
+        secreto1=0;
+        secreto2=0;
+        secreto3=0;
     }
 }
 

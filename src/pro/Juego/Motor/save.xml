@@ -7,9 +7,11 @@
 
 <partida>
     <nivel max="15"/>
-    <monedas max="3"/>
+    <secreto1 max="0"/>
+    <secreto2 max="0"/>
+    <secreto3 max="0"/>
     <habilidades max="5"/>
-    <muertes max="5"/>
-    <nombre>aaaaa</nombre>
+    <muertes max="0"/>
+    <nombre>aaa</nombre>
     <terminado fin="0"/>
 </partida>
