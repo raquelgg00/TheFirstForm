@@ -78,6 +78,8 @@ void Pared::updatemover(){
             if(i>10){
                 this->~Pared(); 
                 romper = false;
+                Motor::Instance()->getSonidoParedRoja()->Play();
+
             }
         }
     }

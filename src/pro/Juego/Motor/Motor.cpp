@@ -83,11 +83,35 @@ Motor::Motor(){
 
     sonidoEvolucion=new Audio();
     sonidoEvolucion->setBuffer("resources/sounds/evolusion.wav");
-    sonidoEvolucion->setVolume(guardar->getSonido());
+    sonidoEvolucion->setVolume(guardar->getSonido()+50);
 
     sonidoNivelCompletado=new Audio();
     sonidoNivelCompletado->setBuffer("resources/sounds/completado.wav");
     sonidoNivelCompletado->setVolume(guardar->getSonido());
+
+    sonidoCanion=new Audio();
+    sonidoCanion->setBuffer("resources/sounds/cannion3.wav");
+    sonidoCanion->setVolume(guardar->getSonido());
+
+    paredRoja=new Audio();
+    paredRoja->setBuffer("resources/sounds/paredRoja.wav");
+    paredRoja->setVolume(guardar->getSonido());
+
+    rebote=new Audio();
+    rebote->setBuffer("resources/sounds/rebote.wav");
+    rebote->setVolume(guardar->getSonido());
+
+    puerta=new Audio();
+    puerta->setBuffer("resources/sounds/puerta.wav");
+    puerta->setVolume(guardar->getSonido());
+
+    sensor=new Audio();
+    sensor->setBuffer("resources/sounds/sensor.wav");
+    sensor->setVolume(guardar->getSonido());
+
+    sonidoClock=new Audio();
+    sonidoClock->setBuffer("resources/sounds/clock.wav");
+    sonidoClock->setVolume(guardar->getSonido()+50);
 
     playercoord.x = 0;
     playercoord.y = 0;
@@ -151,11 +175,36 @@ Motor::~Motor(){
         delete sonidoNivelCompletado;
         sonidoNivelCompletado = NULL;
     }
+    if(puerta != NULL){
+        delete puerta;
+        puerta = NULL;
+    }
+    if(sensor != NULL){
+        delete sensor;
+        sensor = NULL;
+    }
+    if(rebote != NULL){
+        delete rebote;
+        rebote = NULL;
+    }
+    if(paredRoja != NULL){
+        delete paredRoja;
+        paredRoja = NULL;
+    }
+    if(sonidoCanion != NULL){
+        delete sonidoCanion;
+        sonidoCanion = NULL;
+    }
+    if(sonidoClock != NULL){
+        delete sonidoClock;
+        sonidoClock = NULL;
+    }
     if(event!=NULL){
         delete event;
         event=NULL;
     }
 }
+
 
 // Crea una ventana
 void Motor::new_ventana(int n1, int n2, sf::String s){

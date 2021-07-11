@@ -82,6 +82,12 @@ class Motor{
         Audio* getSonidoMorision(){return sonidoMorision;};
         Audio* getSonidoEvolucion(){return sonidoEvolucion;};
         Audio* getSonidoNivelCompleto(){return sonidoNivelCompletado;};
+        Audio* getSonidoRebote(){return rebote;};
+        Audio* getSonidoSensor(){return sensor;};
+        Audio* getSonidoPuerta(){return puerta;};
+        Audio* getSonidoParedRoja(){return paredRoja;};
+        Audio* getSonidoCanion(){return sonidoCanion;};
+        Audio* getSonidoClock(){return sonidoClock;};
 
         int getTamWidth(){return tamWidth;};
         int getTamHeight(){return tamHeight;};
@@ -110,6 +116,15 @@ class Motor{
         Audio *sonidoMorision;
         Audio *sonidoInicio;
         Audio *sonidoEvolucion;
+        Audio *sonidoCanion;
+        Audio *paredRoja;
+        Audio *sonidoClock;
+        Audio *rebote;
+        Audio *sensor;
+        Audio *puerta;
+     
+
+
         Audio *sonidoNivelCompletado;
         float deltaTime;
         int tamWidth, tamHeight;

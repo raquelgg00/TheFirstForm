@@ -308,6 +308,7 @@ void InGame::input(){
                     p1->setAtravesarObj(true);
                     p1->setTiempo_q_activa(5);
                     mundo2reloj.restart();
+                    Motor::Instance()->getSonidoClock()->Play();
                 }
             }
             if(mundo2reloj.getElapsedTime().asSeconds() > 0 && mundo2reloj.getElapsedTime().asSeconds() < 1){
@@ -327,6 +328,7 @@ void InGame::input(){
             }
             else {
                 p1->setTiempo_q_activa(0);
+                Motor::Instance()->getSonidoClock()->pause();
             }
         
         }

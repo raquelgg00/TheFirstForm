@@ -212,6 +212,12 @@ void Opciones::MoveRight(){
         motor->getSonidoMorision()->setVolume(motor->getSonidoMorision()->getVolume()+20);
         motor->getSonidoEvolucion()->setVolume(motor->getSonidoEvolucion()->getVolume()+20);
         motor->getSonidoNivelCompleto()->setVolume(motor->getSonidoNivelCompleto()->getVolume()+20);
+        motor->getSonidoCanion()->setVolume(motor->getSonidoCanion()->getVolume()+20);
+        motor->getSonidoParedRoja()->setVolume(motor->getSonidoParedRoja()->getVolume()+20);
+        motor->getSonidoPuerta()->setVolume(motor->getSonidoPuerta()->getVolume()+20);
+        motor->getSonidoRebote()->setVolume(motor->getSonidoRebote()->getVolume()+20);
+        motor->getSonidoSensor()->setVolume(motor->getSonidoSensor()->getVolume()+20);
+        motor->getSonidoClock()->setVolume(motor->getSonidoClock()->getVolume()+20);
 
         Guardar::Instance()->setSonido(motor->getSonidoSeleccion()->getVolume());
 
@@ -245,6 +251,12 @@ void Opciones::MoveLeft(){
         motor->getSonidoMorision()->setVolume(motor->getSonidoMorision()->getVolume()-20);
         motor->getSonidoEvolucion()->setVolume(motor->getSonidoEvolucion()->getVolume()-20);
         motor->getSonidoNivelCompleto()->setVolume(motor->getSonidoNivelCompleto()->getVolume()-20);
+        motor->getSonidoCanion()->setVolume(motor->getSonidoCanion()->getVolume()-20);
+        motor->getSonidoParedRoja()->setVolume(motor->getSonidoParedRoja()->getVolume()-20);
+        motor->getSonidoPuerta()->setVolume(motor->getSonidoPuerta()->getVolume()-20);
+        motor->getSonidoRebote()->setVolume(motor->getSonidoRebote()->getVolume()-20);
+        motor->getSonidoSensor()->setVolume(motor->getSonidoSensor()->getVolume()-20);
+        motor->getSonidoClock()->setVolume(motor->getSonidoClock()->getVolume()-20);
 
         Guardar::Instance()->setSonido(motor->getSonidoSeleccion()->getVolume());
     }

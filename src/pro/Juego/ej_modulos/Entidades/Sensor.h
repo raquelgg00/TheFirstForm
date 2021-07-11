@@ -39,6 +39,7 @@ class Sensor: public Entidad{
         float velx;
         float vely;
         bool presionado;
+        bool tiene_que_sonar;
 
 };
 #endif
