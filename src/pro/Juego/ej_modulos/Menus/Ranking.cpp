@@ -235,8 +235,8 @@ void Ranking::actualiza_ranking(){
         }
             
     }
-
-    std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select count(*) from usuario where niveles<nivelesMio OR niveles=nivelesMio AND monedas<monedasMio OR niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio) as position from usuario where nombre='"+Guardar::Instance()->getNombre()+"' order by niveles desc, monedas desc, muertes";
+    
+    std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select count(*) from usuario where (nombre != '"+Guardar::Instance()->getNombre()+"') AND ( (niveles>=nivelesMio) OR (niveles=nivelesMio AND monedas>=monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<=muertesMio))) as position from usuario where nombre='"+Guardar::Instance()->getNombre()+"' order by niveles desc, monedas desc, muertes";
 
     std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
     string pos_mio=res2[0][3]+". "+Guardar::Instance()->getNombre()+"          "+res2[0][0]+" niveles         "+res2[0][1]+" monedas         "+res2[0][1]+" muertes";
