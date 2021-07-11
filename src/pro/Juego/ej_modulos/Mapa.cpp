@@ -248,12 +248,9 @@ Mapa::~Mapa() {
                             datosDinamicos[contDinamicos][0]=6; //es moneda
                             XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
-                              
                                 XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
-                                    if(strcmp(property->Attribute("name"), "name")==0){
-                                        property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][1]);
-                                    }
+                                    property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
                                     property=property->NextSiblingElement();
                                 }
                             }
