@@ -6,10 +6,10 @@
 </opciones>
 
 <partida>
-    <nivel max="15"/>
+    <nivel max="1"/>
     <monedas max="2"/>
-    <habilidades max="5"/>
-    <muertes max="2"/>
-    <nombre>gaspii</nombre>
+    <habilidades max="0"/>
+    <muertes max="3"/>
+    <nombre>prueba</nombre>
     <terminado fin="0"/>
 </partida>

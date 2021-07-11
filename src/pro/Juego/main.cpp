@@ -1,7 +1,5 @@
 #include "Partida.h"
 
-#include "ej_modulos/mysql/mysql.h"
-
 /*
 para usar valgrind primero instalarlo desde terminal y colocarse en la carpeta build de juego para ejecutar el comando:
 valgrind --tool=memcheck --track-origins=yes ./MiJuego

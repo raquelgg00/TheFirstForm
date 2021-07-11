@@ -1,7 +1,7 @@
 #ifndef CONEXION_H
 #define CONEXION_H
 #include <SFML/Graphics.hpp>
-#include "../ej_modulos/mysql/mysql.h"
+#include "mysql/mysql.h"
 #include <string>
 #include <sstream>
 
