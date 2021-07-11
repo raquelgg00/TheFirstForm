@@ -57,7 +57,7 @@ Ranking::Ranking(){
             nombres[i]->setSize(67);
 
         nombres[i]->setOrigin(nombres[i]->getWidthBounds()/2.f, nombres[i]->getHeightBounds()/2.f);
-        nombres[i]->setPosition(motor->getTamWidth()/3.5, (motor->getTamHeight()/5) + i*50);
+        nombres[i]->setPosition(motor->getTamWidth()/4.5, (motor->getTamHeight()/5) + i*50);
         nombres[i]->setColor(255,255,255);
     }
     actualiza_ranking();
@@ -143,13 +143,22 @@ void Ranking::actualiza_ranking(){
         stringstream ss;  
         ss << i+1;  
         ss >> pos_ranking;
-        pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
+        //pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
+
+        pos_ranking = pos_ranking + ". "+res[i][0];
+        while(pos_ranking.length()<20){
+            pos_ranking = pos_ranking + " ";
+        }
+        pos_ranking += res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
 
         std::cout<<res[i][0]<<" --> "<<res[i][1]<<std::endl;
         nombres[i]->setTexto(pos_ranking);
 
         if(res[i][0] == Guardar::Instance()->getNombre()){
             nombres[i]->setColor(255,230,0);
+        }
+        else {
+            nombres[i]->setColor(255,255,255);
         }
             
     }

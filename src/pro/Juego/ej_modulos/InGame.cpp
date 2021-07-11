@@ -304,9 +304,11 @@ void InGame::input(){
         }
         else{
             if(motor->isKeyPressedQ()){
-                p1->setAtravesarObj(true);
-                p1->setTiempo_q_activa(5);
-                mundo2reloj.restart();
+                if(!p1->getAtravesarObj()){
+                    p1->setAtravesarObj(true);
+                    p1->setTiempo_q_activa(5);
+                    mundo2reloj.restart();
+                }
             }
             if(mundo2reloj.getElapsedTime().asSeconds() > 0 && mundo2reloj.getElapsedTime().asSeconds() < 1){
                 p1->setTiempo_q_activa(5);
