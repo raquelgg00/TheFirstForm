@@ -18,6 +18,7 @@ class PreguntarNombre : public JuegoState {
 
         Motor *motor=NULL;
         Sprite *fondo;
+        Sprite *fondo2;
         sf::String playerInput;
         Texto *playerText;
         Texto *disponibilidad;

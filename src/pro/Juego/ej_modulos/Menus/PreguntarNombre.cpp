@@ -19,9 +19,15 @@ PreguntarNombre::PreguntarNombre(){
     //Fondo del menu
     fondo=new Sprite();
     fondo->setTexture("Nombre","png");
+
+    fondo2=new Sprite();
+    fondo2->setTexture("NuevaError","png");
+
     if(motor->getTamHeight()==720){
         fondo->setScale(0.67,0.67);
+        fondo2->setScale(0.67,0.67);
     }
+    
     
     // Texto del input
     playerText = new Texto("");
@@ -64,7 +70,10 @@ PreguntarNombre::~PreguntarNombre(){
         delete fondo;
         fondo=NULL;
     }
-
+    if(fondo2!=NULL){
+        delete fondo2;
+        fondo2=NULL;
+    }
     if(playerText!=NULL){
         delete playerText;
         playerText=NULL;
@@ -89,6 +98,8 @@ void PreguntarNombre::render(float tick){
             disponibilidad->drawText();
         } 
     }
+    else
+        motor->ventanaDibuja(fondo2->getSprite());
     
 
     motor->ventanaDisplay();

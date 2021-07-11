@@ -31,6 +31,7 @@ class Ranking : public JuegoState {
         Texto *muertes[10];  // casillas opciones
         Texto *miResult;
         Sprite *fondo;
+        Sprite *fondo2;
         int num_items = 10;
 
 

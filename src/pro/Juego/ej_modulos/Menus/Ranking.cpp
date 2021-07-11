@@ -20,8 +20,11 @@ Ranking::Ranking(){
     //Fondo del menu
     fondo=new Sprite();
     fondo->setTexture("Ranking","png");
+    fondo2=new Sprite();
+    fondo2->setTexture("RankingError","png");
     if(motor->getTamHeight()==720){
         fondo->setScale(0.67,0.67);
+        fondo2->setScale(0.67,0.67);
     }
 
 
@@ -98,6 +101,10 @@ Ranking::~Ranking(){
         delete fondo;
         fondo=NULL;
     }
+    if(fondo2!=NULL){
+        delete fondo2;
+        fondo2=NULL;
+    }
     if(miResult!=NULL){
         delete miResult;
         miResult=NULL;
@@ -144,6 +151,10 @@ void Ranking::render(float tick){
         }
 
         miResult->drawText();
+    }
+    else{
+        motor->ventanaDibuja(fondo2->getSprite());
+
     }
     motor->setView(0);
     motor->ventanaDisplay();
