@@ -303,18 +303,21 @@ void Player::rebote(){
     if(contactoVerdeDown){
         saltando=true;
         velocidad_y = -110;
+        Motor::Instance()->getSonidoRebote()->Play();
     }
     else if(contactoVerdeDer){
         rebotando=true;
         if(aceleracion_x<0)
             aceleracion_x=aceleracion_x*-1;
         velocidad_x = -110;
+        Motor::Instance()->getSonidoRebote()->Play();
     }
     else if(contactoVerdeIzq){
         rebotando=true;
         if(aceleracion_x>0)
             aceleracion_x=aceleracion_x*-1;
         velocidad_x = +110;
+        Motor::Instance()->getSonidoRebote()->Play();
     }
 }
 

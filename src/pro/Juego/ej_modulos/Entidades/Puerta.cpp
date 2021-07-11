@@ -123,10 +123,16 @@ void Puerta::comprobarApertura(){
     for(unsigned int k=0;k<sensores.size();k++){
         //ret=ret*sensores[i]->getPresionado();
         if(!sensores[k]->getPresionado()){
-            abierta = false;
+            abierta = false;     
         }
     }
-    if(abierta) alguna_vez_abierta = true;
+    if(abierta) {
+        alguna_vez_abierta = true;
+        if(suena){
+            Motor::Instance()->getSonidoPuerta()->Play();
+            suena = false;
+        }
+    }
 }
 
 

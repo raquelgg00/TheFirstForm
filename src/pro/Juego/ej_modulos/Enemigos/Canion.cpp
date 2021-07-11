@@ -139,7 +139,7 @@ void Canion::updatemover(){
                 }
                 bala = new Bala(x,y);
                 reloj1->restart();
-
+                Motor::Instance()->getSonidoCanion()->Play();
             }   
         }
     }

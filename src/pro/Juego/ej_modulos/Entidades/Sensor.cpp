@@ -26,6 +26,7 @@ Sensor::Sensor(int x_ini, int y_ini){
     velx = 0.f;
     vely = 0.f;
     presionado = false;
+    tiene_que_sonar = false;
 }
 
 Sensor::~Sensor(){
@@ -49,9 +50,14 @@ void Sensor::updatemover(){
     setPosition(x,y);
     if(presionado){
         sprite->setFrameSprite(140, 0, 70, 70);
+        if(tiene_que_sonar){
+            Motor::Instance()->getSonidoSensor()->Play();
+            tiene_que_sonar = false;
+        }
     }
     else{
         sprite->setFrameSprite(0,0,70,70);      
+        tiene_que_sonar = true;
     }
 }
 

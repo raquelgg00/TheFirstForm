@@ -55,6 +55,7 @@ class Puerta: public Entidad{
         vector<Sensor*> sensores;
 
         bool final_animacion = false;
+        bool suena = true;
 
 };
 #endif
