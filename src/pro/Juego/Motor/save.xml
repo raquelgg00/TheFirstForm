@@ -7,11 +7,11 @@
 
 <partida>
     <nivel max="15"/>
-    <secreto1 max="0"/>
+    <secreto1 max="1"/>
     <secreto2 max="0"/>
-    <secreto3 max="0"/>
+    <secreto3 max="1"/>
     <habilidades max="5"/>
-    <muertes max="7"/>
+    <muertes max="11"/>
     <nombre>diegooo</nombre>
     <terminado fin="0"/>
 </partida>

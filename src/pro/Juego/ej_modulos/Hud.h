@@ -48,6 +48,9 @@ class Hud {
         Texto* muertes;
         int nivel;
         float x,y;
+        float sec1=false;
+        float sec2=false;
+        float sec3=false;
 
 };
 

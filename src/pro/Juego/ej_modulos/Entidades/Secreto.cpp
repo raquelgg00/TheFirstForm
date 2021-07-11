@@ -10,13 +10,24 @@ Secreto::Secreto(){
     width=0;
     i = 0;
     current_coin_frame = 0;
+    tipo=0;
     
 }
 
-Secreto::Secreto(int x_ini, int y_ini){
+Secreto::Secreto(int x_ini, int y_ini, int t){
 
     sprite = new Sprite();
-    sprite->setTexture("Secreto1", "png");
+    if(t==1){
+        sprite->setTexture("Secreto1", "png");
+    }
+    else if(t==2){
+        sprite->setTexture("Secreto2", "png");
+    }
+    else{
+        sprite->setTexture("Secreto5", "png");
+
+    }
+    tipo=t;
     //sprite->setScale(0.1, 0.1);
     //sprite->setFrameSprite(0,0,60,60);
 
@@ -29,7 +40,9 @@ Secreto::Secreto(int x_ini, int y_ini){
     current_coin_frame = 0;
     
     motor = Motor::Instance();
-
+    if((t==1&&Guardar::Instance()->getSecreto1()==1)||(t==2&&Guardar::Instance()->getSecreto2()==1)||(t==3&&Guardar::Instance()->getSecreto3()==1)){
+        this->~Secreto();
+    }
 }
 
 Secreto::~Secreto(){
@@ -63,7 +76,13 @@ void Secreto::onCollisionPlayer(int g){
     if(sprite != NULL){
         if(sprite->getBounds("global").intersects(player->getSprite()->getBounds("global"))){
             motor->getSonidoEvolucion()->Play(); //* cambiar sonido misterio
-            Guardar::Instance()->setMonedas(1);
+            if(tipo==1)
+                Guardar::Instance()->setMonedas(1);
+            else if(tipo==2)
+                Guardar::Instance()->setMonedas(2);
+            else
+                Guardar::Instance()->setMonedas(3);
+
             this->~Secreto(); 
         }
     }

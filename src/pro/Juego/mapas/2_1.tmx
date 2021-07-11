@@ -51,6 +51,9 @@
    <point/>
   </object>
   <object id="85" name="moneda" x="1342" y="7550">
+   <properties>
+    <property name="tipo" type="int" value="1"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>

@@ -145,7 +145,7 @@ void Guardar::setMonedas(int mon){
             monedas=partida->FirstChildElement("secreto3");
             secreto3=1;
         }
-        monedas->SetAttribute("max",mon);
+        monedas->SetAttribute("max",1);
         doc.SaveFile("Motor/save.xml");
     }
 }

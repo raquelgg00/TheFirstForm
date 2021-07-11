@@ -313,7 +313,7 @@ void Nivel::cargarEntidades(){
 
             }
             else if(datosDinamicos[i][0]==6){ //Es un SECRETO
-                plat = (Entidad*)new Secreto(x_ini,y_ini);
+                plat = (Entidad*)new Secreto(x_ini,y_ini,datosDinamicos[i][1]);
             }
             else if(datosDinamicos[i][0]==7){ //Es una arista
                 plat = (Entidad*)new Arista(x_ini,y_ini);

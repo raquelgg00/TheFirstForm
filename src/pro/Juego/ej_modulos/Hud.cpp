@@ -32,13 +32,13 @@ Hud::Hud(){
     habilidades->setFrameSprite(0,0,320,64);
 
     secreto1=new Sprite();
-    secreto1->setTexture("Secreto1","png");
+    secreto1->setTexture("Secreto1No","png");
     secreto1->setScale(0.8,0.8);
     secreto2=new Sprite();
-    secreto2->setTexture("Secreto2","png");
+    secreto2->setTexture("Secreto2No","png");
     secreto2->setScale(0.8,0.8);
     secreto3=new Sprite();
-    secreto3->setTexture("Secreto5","png");
+    secreto3->setTexture("Secreto5No","png");
     secreto3->setScale(0.8,0.8);
 
     calavera=new Sprite();
@@ -238,7 +238,18 @@ void Hud::update(int item, int gravedad){
     habilidades->setFrameSprite(0,hab*64,320,64);
 
     // Sprite de Secretos
-    
+    if(sec1==false&&Guardar::Instance()->getSecreto1()==1){
+        secreto1->setTexture("Secreto1","png");
+        sec1=true;
+    }
+    if(sec2==false&&Guardar::Instance()->getSecreto2()==1){
+        secreto2->setTexture("Secreto2","png");
+        sec2=true;
+    }
+    if(sec3==false&&Guardar::Instance()->getSecreto3()==1){
+        sec3=true;
+        secreto3->setTexture("Secreto5","png");
+    }
 
     x=motor->getCamaraCenter().x;
     y=motor->getCamaraCenter().y;

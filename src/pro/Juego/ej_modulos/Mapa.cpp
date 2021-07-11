@@ -246,6 +246,17 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "moneda")==0){
                             datosDinamicos[contDinamicos][0]=6; //es moneda
+                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            if(properties!=NULL){
+                              
+                                XMLElement* property = properties->FirstChildElement("property");
+                                while(property!=NULL){
+                                    if(strcmp(property->Attribute("name"), "name")==0){
+                                        property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][1]);
+                                    }
+                                    property=property->NextSiblingElement();
+                                }
+                            }
                         }
                         else if(strcmp(objecto->Attribute("name"), "arista")==0){
                             datosDinamicos[contDinamicos][0]=7; //es arista

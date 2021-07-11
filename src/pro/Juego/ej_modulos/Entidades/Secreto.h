@@ -12,7 +12,7 @@ class Secreto: public Entidad{
     
     public:
         Secreto();
-        Secreto(int, int);
+        Secreto(int, int, int);
         ~Secreto();
         
         void onCollisionPlayer(int) override;
@@ -24,7 +24,7 @@ class Secreto: public Entidad{
         int getPositionX(){return x;};
         int getPositionY(){return y;};
         void setPosition(int, int) override;
-
+        int getTipo(){return tipo;};
         float getX() override{return x;};
         float getY() override{return y;};
         Sprite* getSprite() override{return sprite;};
@@ -37,6 +37,7 @@ class Secreto: public Entidad{
         Motor* motor = NULL;
         int x;
         int y;
+        int tipo;
         int width, height;
         sf::Clock clock;
         int current_coin_frame;
