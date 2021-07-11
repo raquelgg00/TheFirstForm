@@ -13,7 +13,15 @@ class Conexion{
         bool update_bd(std::string);
         void delete_bd(std::string);
         std::string** select_bd(std::string, int);
-
+        bool getConexion(){
+            mysql_close(conectar);
+            conectar = mysql_init(0);
+            conectar = mysql_real_connect(conectar, "sql11.freesqldatabase.com", "sql11423929", "YJhMdyzuXx", "sql11423929", 3306, NULL, 0);
+            if(conectar)
+            return true;
+            else
+            return false;
+        }
 
     protected:
         Conexion();

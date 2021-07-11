@@ -219,7 +219,8 @@ void InGame::update(){
 
             // Hacemos la consulta
             std::string consult = "UPDATE `usuario` SET `muertes`="+muertes+",`monedas`="+moneda+",`niveles`="+nivel+" WHERE nombre = '"+nombre_actual+"'";
-            Conexion::Instance()->update_bd(consult);
+            if(Conexion::Instance()->getConexion())
+                Conexion::Instance()->update_bd(consult);
 
 
             CambiarEstado();
