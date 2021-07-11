@@ -27,7 +27,12 @@ if (SFML_FOUND)
     target_link_libraries(TheFirstShape ${SFML_LIBRARIES})
 endif()
 
-target_link_libraries(TheFirstShape mysqlclient)
+find_package(MYSQL)
+if (MYSQL_FOUND)
+    include_directories(${MYSQL_INCLUDE_DIR})
+    target_link_libraries(TheFirstShape ${MYSQL_LIBRARIES})
+endif()
+#target_link_libraries(TheFirstShape mysqlclient)
 
 # Copy dlls to build directory
 if(WIN32)

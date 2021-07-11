@@ -168,10 +168,16 @@ void Guardar::reiniciarPartida(){
         nivel->SetAttribute("max",0);
         XMLElement* fin=partida->FirstChildElement("terminado");
         fin->SetAttribute("fin",0);
+        XMLElement* muertes=partida->FirstChildElement("muertes");
+        muertes->SetAttribute("max",0);
+        XMLElement* monedas=partida->FirstChildElement("monedas");
+        monedas->SetAttribute("max",0);
         doc.SaveFile("Motor/save.xml");
         nivelMax = 0;
         habilidades = 0;
         terminado=0;
+        num_muertes=0;
+        numMonedas=0;
     }
 }
 
