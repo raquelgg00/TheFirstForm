@@ -174,11 +174,11 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
             update_datos_player();
             Ranking::Instance()->setConnect(true);
             Ranking::Instance()->actualiza_ranking();
-            Partida::setEstado(Ranking::Instance());
         }
         else{
             Ranking::Instance()->setConnect(false);
         }
+        Partida::setEstado(Ranking::Instance());
     }
     else if(selectedItem==5){//Soporte
         Partida::setEstado(Soporte::Instance());

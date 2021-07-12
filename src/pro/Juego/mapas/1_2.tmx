@@ -169,7 +169,7 @@
   <object id="14" name="plataforma" x="1984.67" y="3070.17" width="317.333" height="66"/>
   <object id="15" name="plataforma" x="2367.34" y="2880.83" width="1150.67" height="62.6667"/>
   <object id="16" name="plataforma" x="3711.34" y="3008.17" width="126.667" height="63.3333"/>
-  <object id="17" name="plataforma" x="3518" y="3264.17" width="127.333" height="62"/>
+  <object id="17" name="plataforma" x="3521.75" y="3264.17" width="127.333" height="62"/>
   <object id="18" name="plataforma" x="3519.67" y="3775.5" width="126.667" height="65"/>
   <object id="19" name="plataforma" x="3710.84" y="3520.17" width="127.333" height="64"/>
   <object id="20" name="plataforma" x="3711.34" y="3839.5" width="318.667" height="63.3333"/>
@@ -183,10 +183,10 @@
   <object id="28" name="pincho" x="2687.67" y="2828.5" width="126" height="52"/>
   <object id="29" name="pincho" x="3070.67" y="2828.5" width="129" height="52"/>
   <object id="30" name="pincho" x="3711.67" y="3071.5" width="130" height="54"/>
-  <object id="31" name="pincho" x="3518.67" y="3326.5" width="127" height="60"/>
-  <object id="32" name="pincho" x="3712.17" y="3583" width="125" height="54.5"/>
+  <object id="31" name="pincho" x="3517.67" y="3326.5" width="127" height="60"/>
+  <object id="32" name="pincho" x="3713.99" y="3583.91" width="125" height="54.5"/>
   <object id="33" name="pincho" x="3903.67" y="3393.5" width="52" height="124"/>
-  <object id="34" name="pincho" x="3518.67" y="3840.5" width="128" height="54"/>
+  <object id="34" name="pincho" x="3518.34" y="3840.5" width="128" height="54"/>
   <object id="35" name="pincho" x="4479.67" y="3519.5" width="126" height="54"/>
   <object id="36" name="fin" x="4671.67" y="1452">
    <polygon points="0,0 47,84 -47.5,83"/>
@@ -194,7 +194,7 @@
   <object id="37" name="inicioPortal" x="1472" y="3712.83">
    <point/>
   </object>
-  <object id="38" name="finPortal" x="2816.67" y="1214.83">
+  <object id="38" name="finPortal" x="2590.67" y="1210.16">
    <point/>
   </object>
   <object id="39" name="pincho" x="1280.67" y="1733.5" width="3582.39" height="56"/>
