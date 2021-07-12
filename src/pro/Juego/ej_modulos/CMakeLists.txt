@@ -23,6 +23,7 @@ target_sources(libModulos PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/CambioResolucion.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/Ranking.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Menus/PreguntarNombre.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Menus/Soporte.cpp"
     
 
     "${CMAKE_CURRENT_SOURCE_DIR}/Enemigos/Bolita.cpp"

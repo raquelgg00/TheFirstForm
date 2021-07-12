@@ -6,12 +6,12 @@
 </opciones>
 
 <partida>
-    <nivel max="1"/>
-    <secreto1 max="1"/>
-    <secreto2 max="1"/>
-    <secreto3 max="1"/>
+    <nivel max="15"/>
+    <secreto1 max="0"/>
+    <secreto2 max="0"/>
+    <secreto3 max="0"/>
     <habilidades max="5"/>
-    <muertes max="16"/>
-    <nombre>Erik</nombre>
+    <muertes max="0"/>
+    <nombre>anonimus</nombre>
     <terminado fin="0"/>
 </partida>
