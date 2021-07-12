@@ -33,7 +33,7 @@ class Ranking : public JuegoState {
         Sprite *fondo;
         Sprite *fondo2;
         int num_items = 10;
-
+        bool conect=false;
 
     public:
         static Ranking* Instance(); 
@@ -41,6 +41,8 @@ class Ranking : public JuegoState {
         void update() override;
         void input() override; 
         void actualiza_ranking();
+        void setConnect(bool b){conect=b;}
+
 
 };
 #endif

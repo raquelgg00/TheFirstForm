@@ -149,8 +149,9 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
             PreguntarNombre::Instance()->setConnect(true);
         }
         else
-         PreguntarNombre::Instance()->setConnect(false);
-            Partida::setEstado(PreguntarNombre::Instance());
+            PreguntarNombre::Instance()->setConnect(false);
+            
+        Partida::setEstado(PreguntarNombre::Instance());
         
         motor->getMusicaMenu()->pause();
         //motor->getMusicaAnimacion()->Play();
@@ -165,8 +166,14 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
         Partida::setEstado(Controles::Instance());
     }
     else if(selectedItem==4){//Ranking
-        Ranking::Instance()->actualiza_ranking();
-        Partida::setEstado(Ranking::Instance());
+        if(Conexion::Instance()->getConexion()){
+            Ranking::Instance()->setConnect(true);
+            Ranking::Instance()->actualiza_ranking();
+            Partida::setEstado(Ranking::Instance());
+        }
+        else{
+            Ranking::Instance()->setConnect(false);
+        }
     }
 }
 

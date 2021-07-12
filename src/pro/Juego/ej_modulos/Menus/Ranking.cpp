@@ -141,7 +141,7 @@ void Ranking::render(float tick){
     motor->ventanaClear(140,140,140);
     
 
-    if(Conexion::Instance()->getConexion()){
+    if(conect){
         motor->ventanaDibuja(fondo->getSprite());
         for(int i=0;i<num_items;i++){
             nombres[i]->drawText();
