@@ -52,7 +52,7 @@ MenuPrincipal::MenuPrincipal(){
     opciones[2].setString("Opciones");
     opciones[3].setString("Controles");
     opciones[4].setString("Ranking");
-    opciones[5].setString("Salir");
+    opciones[5].setString("Soporte");
 
     for(int i=0;i<num_items;i++){
         opciones[i].setFont(font);
@@ -168,6 +168,9 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
         Ranking::Instance()->actualiza_ranking();
         Partida::setEstado(Ranking::Instance());
     }
+    else if(selectedItem==5){//Soporte
+        Partida::setEstado(Soporte::Instance());
+    }
 }
 
 void MenuPrincipal::render(float tick){
@@ -216,12 +219,7 @@ void MenuPrincipal::input(){
 
         if(motor->isKeyPressedEnter()){
             motor->getSonidoSeleccion()->Play();
-            if(selectedItem==5){
-                motor->ventanaClose();
-            }
-            else{
-                CambiarEstado();
-            }
+            CambiarEstado();
         }      
 
         
@@ -241,12 +239,7 @@ void MenuPrincipal::input(){
                     selectedItem = i;
                     if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
                         motor->getSonidoSeleccion()->Play();
-                        if(selectedItem==5){
-                            motor->ventanaClose();
-                        }
-                        else{
-                            CambiarEstado();
-                        }
+                        CambiarEstado();
                     }
                 }
             }

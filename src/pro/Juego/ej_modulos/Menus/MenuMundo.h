@@ -9,6 +9,7 @@
 #include "Motor.h"
 #include "Hud.h"
 #include "Nivel.h"
+#include "Soporte.h"
 #include <iostream>
 
 class MenuMundo : public JuegoState {
