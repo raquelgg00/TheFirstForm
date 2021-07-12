@@ -23,8 +23,9 @@ class Mapa{
         int getContEstaticos(){return contEstaticos;};
 
         int *getInicioPersonaje(){return initPersonaje;};
-        bool getAyuda(){return ayuda;};
+        int getAyuda(){return ayuda;};
         int *getInicioAyuda(){return initAyuda;};
+        int *getInicioAyuda2(){return initAyuda2;};
 
         int **getDatosMundo2(){return datosMundo2;};
         int getContMundo2(){return contMundo2;};
@@ -59,7 +60,8 @@ class Mapa{
 
         //DATO INICIAL AYUDA
         int initAyuda[2];//x e y inicial de la ayuda
-        bool ayuda;
+        int initAyuda2[2];//x e y inicial de la ayuda
+        int ayuda;
 
         //DATO MUNDO2
         int **datosMundo2;

@@ -39,6 +39,15 @@ Ayuda::Ayuda(int niv,int pos_x, int pos_y){
         case 13://portal pequeño
             sprite->setTexture("Ayudas/Ayuda13","png");
         break;
+        case 14://portal salto
+            sprite->setTexture("Ayudas/Ayuda1-2","png");
+        break;
+        case 18://mecanica mundo 2
+            sprite->setTexture("Ayudas/Ayuda2-1","png");
+        break;
+        case 19://portal romper
+            sprite->setTexture("Ayudas/Ayuda2-2","png");
+        break;
     }
     sprite->setPosition(x,y);
 

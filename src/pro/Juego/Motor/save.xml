@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opciones>
-    <musica volumen="0"/>
-    <sonido volumen="20"/>
+    <musica volumen="40"/>
+    <sonido volumen="40"/>
     <resolucion tam="1080"/>
 </opciones>
 
 <partida>
-    <nivel max="15"/>
+    <nivel max="0"/>
     <secreto1 max="0"/>
     <secreto2 max="0"/>
     <secreto3 max="0"/>
-    <habilidades max="5"/>
+    <habilidades max="0"/>
     <muertes max="0"/>
-    <nombre>anonimus</nombre>
+    <nombre>rachel</nombre>
     <terminado fin="0"/>
 </partida>

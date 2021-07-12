@@ -18,14 +18,15 @@ Mapa::Mapa(){
     tilemapSprite=NULL;
     tilesetSprite=NULL;
     motor = NULL;
-    ayuda=false;
+    ayuda=0;
     datosEstaticos=NULL;
     datosDinamicos=NULL;
     contEstaticos=0;
     contDinamicos=0;
-    ayuda=false;
     initAyuda[0]=0;
     initAyuda[1]=0;
+    initAyuda2[0]=0;
+    initAyuda2[1]=0;
     initPersonaje[0]=0;
     initPersonaje[1]=0;
     datosMundo2=NULL;
@@ -335,7 +336,7 @@ void Mapa::cargarAtributos(XMLElement* map){
     inicioPortal[1]=-1;
     finPortal[0]=-1;
     finPortal[1]=-1;
-    ayuda=false;
+    ayuda=0;
 
     // Se leen los atributos int de la etiqueta
     map->QueryIntAttribute("width", &width);
@@ -539,9 +540,14 @@ void Mapa::inicioNivel(XMLElement* map){
                         objecto->QueryIntAttribute("y", &initPersonaje[1]);                        
                     }
                     else if(strcmp(objecto->Attribute("name"), "ayuda")==0){
-                        ayuda=true;
+                        ayuda++;
                         objecto->QueryIntAttribute("x", &initAyuda[0]);
                         objecto->QueryIntAttribute("y", &initAyuda[1]);
+                    }
+                    else if(strcmp(objecto->Attribute("name"), "ayuda2")==0){
+                        ayuda++;
+                        objecto->QueryIntAttribute("x", &initAyuda2[0]);
+                        objecto->QueryIntAttribute("y", &initAyuda2[1]);
                     }
                     objecto = objecto->NextSiblingElement("object");
                     

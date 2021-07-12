@@ -66,7 +66,8 @@ class Nivel{
         int numNivel; // numero del nivel actual
         int contEntidades;
         Mapa* mapa = NULL;
-        Ayuda* ayuda = NULL;
+        Ayuda* ayuda1 = NULL;
+        Ayuda* ayuda2 = NULL;
         Player* player = NULL;
         XMLDocument listaMapas;
         Entidad** entidades = NULL;

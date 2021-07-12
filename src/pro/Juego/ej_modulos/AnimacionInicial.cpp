@@ -19,7 +19,7 @@ AnimacionInicial::AnimacionInicial(){
 
     // Frame inicial
     frame = new Sprite();
-    frame->setTexture("../AnimacionFinal/AnimacionFinal_000000","jpeg");
+    frame->setTexture("../AnimacionConExplicacion/AnimacionFinal_000000","jpeg");
     cont = 0;
       
 }
@@ -57,7 +57,7 @@ void AnimacionInicial::update(){
 
     // Usando un solo frame a la vez
     
-    std::string path = "../AnimacionFinal/AnimacionFinal_";
+    std::string path = "../AnimacionConExplicacion/AnimacionFinal_";
 
     std::ostringstream ss;
     ss << cont;
@@ -76,7 +76,7 @@ void AnimacionInicial::update(){
     // Si cargo todos en el constructor solo dejo esto
     cont+=1;
 
-    if(cont>=1097) {
+    if(cont>=1574) {
         cont = 0;
         CambiarEstado();
     }

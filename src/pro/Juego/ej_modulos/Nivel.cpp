@@ -35,12 +35,20 @@ Nivel::Nivel()
         player->getPosicion()->setPositionXY(mapa->getInicioPersonaje()[0],mapa->getInicioPersonaje()[1]);
 
         //si hay ayuda
-        if(mapa->getAyuda()){
+        if(mapa->getAyuda()==1){
             
-            ayuda=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+            ayuda1=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+            ayuda2=NULL;
+
         }
-        else
-            ayuda=NULL;
+        else if(mapa->getAyuda()==2){
+            ayuda1=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+            ayuda2=new Ayuda(numNivel+12,mapa->getInicioAyuda2()[0],mapa->getInicioAyuda2()[1]);
+        }
+        else{
+            ayuda1=NULL;
+            ayuda2=NULL;
+        }
    
         //si hay portal
         int hab_actual = Guardar::Instance()->getHabilidades();
@@ -93,11 +101,14 @@ Nivel::~Nivel(){
         delete[] entidades;
         entidades =NULL;
     }
-    if(ayuda!=NULL){
-        delete ayuda;
-        ayuda=NULL;
+    if(ayuda1!=NULL){
+        delete ayuda1;
+        ayuda1=NULL;
     }
-
+    if(ayuda2!=NULL){
+        delete ayuda2;
+        ayuda2=NULL;
+    }
     for(int i=0;i<contMundo2;i++){
         if(mundo2[i]!=NULL){
             delete mundo2[i];
@@ -138,17 +149,30 @@ void Nivel::cambiarNivel(int num){
             player->setPosition(mapa->getInicioPersonaje()[0], mapa->getInicioPersonaje()[1]);
 
             //si hay ayuda
-            if(ayuda!=NULL){
-                delete ayuda;
-                ayuda=NULL;
+            if(ayuda1!=NULL){
+                delete ayuda1;
+                ayuda1=NULL;
+            }
+            if(ayuda2!=NULL){
+                delete ayuda2;
+                ayuda2=NULL;
             }
 
-            if(mapa->getAyuda()){
+            //si hay ayuda
+            if(mapa->getAyuda()==1){
                 
-                ayuda=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+                ayuda1=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+                ayuda2=NULL;
+
             }
-            else
-                ayuda=NULL;
+            else if(mapa->getAyuda()==2){
+                ayuda1=new Ayuda(numNivel,mapa->getInicioAyuda()[0],mapa->getInicioAyuda()[1]);
+                ayuda2=new Ayuda(numNivel+12,mapa->getInicioAyuda2()[0],mapa->getInicioAyuda2()[1]);
+            }
+            else{
+                ayuda1=NULL;
+                ayuda2=NULL;
+            }
 
             if((hab_actual>=1&&numNivel==2) || (hab_actual>=2&&numNivel==5) || (hab_actual>=3&&numNivel==7) ||
             (hab_actual>=4&&numNivel==9) || (hab_actual>=5&&numNivel==13)){
@@ -358,8 +382,11 @@ void Nivel::cargarEntidades(){
 void Nivel::render(float tick){
     if(mapa != NULL){
         mapa->render();
-        if(ayuda!=NULL){
-            ayuda->render();
+        if(ayuda1!=NULL){
+                ayuda1->render();  
+        }
+        if(ayuda2!=NULL){
+            ayuda2->render();
         }
         int i =0;
         int contador = mapa->getContDinamicos();
