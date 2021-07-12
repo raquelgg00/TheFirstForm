@@ -34,6 +34,7 @@ class Ranking : public JuegoState {
         Sprite *fondo2;
         int num_items = 10;
         bool conect=false;
+        bool estoy_en_ranking = false;
 
     public:
         static Ranking* Instance(); 

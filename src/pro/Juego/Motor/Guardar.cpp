@@ -195,6 +195,8 @@ void Guardar::reiniciarPartida(){
         sec2->SetAttribute("max",0);
         XMLElement* sec3=partida->FirstChildElement("secreto3");
         sec3->SetAttribute("max",0);
+        XMLElement* nombre=partida->FirstChildElement("nombre");
+        nombre->SetText(" ");
 
         doc.SaveFile("Motor/save.xml");
         nivelMax = 0;
@@ -225,7 +227,13 @@ std::string Guardar::getNombre(){
 
     if(partida!=NULL){
         XMLElement* nombre=partida->FirstChildElement("nombre");
-        return nombre->GetText();
+        if(nombre != NULL && nombre->GetText() != 0){
+
+            return nombre->GetText();
+        }
+        else {
+            return "";
+        }
     }
     return "";
 }

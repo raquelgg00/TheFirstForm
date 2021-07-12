@@ -40,7 +40,7 @@ class MenuPrincipal : public JuegoState {
         float x_cursor, y_cursor; // posicion del raton
         int alpha;
         Sprite *fondoTransicion;
-        
+        void update_datos_player();
 
     public:
         static MenuPrincipal* Instance(); 

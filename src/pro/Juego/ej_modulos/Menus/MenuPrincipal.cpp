@@ -141,9 +141,11 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
     }
     else if(selectedItem==1){//Nueva partida
         if(Conexion::Instance()->getConexion()){
-            // Borramos de la BD los datos de la persona anterior
-            std::string consult = "DELETE FROM `usuario` WHERE nombre='"+Guardar::Instance()->getNombre()+"'";
-            Conexion::Instance()->update_bd(consult);
+            if(Guardar::Instance()->getNombre() != "nuevo"){
+                // Borramos de la BD los datos de la persona anterior
+                std::string consult = "DELETE FROM `usuario` WHERE nombre='"+Guardar::Instance()->getNombre()+"'";
+                Conexion::Instance()->update_bd(consult);
+            }
             Guardar::Instance()->reiniciarPartida();
             Nivel::Instance()->cambiarNivel(0);
             PreguntarNombre::Instance()->setConnect(true);
@@ -167,6 +169,9 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
     }
     else if(selectedItem==4){//Ranking
         if(Conexion::Instance()->getConexion()){
+             // Se hacen los updates en la BD con los nuevos datos
+
+            update_datos_player();
             Ranking::Instance()->setConnect(true);
             Ranking::Instance()->actualiza_ranking();
             Partida::setEstado(Ranking::Instance());
@@ -255,3 +260,38 @@ void MenuPrincipal::input(){
     }
 }
 
+
+void MenuPrincipal::update_datos_player(){
+      int nivel_actual = Guardar::Instance()->getNivel();
+    int num_secretos=0;
+    if(Guardar::Instance()->getSecreto1()==1)
+        num_secretos++;
+    if(Guardar::Instance()->getSecreto2()==1)
+        num_secretos++;
+    if(Guardar::Instance()->getSecreto3()==1)
+        num_secretos++;
+
+    std::string nombre_actual = Guardar::Instance()->getNombre();
+    int muertes_actual = Guardar::Instance()->getMuertes();
+    
+    // Pasamos a string lo que obtenemos de save.xml
+    std::string moneda;
+    stringstream ss;  
+    ss << num_secretos;  
+    ss >> moneda;
+
+    std::string muertes_s;
+    stringstream ss2;  
+    ss2 << muertes_actual;  
+    ss2 >> muertes_s;
+
+    std::string nivel;
+    stringstream ss3; 
+    ss3 << nivel_actual;
+    ss3 >> nivel;
+
+    // Hacemos la consulta
+    std::string consult = "UPDATE `usuario` SET `muertes`="+muertes_s+",`monedas`="+moneda+",`niveles`="+nivel+" WHERE nombre = '"+nombre_actual+"'";
+    if(Conexion::Instance()->getConexion())
+        Conexion::Instance()->update_bd(consult);
+}
