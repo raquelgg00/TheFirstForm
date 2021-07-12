@@ -2,16 +2,16 @@
 <opciones>
     <musica volumen="0"/>
     <sonido volumen="20"/>
-    <resolucion tam="720"/>
+    <resolucion tam="1080"/>
 </opciones>
 
 <partida>
-    <nivel max="15"/>
-    <secreto1 max="1"/>
-    <secreto2 max="1"/>
-    <secreto3 max="1"/>
-    <habilidades max="5"/>
-    <muertes max="21"/>
-    <nombre>jueves</nombre>
+    <nivel max="1"/>
+    <secreto1 max="0"/>
+    <secreto2 max="0"/>
+    <secreto3 max="0"/>
+    <habilidades max="0"/>
+    <muertes max="0"/>
+    <nombre>holaa</nombre>
     <terminado fin="0"/>
 </partida>
