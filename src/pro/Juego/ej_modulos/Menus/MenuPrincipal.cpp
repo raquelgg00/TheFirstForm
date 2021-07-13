@@ -147,6 +147,7 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
                 Conexion::Instance()->update_bd(consult);
             }
             Guardar::Instance()->reiniciarPartida();
+            MenuMundo::Instance()->resetSelect();
             Nivel::Instance()->cambiarNivel(0);
             PreguntarNombre::Instance()->setConnect(true);
         }

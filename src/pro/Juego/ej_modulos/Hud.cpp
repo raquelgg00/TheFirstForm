@@ -242,13 +242,25 @@ void Hud::update(int item, int gravedad){
         secreto1->setTexture("Secreto1","png");
         sec1=true;
     }
+    else if(sec1==true&&Guardar::Instance()->getSecreto1()==0){
+        secreto1->setTexture("Secreto1No","png");
+        sec1=false;
+    }
     if(sec2==false&&Guardar::Instance()->getSecreto2()==1){
         secreto2->setTexture("Secreto2","png");
         sec2=true;
     }
+    else if(sec2==true&&Guardar::Instance()->getSecreto2()==0){
+        secreto2->setTexture("Secreto2No","png");
+        sec2=false;
+    }
     if(sec3==false&&Guardar::Instance()->getSecreto3()==1){
         sec3=true;
         secreto3->setTexture("Secreto5","png");
+    }
+    else if(sec3==true&&Guardar::Instance()->getSecreto3()==0){
+        secreto3->setTexture("Secreto5No","png");
+        sec3=false;
     }
 
     x=motor->getCamaraCenter().x;

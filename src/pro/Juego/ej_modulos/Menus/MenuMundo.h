@@ -40,6 +40,9 @@ class MenuMundo : public JuegoState {
         void update() override;
         void input() override;  
         void actualiza_colores();
+        void resetSelect(){
+            selectedItem=0;
+        }
 };
 
 #endif
