@@ -28,14 +28,6 @@
    </properties>
    <point/>
   </object>
-  <object id="42" name="bola" x="3328" y="2048">
-   <properties>
-    <property name="tipo" type="int" value="0"/>
-    <property name="x_fin" type="int" value="3328"/>
-    <property name="y_fin" type="int" value="2375"/>
-   </properties>
-   <point/>
-  </object>
   <object id="45" name="plataforma" x="3134.67" y="1726">
    <properties>
     <property name="movimiento" type="bool" value="true"/>
