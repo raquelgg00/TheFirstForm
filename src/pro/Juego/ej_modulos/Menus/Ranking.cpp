@@ -185,6 +185,7 @@ void Ranking::actualiza_ranking(){
 
 	if (res != NULL) {
 		estoy_en_ranking = false;
+		estoy_en_ranking_int = -1;
 
 		for (int i = 0; i < 10; i++) {
 
@@ -231,6 +232,7 @@ void Ranking::actualiza_ranking(){
 				monedas[i]->setColor(255, 230, 0);
 				muertes[i]->setColor(255, 230, 0);
 				estoy_en_ranking = true;
+                estoy_en_ranking_int = i+1;
 			}
 			else {
 				nombres[i]->setColor(255, 255, 255);
@@ -238,14 +240,25 @@ void Ranking::actualiza_ranking(){
 				monedas[i]->setColor(255, 255, 255);
 				muertes[i]->setColor(255, 255, 255);
 			}
-
 		}
-
 
 		std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio))) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes";
 
-		std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
-		string pos_mio = res2[0][3] + ". " + Guardar::Instance()->getNombre() + "          " + res2[0][0] + " niveles         " + res2[0][1] + " secretos         " + res2[0][2] + " muertes";
+        std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
+
+        std::string pos;
+        stringstream strstr;
+
+        
+        if(estoy_en_ranking){
+            strstr << estoy_en_ranking_int;
+        }
+        else {
+            strstr << res2[0][3];
+        }
+        strstr >> pos;
+
+		string pos_mio = pos + ". " + Guardar::Instance()->getNombre() + "          " + res2[0][0] + " niveles         " + res2[0][1] + " secretos         " + res2[0][2] + " muertes";
 		miResult->setTexto(pos_mio);
 		miResult->setPosition(40 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + 10 * 40);
 		if (Guardar::Instance()->getResolucion() == 720) {

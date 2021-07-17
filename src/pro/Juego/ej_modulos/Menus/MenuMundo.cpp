@@ -174,11 +174,11 @@ void MenuMundo::input(){
         else if(motor->isKeyPressedLeft()){
             MoveLeft();
         }
-        else if(motor->isKeyPressedP()){ // esto es para desbloquear todos los niveles
+        /*else if(motor->isKeyPressedP()){ // esto es para desbloquear todos los niveles
             Guardar::Instance()->setNivel(15);
             Guardar::Instance()->setHabilidades(5);
             actualiza_colores();
-        }
+        }*/
         else if(motor->isKeyPressedEscape()){
             motor->getMusica()->pause();
             motor->getMusicaMenu()->Play();

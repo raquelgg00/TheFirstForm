@@ -34,6 +34,7 @@ class Ranking : public JuegoState {
         int num_items = 10;
         bool conect=false;
         bool estoy_en_ranking = false;
+        int estoy_en_ranking_int = -1;
 
     public:
         static Ranking* Instance(); 

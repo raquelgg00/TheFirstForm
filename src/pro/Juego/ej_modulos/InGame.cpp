@@ -376,7 +376,7 @@ void InGame::input(){
  
 
     // Para hacer pruebas si le da a la I salta mucho 
-    if(motor->isKeyPressedI()) p1->saltar();
+    //if(motor->isKeyPressedI()) p1->saltar();
    
     //p1->input();
 }
