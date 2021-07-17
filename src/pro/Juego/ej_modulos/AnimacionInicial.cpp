@@ -41,16 +41,22 @@ AnimacionInicial::~AnimacionInicial(){
 
 void AnimacionInicial::CambiarEstado(){
     //motor->getMusicaAnimacion()->pause();
-    motor->getMusica()->Play();
+    //motor->getMusica()->Play();
     Partida::setEstado(InGame::Instance());
 }
 
-void AnimacionInicial::input(){
-    while(motor->ventanaPollEvent()) {
-        if(motor->eventTypeClosed()){
-            motor->ventanaClose();
-        }
-    }
+void AnimacionInicial::input() {
+
+	enter_pulsado = false;
+
+	while (motor->ventanaPollEvent()) {
+		if (motor->eventTypeClosed()) {
+			motor->ventanaClose();
+		}
+	}
+	if (motor->isKeyPressedEnter()) {
+		enter_pulsado = true;
+	}
 }
 
 void AnimacionInicial::update(){
@@ -73,13 +79,21 @@ void AnimacionInicial::update(){
         frame->setScale(0.67, 0.67);
     
 
-    // Si cargo todos en el constructor solo dejo esto
-    cont+=1;
+	if (cont == 1058 || cont == 1242 || cont == 1392 || cont == 1548) {
+		if (enter_pulsado) {
+			cont++;
+		}
+		enter_pulsado = false;
+	}
+	else {
+		// Si cargo todos en el constructor solo dejo esto
+		cont += 1;
 
-    if(cont>=1574) {
-        cont = 0;
-        CambiarEstado();
-    }
+		if (cont >= 1574) {
+			cont = 0;
+			CambiarEstado();
+		}
+	}
 }
 
 

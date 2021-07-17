@@ -104,7 +104,10 @@ void Puerta::updatemover(){
                 if(clock.getElapsedTime().asSeconds() > 0.1f){
                     if(current_coin_frame>=i){
                         final_animacion = true;
-                        this->~Puerta();
+						if (sprite != NULL) {
+							delete sprite;
+							sprite = NULL;
+						}
                     }
                     else{
                         current_coin_frame++;

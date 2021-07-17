@@ -2,7 +2,9 @@
 #define GUARDAR_H
 #include "../ej_modulos/tinyxml2/tinyxml2.h"
 #include <iostream>
-using namespace tinyxml2;
+//#include <msxml.h>
+
+//using namespace tinyxml2;
 
 
 class Guardar{
@@ -55,7 +57,7 @@ class Guardar{
         int num_muertes;
         std::string nombre;
         int terminado;
-        XMLDocument doc;
+		tinyxml2::XMLDocument doc;
 };
 
 #endif

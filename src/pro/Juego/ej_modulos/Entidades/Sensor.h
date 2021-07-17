@@ -5,7 +5,6 @@
 #include "Sprite.h"
 #include "Motor.h"
 #include "Player.h"
-#include "../Motor/Shape.h"
 
 class Sensor: public Entidad{
     

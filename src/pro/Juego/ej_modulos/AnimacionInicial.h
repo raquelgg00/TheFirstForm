@@ -19,6 +19,7 @@ class AnimacionInicial : public JuegoState {
         Sprite *frame;
         Motor *motor=NULL;
         int cont;
+		bool enter_pulsado = false;
 
     public:
         static AnimacionInicial* Instance(); 

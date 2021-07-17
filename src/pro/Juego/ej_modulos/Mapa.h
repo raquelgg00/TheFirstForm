@@ -1,11 +1,12 @@
 #include <iostream>
 #include <sstream>
 #include <algorithm>
+//#include <msxml.h>
 #include "tinyxml2/tinyxml2.h"
 #include "Motor.h"
 
-using namespace tinyxml2;
 using namespace std;
+//using namespace tinyxml2;
 
 class Mapa{
     
@@ -75,11 +76,11 @@ class Mapa{
         void cargarSprites();
         void cargarTilesetSprites();
         void reservarMemoria();
-        void cargarTilemap(XMLElement* map);
-        void cargarAtributos(XMLElement* map);
-        void cargarCapas(XMLElement* map);
-        void getDinamicoMapa(XMLElement* map); //Sirve para coger informacion dinamica sobre el mapa
-        void getEstaticoMapa(XMLElement* map); //Sirve para coger informacion estatica sobre el mapa
-        void inicioNivel(XMLElement* map);
-        void getDatosMundo2(XMLElement* map);
+        void cargarTilemap(tinyxml2::XMLElement* map);
+        void cargarAtributos(tinyxml2::XMLElement* map);
+        void cargarCapas(tinyxml2::XMLElement* map);
+        void getDinamicoMapa(tinyxml2::XMLElement* map); //Sirve para coger informacion dinamica sobre el mapa
+        void getEstaticoMapa(tinyxml2::XMLElement* map); //Sirve para coger informacion estatica sobre el mapa
+        void inicioNivel(tinyxml2::XMLElement* map);
+        void getDatosMundo2(tinyxml2::XMLElement* map);
 };

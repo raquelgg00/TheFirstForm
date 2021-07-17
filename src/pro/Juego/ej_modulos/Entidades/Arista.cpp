@@ -62,9 +62,14 @@ void Arista::onCollisionPlayer(int g){
     if(sprite != NULL){
         if(sprite->getBounds("global").intersects(player->getSprite()->getBounds("global"))){
             motor->getSonidoEvolucion()->Play();
-            this->~Arista(); 
+			
             player->setForma();
             player->setArista(true);
+
+			if (sprite != NULL) {
+				delete sprite;
+				sprite = NULL;
+			}
         }
     }
    

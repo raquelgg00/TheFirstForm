@@ -83,6 +83,8 @@ PreguntarNombre::~PreguntarNombre(){
 
 void PreguntarNombre::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiamos a InGame.cpp
 //reseteo creditos y luego cambio
+	motor->getMusicaMenu()->pause();
+	motor->getMusica()->Play();
     Partida::setEstado(AnimacionInicial::Instance());
 }
 

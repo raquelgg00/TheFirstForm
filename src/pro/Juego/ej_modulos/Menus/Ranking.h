@@ -8,7 +8,6 @@
 #include "Texto.h"
 #include "Sprite.h"
 #include "Partida.h"
-//#include "mysql/mysql.h"
 #include <string>
 #include <sstream>
 

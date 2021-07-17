@@ -155,9 +155,6 @@ void MenuPrincipal::CambiarEstado(){ // Cuando seleccionamos una opcion, cambiam
             PreguntarNombre::Instance()->setConnect(false);
             
         Partida::setEstado(PreguntarNombre::Instance());
-        
-        motor->getMusicaMenu()->pause();
-        //motor->getMusicaAnimacion()->Play();
 
     }
     else if(selectedItem==2){//menu de opciones

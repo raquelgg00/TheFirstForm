@@ -40,11 +40,11 @@ Mapa::Mapa(const char* nombre){
     motor=Motor::Instance();
 
     // Cargo tmx
-    XMLDocument doc;
+    tinyxml2::XMLDocument doc;
     doc.LoadFile(nombre);
 
     // Tamaño del mapa y los tiles
-    XMLElement* map=doc.FirstChildElement("map");
+    tinyxml2::XMLElement* map=doc.FirstChildElement("map");
     
     if(map!=NULL){
 
@@ -126,21 +126,21 @@ Mapa::~Mapa() {
 
 
 //En teoría esta función busca las x de los object que son todas las plataformas. esta cadena se retorna.
- void Mapa::getDinamicoMapa(XMLElement* map){
+ void Mapa::getDinamicoMapa(tinyxml2::XMLElement* map){
 
     contDinamicos=0;
     int id = 0;
     bool salir = false;
 
     if(map!=NULL){
-        XMLElement* plat = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* plat = map->FirstChildElement("objectgroup");
         while(plat && salir == false){       
 
             plat->QueryIntAttribute("id", &id);
             if(strcmp(plat->Attribute("name"), "dinamicas")==0){
             
                 if(plat!=NULL){
-                    XMLElement* plataforma = plat->FirstChildElement("object");
+                    tinyxml2::XMLElement* plataforma = plat->FirstChildElement("object");
                     while(plataforma){              
                         plataforma = plataforma->NextSiblingElement("object");
                         contDinamicos++;
@@ -159,7 +159,7 @@ Mapa::~Mapa() {
      
         contDinamicos=0;
        
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         if(objectGroup!=NULL){
             while(objectGroup){
                 
@@ -167,7 +167,7 @@ Mapa::~Mapa() {
                 if(strcmp(objectGroup->Attribute("name"), "dinamicas")==0){
                 //if(id==1){
            
-                    XMLElement* objecto = objectGroup->FirstChildElement("object");
+                    tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
 
                     while(objecto){
                         objecto->QueryIntAttribute("x", &datosDinamicos[contDinamicos][1]);
@@ -175,10 +175,10 @@ Mapa::~Mapa() {
 
                         if(strcmp(objecto->Attribute("name"), "plataforma")==0){
                             datosDinamicos[contDinamicos][0]=1; //es plataforma
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "movimiento")==0){
                                         bool mov;
@@ -200,10 +200,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "bola")==0){
                             datosDinamicos[contDinamicos][0]=2; //es bola
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "tipo")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -227,10 +227,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "pared")==0){
                             datosDinamicos[contDinamicos][0]=3; //es pared
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "pinchos")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -247,9 +247,9 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "moneda")==0){
                             datosDinamicos[contDinamicos][0]=6; //es moneda
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
                                     property=property->NextSiblingElement();
@@ -261,10 +261,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "cubo")==0){
                             datosDinamicos[contDinamicos][0]=8; //es cubo
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "altura")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -278,10 +278,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "molino")==0){
                             datosDinamicos[contDinamicos][0]=10; 
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "direccion")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -292,10 +292,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "campoGravedad")==0){
                             datosDinamicos[contDinamicos][0]=11; 
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "tipo")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -306,10 +306,10 @@ Mapa::~Mapa() {
                         }
                         else if(strcmp(objecto->Attribute("name"), "puerta")==0){
                             datosDinamicos[contDinamicos][0]=12; 
-                            XMLElement* properties = objecto->FirstChildElement("properties");
+                            tinyxml2::XMLElement* properties = objecto->FirstChildElement("properties");
                             if(properties!=NULL){
                               
-                                XMLElement* property = properties->FirstChildElement("property");
+                                tinyxml2::XMLElement* property = properties->FirstChildElement("property");
                                 while(property!=NULL){
                                     if(strcmp(property->Attribute("name"), "tipo")==0){
                                         property->QueryIntAttribute("value", &datosDinamicos[contDinamicos][3]);
@@ -330,7 +330,7 @@ Mapa::~Mapa() {
 
 
 // Se pasa por parametro el puntero que apunta a la etiqueta mapa del inicio del fichero tmx. Se obtienen obtienen los valores de los atributos necesarios con funciones de tinyxml2 y la variable capas se inicializa.
-void Mapa::cargarAtributos(XMLElement* map){
+void Mapa::cargarAtributos(tinyxml2::XMLElement* map){
     capas=0;//capas que tiene el mapa por defecto
     inicioPortal[0]=-1;
     inicioPortal[1]=-1;
@@ -348,15 +348,15 @@ void Mapa::cargarAtributos(XMLElement* map){
     map->FirstChildElement("tileset")->QueryIntAttribute("columns", &tileColumns);
     
     // Direccion de la imagen para el mapa
-    XMLElement* img=map->FirstChildElement("tileset")->FirstChildElement("image");
+    tinyxml2::XMLElement* img=map->FirstChildElement("tileset")->FirstChildElement("image");
     if(img!=NULL){
         imgfile=img->Attribute("source");
     }
 }
 
 //Cuenta el número de capas del fichero pasando de una etiqueta layer a otra.
-void Mapa::cargarCapas(XMLElement* map){
-    XMLElement* capa=map->FirstChildElement("layer");
+void Mapa::cargarCapas(tinyxml2::XMLElement* map){
+    tinyxml2::XMLElement* capa=map->FirstChildElement("layer");
     while(capa){
         capas++;
         capa=capa->NextSiblingElement("layer");
@@ -403,11 +403,11 @@ void Mapa::reservarMemoria(){
 }
 
 /*CargarTilemap recorre el fichero tmx y almacena los valorer en una matriz de numeros. Estos valores son los que indicarán que sprite le corresponde a cada posicion*/
-void Mapa::cargarTilemap(XMLElement* map){
+void Mapa::cargarTilemap(tinyxml2::XMLElement* map){
 
     // Se apunta a la primera capa
-    XMLElement* capa=map->FirstChildElement("layer");
-    XMLElement *data;
+    tinyxml2::XMLElement* capa=map->FirstChildElement("layer");
+    tinyxml2::XMLElement *data;
     const char *p;
     for(int i=0;i<capas && capa != NULL;i++){
         //en data se guarda un puntero a la etiqueta data
@@ -528,12 +528,12 @@ void Mapa::render(){
 }
 
 //Obtener posicion inicial del personaje
-void Mapa::inicioNivel(XMLElement* map){
+void Mapa::inicioNivel(tinyxml2::XMLElement* map){
     if(map!=NULL){
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         while(objectGroup!=NULL){
             if(strcmp(objectGroup->Attribute("name"), "personaje")==0){
-                XMLElement* objecto = objectGroup->FirstChildElement("object");
+                tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
                 while(objecto){
                     if(strcmp(objecto->Attribute("name"), "inicio")==0){
                         objecto->QueryIntAttribute("x", &initPersonaje[0]);
@@ -559,16 +559,16 @@ void Mapa::inicioNivel(XMLElement* map){
 }
 
 //Metodo que lee los datos de los objetos que estan dentro del grupo de los estaticos en el tmx del mapa
-void Mapa::getEstaticoMapa(XMLElement* map){
+void Mapa::getEstaticoMapa(tinyxml2::XMLElement* map){
     contEstaticos=0;
 
 
     if(map!=NULL){
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         if(objectGroup!=NULL){
             objectGroup = objectGroup->NextSiblingElement("objectgroup");
                 if(objectGroup!=NULL){
-                    XMLElement* objecto = objectGroup->FirstChildElement("object");
+                    tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
                     while(objecto){
                         if(strcmp(objecto->Attribute("name"), "finPortal")!=0)
                             contEstaticos++;
@@ -585,11 +585,11 @@ void Mapa::getEstaticoMapa(XMLElement* map){
 
     contEstaticos=0;
     if(map!=NULL){
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         if(objectGroup!=NULL){
             objectGroup = objectGroup->NextSiblingElement("objectgroup");
                 if(objectGroup!=NULL){
-                    XMLElement* objecto = objectGroup->FirstChildElement("object");
+                    tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
                     while(objecto){
                         if(strcmp(objecto->Attribute("name"), "plataforma")==0){
                             datosEstaticos[contEstaticos][0]=1; //es plataforma
@@ -598,7 +598,7 @@ void Mapa::getEstaticoMapa(XMLElement* map){
                         }
                         else if(strcmp(objecto->Attribute("name"), "suelo")==0){
                             datosEstaticos[contEstaticos][0]=2; //es suelo
-                            XMLElement* poligonos = objecto->FirstChildElement("polyline");
+                            tinyxml2::XMLElement* poligonos = objecto->FirstChildElement("polyline");
                             const char* p = poligonos->Attribute("points");
                             while(*p!=' '){
                                 p++;
@@ -627,7 +627,7 @@ void Mapa::getEstaticoMapa(XMLElement* map){
                         else if(strcmp(objecto->Attribute("name"), "fin")==0){
                             datosEstaticos[contEstaticos][0]=3; //es fin
                             //Cogemos datos del primer numero
-                            XMLElement* poligonos = objecto->FirstChildElement("polygon"); //Cogemos la linea de poligonos
+                            tinyxml2::XMLElement* poligonos = objecto->FirstChildElement("polygon"); //Cogemos la linea de poligonos
                             const char* p = poligonos->Attribute("points"); //Accedemos a los puntos del triangulo
                             while(*p!=' '){ //Nos movemos hasta el primer espacio para saltarnos los 0,0
                                 p++;
@@ -719,14 +719,14 @@ void Mapa::getEstaticoMapa(XMLElement* map){
     }
 }
 
-void Mapa::getDatosMundo2(XMLElement *map){
+void Mapa::getDatosMundo2(tinyxml2::XMLElement *map){
     contMundo2=0;
 
     if(map!=NULL){
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         while(objectGroup!=NULL){
             if(strcmp(objectGroup->Attribute("name"), "mundo2")==0){
-                XMLElement* objecto = objectGroup->FirstChildElement("object");
+                tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
                 while(objecto){
                     contMundo2++;
                     objecto = objecto->NextSiblingElement("object");
@@ -744,10 +744,10 @@ void Mapa::getDatosMundo2(XMLElement *map){
 
     contMundo2=0;
     if(map!=NULL){
-        XMLElement* objectGroup = map->FirstChildElement("objectgroup");
+        tinyxml2::XMLElement* objectGroup = map->FirstChildElement("objectgroup");
         while(objectGroup!=NULL){
             if(strcmp(objectGroup->Attribute("name"), "mundo2")==0){
-                XMLElement* objecto = objectGroup->FirstChildElement("object");
+                tinyxml2::XMLElement* objecto = objectGroup->FirstChildElement("object");
                 while(objecto){
                     objecto->QueryIntAttribute("x", &datosMundo2[contMundo2][0]);
                     objecto->QueryIntAttribute("y", &datosMundo2[contMundo2][1]);                        

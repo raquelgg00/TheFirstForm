@@ -25,39 +25,39 @@ Guardar::Guardar(){
     doc.LoadFile("Motor/save.xml");
 
     // apuntamos a opciones y partida
-    XMLElement* opciones=doc.FirstChildElement("opciones");
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* opciones=doc.FirstChildElement("opciones");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
     
     if(opciones!=NULL){
-        XMLElement* volMusica=opciones->FirstChildElement("musica");
+        tinyxml2::XMLElement* volMusica=opciones->FirstChildElement("musica");
         volMusica->QueryIntAttribute("volumen", &musica);
 
-        XMLElement* volSonido=opciones->FirstChildElement("sonido");
+        tinyxml2::XMLElement* volSonido=opciones->FirstChildElement("sonido");
         volSonido->QueryIntAttribute("volumen", &sonido);
 
-        XMLElement* resPantalla=opciones->FirstChildElement("resolucion");
+        tinyxml2::XMLElement* resPantalla=opciones->FirstChildElement("resolucion");
         resPantalla->QueryIntAttribute("tam", &resolucion);
     }
     if(partida!=NULL){
-        XMLElement* nivel=partida->FirstChildElement("nivel");
+        tinyxml2::XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->QueryIntAttribute("max", &nivelMax);
 
-        XMLElement* sec1=partida->FirstChildElement("secreto1");
+        tinyxml2::XMLElement* sec1=partida->FirstChildElement("secreto1");
         sec1->QueryIntAttribute("max", &secreto1);
 
-        XMLElement* sec2=partida->FirstChildElement("secreto2");
+        tinyxml2::XMLElement* sec2=partida->FirstChildElement("secreto2");
         sec2->QueryIntAttribute("max", &secreto2);
 
-        XMLElement* sec3=partida->FirstChildElement("secreto3");
+        tinyxml2::XMLElement* sec3=partida->FirstChildElement("secreto3");
         sec3->QueryIntAttribute("max", &secreto3);
 
-        XMLElement* hab=partida->FirstChildElement("habilidades");
+        tinyxml2::XMLElement* hab=partida->FirstChildElement("habilidades");
         hab->QueryIntAttribute("max", &habilidades);
 
-        XMLElement* fin=partida->FirstChildElement("terminado");
+        tinyxml2::XMLElement* fin=partida->FirstChildElement("terminado");
         fin->QueryIntAttribute("fin", &terminado);
 
-        XMLElement* muertes=partida->FirstChildElement("muertes");
+        tinyxml2::XMLElement* muertes=partida->FirstChildElement("muertes");
         muertes->QueryIntAttribute("max", &num_muertes);
     }
 }
@@ -70,10 +70,10 @@ Guardar::~Guardar(){
 }
 
 void Guardar::setMusica(int vol){
-    XMLElement* opciones=doc.FirstChildElement("opciones");
+    tinyxml2::XMLElement* opciones=doc.FirstChildElement("opciones");
 
     if(opciones!=NULL){
-        XMLElement* volMusica=opciones->FirstChildElement("musica");
+        tinyxml2::XMLElement* volMusica=opciones->FirstChildElement("musica");
         volMusica->SetAttribute("volumen",vol);
         doc.SaveFile("Motor/save.xml");
         musica = vol;
@@ -81,10 +81,10 @@ void Guardar::setMusica(int vol){
 }
 
 void Guardar::setSonido(int vol){
-    XMLElement* opciones=doc.FirstChildElement("opciones");
+    tinyxml2::XMLElement* opciones=doc.FirstChildElement("opciones");
 
     if(opciones!=NULL){
-        XMLElement* volSonido=opciones->FirstChildElement("sonido");
+        tinyxml2::XMLElement* volSonido=opciones->FirstChildElement("sonido");
         volSonido->SetAttribute("volumen",vol);
         doc.SaveFile("Motor/save.xml");
         sonido = vol;
@@ -92,10 +92,10 @@ void Guardar::setSonido(int vol){
 }
 
 void Guardar::setResolucion(int res){
-    XMLElement* opciones=doc.FirstChildElement("opciones");
+    tinyxml2::XMLElement* opciones=doc.FirstChildElement("opciones");
 
     if(opciones!=NULL){
-        XMLElement* resPantalla=opciones->FirstChildElement("resolucion");
+        tinyxml2::XMLElement* resPantalla=opciones->FirstChildElement("resolucion");
         resPantalla->SetAttribute("tam",res);
         doc.SaveFile("Motor/save.xml");
         resolucion = res;
@@ -107,10 +107,10 @@ void Guardar::setResolucionAtr(int res){
 }
 
 void Guardar::setNivel(int niv){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL&&niv>nivelMax){
-        XMLElement* nivel=partida->FirstChildElement("nivel");
+        tinyxml2::XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->SetAttribute("max",niv);
         doc.SaveFile("Motor/save.xml");
         nivelMax = niv;
@@ -118,10 +118,10 @@ void Guardar::setNivel(int niv){
 }
 
 void Guardar::setTerminado(int fin){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* term=partida->FirstChildElement("terminado");
+        tinyxml2::XMLElement* term=partida->FirstChildElement("terminado");
         term->SetAttribute("fin",fin);
         doc.SaveFile("Motor/save.xml");
         terminado = fin;
@@ -129,10 +129,10 @@ void Guardar::setTerminado(int fin){
 }
 
 void Guardar::setMonedas(int mon){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* monedas=NULL;
+        tinyxml2::XMLElement* monedas=NULL;
         if(mon==1){
             monedas=partida->FirstChildElement("secreto1");
             secreto1=1;
@@ -152,10 +152,10 @@ void Guardar::setMonedas(int mon){
 
 
 void Guardar::setHabilidades(int hab){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL&&hab>=habilidades){
-        XMLElement* habilid=partida->FirstChildElement("habilidades");
+        tinyxml2::XMLElement* habilid=partida->FirstChildElement("habilidades");
         habilid->SetAttribute("max",hab);
         doc.SaveFile("Motor/save.xml");
         habilidades = hab;
@@ -164,10 +164,10 @@ void Guardar::setHabilidades(int hab){
 
 
 void Guardar::setMuertes(int hab){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* habilid=partida->FirstChildElement("muertes");
+        tinyxml2::XMLElement* habilid=partida->FirstChildElement("muertes");
         habilid->SetAttribute("max",hab);
         doc.SaveFile("Motor/save.xml");
         num_muertes = hab;
@@ -179,23 +179,23 @@ void Guardar::setHabilidadesAtrib(int hab){
 }
 
 void Guardar::reiniciarPartida(){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
     if(partida!=NULL){
-        XMLElement* habilid=partida->FirstChildElement("habilidades");
+        tinyxml2::XMLElement* habilid=partida->FirstChildElement("habilidades");
         habilid->SetAttribute("max",0);
-        XMLElement* nivel=partida->FirstChildElement("nivel");
+        tinyxml2::XMLElement* nivel=partida->FirstChildElement("nivel");
         nivel->SetAttribute("max",0);
-        XMLElement* fin=partida->FirstChildElement("terminado");
+        tinyxml2::XMLElement* fin=partida->FirstChildElement("terminado");
         fin->SetAttribute("fin",0);
-        XMLElement* muertes=partida->FirstChildElement("muertes");
+        tinyxml2::XMLElement* muertes=partida->FirstChildElement("muertes");
         muertes->SetAttribute("max",0);
-        XMLElement* sec1=partida->FirstChildElement("secreto1");
+        tinyxml2::XMLElement* sec1=partida->FirstChildElement("secreto1");
         sec1->SetAttribute("max",0);
-        XMLElement* sec2=partida->FirstChildElement("secreto2");
+        tinyxml2::XMLElement* sec2=partida->FirstChildElement("secreto2");
         sec2->SetAttribute("max",0);
-        XMLElement* sec3=partida->FirstChildElement("secreto3");
+        tinyxml2::XMLElement* sec3=partida->FirstChildElement("secreto3");
         sec3->SetAttribute("max",0);
-        XMLElement* nombre=partida->FirstChildElement("nombre");
+        tinyxml2::XMLElement* nombre=partida->FirstChildElement("nombre");
         nombre->SetText(" ");
 
         doc.SaveFile("Motor/save.xml");
@@ -210,10 +210,10 @@ void Guardar::reiniciarPartida(){
 }
 
 void Guardar::setNombre(std::string nom){
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* nivel=partida->FirstChildElement("nombre");
+        tinyxml2::XMLElement* nivel=partida->FirstChildElement("nombre");
         nivel->SetText(nom.c_str());
         doc.SaveFile("Motor/save.xml");
     }
@@ -223,10 +223,10 @@ std::string Guardar::getNombre(){
     // Cargo tmx
     doc.LoadFile("Motor/save.xml");
     // apuntamos a partida
-    XMLElement* partida=doc.FirstChildElement("partida");
+    tinyxml2::XMLElement* partida=doc.FirstChildElement("partida");
 
     if(partida!=NULL){
-        XMLElement* nombre=partida->FirstChildElement("nombre");
+        tinyxml2::XMLElement* nombre=partida->FirstChildElement("nombre");
         if(nombre != NULL && nombre->GetText() != 0){
 
             return nombre->GetText();

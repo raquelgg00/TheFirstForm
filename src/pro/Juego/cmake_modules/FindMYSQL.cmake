@@ -11,15 +11,37 @@ IF (MYSQL_INCLUDE_DIR)
 ENDIF (MYSQL_INCLUDE_DIR)
 
 FIND_PATH(MYSQL_INCLUDE_DIR mysql.h
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 8.0;Location]/include"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 5.0;Location]/include"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 4.1;Location]/include"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 4.0;Location]/include"
+  /usr/local/mysql/include
   /usr/local/include/mysql
+  /usr/local/include
   /usr/include/mysql
+  /usr/include
+  /usr/mysql/include
 )
 
-SET(MYSQL_NAMES mysqlclient mysqlclient_r)
+IF(MSVC)
+  SET(MYSQL_NAMES libmysql)
+ELSE(MSVC)
+  SET(MYSQL_NAMES mysqlclient mysqlclient_r)
+ENDIF(MSVC)
+SET(MYSQL_SEARCH_LIB_PATHS 
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 8.0;Location]/lib/opt"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 5.0;Location]/lib/opt"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 4.1;Location]/lib/opt"
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\MySQL AB\\MySQL Server 4.0;Location]/lib/opt"
+  /usr/local/mysql/lib
+  /usr/local/lib/mysql
+  /usr/local/lib
+  /usr/lib/mysql
+  /usr/lib
+)
 FIND_LIBRARY(MYSQL_LIBRARY
   NAMES ${MYSQL_NAMES}
-  PATHS /usr/lib /usr/local/lib
-  PATH_SUFFIXES mysql
+  PATHS ${MYSQL_SEARCH_LIB_PATHS}
 )
 
 IF (MYSQL_INCLUDE_DIR AND MYSQL_LIBRARY)
@@ -44,4 +66,4 @@ ENDIF (MYSQL_FOUND)
 MARK_AS_ADVANCED(
   MYSQL_LIBRARY
   MYSQL_INCLUDE_DIR
-  )
+)

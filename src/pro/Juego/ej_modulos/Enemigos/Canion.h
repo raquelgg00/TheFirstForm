@@ -5,7 +5,6 @@
 #include "Sprite.h"
 #include "Motor.h"
 #include "Player.h"
-#include "../Motor/Rectangle.h"
 #include <SFML/Graphics.hpp>
 #include "math.h"
 #include "Bala.h"

@@ -204,10 +204,10 @@ void Nivel::cargarMapa(){
     }
     
     //buscamos el nombre del fichero de mapa que tenemos que abrir desde lista_mapas.xml
-    XMLElement* niveles=(listaMapas.FirstChildElement("niveles"));
+    tinyxml2::XMLElement* niveles=(listaMapas.FirstChildElement("niveles"));
     if(niveles != NULL){
 
-        XMLElement* nivel = niveles->FirstChildElement("nivel");
+        tinyxml2::XMLElement* nivel = niveles->FirstChildElement("nivel");
         if(nivel != NULL){
 
             int id=-1;
@@ -388,13 +388,12 @@ void Nivel::render(float tick){
         if(ayuda2!=NULL){
             ayuda2->render();
         }
-        int i =0;
+
         int contador = mapa->getContDinamicos();
-        while(i<contador){
+		for (int i = 0; i < contador; i++){
             if(entidades[i] != NULL){
                 entidades[i]->render(tick);
             }
-            i++;
         }
         for(int i=0;i<contMundo2;i++){
             if(mundo2[i]!=NULL){

@@ -3,8 +3,11 @@
     "",
     "\\src",
     "\\src\\pro",
-    "\\src\\pro\\Juego"
+    "\\src\\pro\\Juego",
+    "\\src\\pro\\Juego\\cmake_modules",
+    "\\src\\pro\\Juego\\ej_modulos\\tinyxml2",
+    "\\src\\pro\\Juego\\Motor"
   ],
-  "SelectedNode": "\\src\\pro\\Juego\\CMakeLists.txt",
+  "SelectedNode": "\\src\\pro\\Juego\\Motor\\Guardar.h",
   "PreviewInSolutionExplorer": false
 }

@@ -76,9 +76,19 @@ void Pared::updatemover(){
             sprite->setFrameSprite(64*i,0,64,256);
             i++;
             if(i>10){
-                this->~Pared(); 
-                romper = false;
-                Motor::Instance()->getSonidoParedRoja()->Play();
+				romper = false;
+				Motor::Instance()->getSonidoParedRoja()->Play();
+				if (sprite != NULL) {
+					delete sprite;
+					sprite = NULL;
+				}
+				for (int i = 0; i < 3; i++) {
+					if (pinchos[i] != NULL) {
+						delete pinchos[i];
+						pinchos[i] = NULL;
+					}
+				}
+                
 
             }
         }
@@ -131,7 +141,6 @@ void Pared::onCollisionPlayer(int dir_gravedad){
                 colisiones[2]=onCollisionPlayerRight();
                 colisiones[3]=onCollisionPlayerLeft();
                 if(motor->isKeyPressedSpace() && player->getHabilidadActiva()==3){
-                    //this->~Pared(); 
                     romper = true;
                 }
                 player->setColisionesDinam(colisiones);    
@@ -144,7 +153,6 @@ void Pared::onCollisionPlayer(int dir_gravedad){
                 colisiones[2]=onCollisionPlayerDown();
                 colisiones[3]=onCollisionPlayerTop();
                 if(motor->isKeyPressedSpace() && player->getHabilidadActiva()==3){
-                    //this->~Pared(); 
                     romper = true;
                 }
                 player->setColisionesDinam(colisiones);    
@@ -156,8 +164,7 @@ void Pared::onCollisionPlayer(int dir_gravedad){
                 colisiones[1]=onCollisionPlayerTop();
                 colisiones[2]=onCollisionPlayerLeft();
                 colisiones[3]=onCollisionPlayerRight();
-                if(motor->isKeyPressedSpace() && player->getHabilidadActiva()==3){
-                    //this->~Pared(); 
+                if(motor->isKeyPressedSpace() && player->getHabilidadActiva()==3){ 
                     romper = true;
                 }
                 player->setColisionesDinam(colisiones);    
@@ -170,7 +177,6 @@ void Pared::onCollisionPlayer(int dir_gravedad){
                 colisiones[2]=onCollisionPlayerTop();
                 colisiones[3]=onCollisionPlayerDown();
                 if(motor->isKeyPressedSpace() && player->getHabilidadActiva()==3){
-                    //this->~Pared(); 
                     romper = true;
                 }
                 player->setColisionesDinam(colisiones);    

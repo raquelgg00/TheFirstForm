@@ -1,9 +1,9 @@
 #ifndef CONEXION_H
 #define CONEXION_H
-#include <SFML/Graphics.hpp>
+
 #include <string>
 #include <sstream>
-//#include "mysql/mysql.h"
+#include <mysql.h>
 
 class Conexion{
 
@@ -14,13 +14,13 @@ class Conexion{
         void delete_bd(std::string);
         std::string** select_bd(std::string, int);
         bool getConexion(){
-           /* mysql_close(conectar);
-            conectar = mysql_init(0);
-            conectar = mysql_real_connect(conectar, "sql11.freesqldatabase.com", "sql11423929", "YJhMdyzuXx", "sql11423929", 3306, NULL, 0);
-            if(conectar)
-            return true;
-            else*/
-            return false;
+			mysql_close(conectar);
+			conectar = mysql_init(0);
+			conectar = mysql_real_connect(conectar, "sql11.freesqldatabase.com", "sql11425998", "gXcpSTHTYv", "sql11425998", 3306, NULL, 0);
+			if(conectar)
+				return true;
+			else
+				return false;
         }
 
     protected:
@@ -31,9 +31,9 @@ class Conexion{
 
     private:
         static Conexion* pinstance;
-        /*MYSQL* conectar;
+        MYSQL* conectar;
         MYSQL_ROW fila;
-        MYSQL_RES* resultado;*/
+        MYSQL_RES* resultado;
         int filas_tabla_usuario = 4;
        
 };

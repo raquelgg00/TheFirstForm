@@ -41,7 +41,10 @@ Secreto::Secreto(int x_ini, int y_ini, int t){
     
     motor = Motor::Instance();
     if((t==1&&Guardar::Instance()->getSecreto1()==1)||(t==2&&Guardar::Instance()->getSecreto2()==1)||(t==3&&Guardar::Instance()->getSecreto3()==1)){
-        this->~Secreto();
+		if (sprite != NULL) {
+			delete sprite;
+			sprite = NULL;
+		}
     }
 }
 
@@ -83,7 +86,10 @@ void Secreto::onCollisionPlayer(int g){
             else
                 Guardar::Instance()->setMonedas(3);
 
-            this->~Secreto(); 
+			if (sprite != NULL) {
+				delete sprite;
+				sprite = NULL;
+			}
         }
     }
    

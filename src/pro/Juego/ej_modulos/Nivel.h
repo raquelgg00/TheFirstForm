@@ -18,6 +18,10 @@
 #include "Entidades/Puerta.h"
 #include "Entidades/Secreto.h"
 #include "ObjetoMundo2.h"
+//#include <msxml.h>
+#include "tinyxml2/tinyxml2.h"
+
+//using namespace tinyxml2;
 
 class Nivel{
 
@@ -69,7 +73,7 @@ class Nivel{
         Ayuda* ayuda1 = NULL;
         Ayuda* ayuda2 = NULL;
         Player* player = NULL;
-        XMLDocument listaMapas;
+        tinyxml2::XMLDocument listaMapas;
         Entidad** entidades = NULL;
         ObjetoMundo2 **mundo2=NULL;
         int contMundo2;
