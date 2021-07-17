@@ -3,7 +3,7 @@
 
 #include <string>
 #include <sstream>
-#include <mysql.h>
+#include <mysql/mysql.h>
 
 class Conexion{
 
