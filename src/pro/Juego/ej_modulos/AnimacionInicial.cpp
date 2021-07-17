@@ -51,6 +51,9 @@ void AnimacionInicial::input(){
             motor->ventanaClose();
         }
     }
+    if(motor->isKeyPressedEnter()){
+        enter_pulsado = true;
+    }
 }
 
 void AnimacionInicial::update(){
@@ -73,12 +76,20 @@ void AnimacionInicial::update(){
         frame->setScale(0.67, 0.67);
     
 
-    // Si cargo todos en el constructor solo dejo esto
-    cont+=1;
+    if(cont == 400 || cont == 700){
+        if(enter_pulsado){
+            enter_pulsado = false;
+            cont++;
+        }
+    }
+    else {
+        // Si cargo todos en el constructor solo dejo esto
+        cont+=1;
 
-    if(cont>=1574) {
-        cont = 0;
-        CambiarEstado();
+        if(cont>=1574) {
+            cont = 0;
+            CambiarEstado();
+        }
     }
 }
 
