@@ -181,6 +181,9 @@ void PreguntarNombre::input(){
 
             }
         }
+		else if (motor->getEvent()->type == sf::Event::MouseButtonPressed && !conect) {
+			Partida::setEstado(MenuPrincipal::Instance());
+		}
         else if(motor->isKeyBorrar()){
             if(playerInput != ""){
                 borrar = true;

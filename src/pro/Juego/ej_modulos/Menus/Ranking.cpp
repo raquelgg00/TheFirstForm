@@ -183,76 +183,78 @@ void Ranking::actualiza_ranking(){
     std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes limit 10";
     std::string** res = Conexion::Instance()->select_bd(consult, 10); 
 
-    estoy_en_ranking = false;
+	if (res != NULL) {
+		estoy_en_ranking = false;
 
-    for(int i=0; i<10; i++){
-        
-        string pos_ranking;
-        string pos_nivel;
-        string pos_secretos;
-        string pos_muertes;
-        stringstream ss;  
-        ss << i+1;  
-        ss >> pos_ranking;
-        //pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
-        
-        pos_ranking = pos_ranking + ". "+res[i][0];
-        /*while(pos_ranking.length()<20){
-            pos_ranking = pos_ranking + " ";
-        }
-        pos_ranking += res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
-*/      
-        pos_nivel=res[i][3]+" niveles";
-        pos_secretos=res[i][2]+" secretos";
-        pos_muertes=res[i][1]+" muertes";
+		for (int i = 0; i < 10; i++) {
 
-        nombres[i]->setTexto(pos_ranking);
-        niveles[i]->setTexto(pos_nivel);
-        monedas[i]->setTexto(pos_secretos);
-        muertes[i]->setTexto(pos_muertes);
+			string pos_ranking;
+			string pos_nivel;
+			string pos_secretos;
+			string pos_muertes;
+			stringstream ss;
+			ss << i + 1;
+			ss >> pos_ranking;
+			//pos_ranking = pos_ranking + ". "+res[i][0]+"            "+res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
 
-        if(Guardar::Instance()->getResolucion()==720){
-            nombres[i]->setPosition(40+(motor->getTamWidth()/6), (motor->getTamHeight()/5) + i*40-20);
-            niveles[i]->setPosition(80+(motor->getTamWidth()/6)*2, (motor->getTamHeight()/5) + i*40-20);
-            monedas[i]->setPosition(80+(motor->getTamWidth()/6)*3, (motor->getTamHeight()/5) + i*40-20);
-            muertes[i]->setPosition(80+(motor->getTamWidth()/6)*4, (motor->getTamHeight()/5) + i*40-20);
-        }
-        else{
-            nombres[i]->setPosition(60+(motor->getTamWidth()/6), (motor->getTamHeight()/5) + i*50);
-            niveles[i]->setPosition(100+(motor->getTamWidth()/6)*2, (motor->getTamHeight()/5) + i*50);
-            monedas[i]->setPosition(100+(motor->getTamWidth()/6)*3, (motor->getTamHeight()/5) + i*50);
-            muertes[i]->setPosition(100+(motor->getTamWidth()/6)*4, (motor->getTamHeight()/5) + i*50);
-        }
+			pos_ranking = pos_ranking + ". " + res[i][0];
+			/*while(pos_ranking.length()<20){
+				pos_ranking = pos_ranking + " ";
+			}
+			pos_ranking += res[i][3]+" niveles"+"   ----   "+res[i][2]+" secretos "+"   ----   "+res[i][1]+" muertes ";
+	*/
+			pos_nivel = res[i][3] + " niveles";
+			pos_secretos = res[i][2] + " secretos";
+			pos_muertes = res[i][1] + " muertes";
 
-        if(res[i][0] == Guardar::Instance()->getNombre()){
-            nombres[i]->setColor(255,230,0);
-            niveles[i]->setColor(255,230,0);
-            monedas[i]->setColor(255,230,0);
-            muertes[i]->setColor(255,230,0);
-            estoy_en_ranking = true;
-        }
-        else {
-            nombres[i]->setColor(255,255,255);
-            niveles[i]->setColor(255,255,255);
-            monedas[i]->setColor(255,255,255);
-            muertes[i]->setColor(255,255,255);
-        }
-            
-    }
-    
+			nombres[i]->setTexto(pos_ranking);
+			niveles[i]->setTexto(pos_nivel);
+			monedas[i]->setTexto(pos_secretos);
+			muertes[i]->setTexto(pos_muertes);
 
-    std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select (count(*)+1) from usuario where (nombre != '"+Guardar::Instance()->getNombre()+"') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio))) as position from usuario where nombre='"+Guardar::Instance()->getNombre()+"' order by niveles desc, monedas desc, muertes";
+			if (Guardar::Instance()->getResolucion() == 720) {
+				nombres[i]->setPosition(40 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + i * 40 - 20);
+				niveles[i]->setPosition(80 + (motor->getTamWidth() / 6) * 2, (motor->getTamHeight() / 5) + i * 40 - 20);
+				monedas[i]->setPosition(80 + (motor->getTamWidth() / 6) * 3, (motor->getTamHeight() / 5) + i * 40 - 20);
+				muertes[i]->setPosition(80 + (motor->getTamWidth() / 6) * 4, (motor->getTamHeight() / 5) + i * 40 - 20);
+			}
+			else {
+				nombres[i]->setPosition(60 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + i * 50);
+				niveles[i]->setPosition(100 + (motor->getTamWidth() / 6) * 2, (motor->getTamHeight() / 5) + i * 50);
+				monedas[i]->setPosition(100 + (motor->getTamWidth() / 6) * 3, (motor->getTamHeight() / 5) + i * 50);
+				muertes[i]->setPosition(100 + (motor->getTamWidth() / 6) * 4, (motor->getTamHeight() / 5) + i * 50);
+			}
 
-    std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
-    string pos_mio=res2[0][3]+". "+Guardar::Instance()->getNombre()+"          "+res2[0][0]+" niveles         "+res2[0][1]+" secretos         "+res2[0][2]+" muertes";
-    miResult->setTexto(pos_mio);
-    miResult->setPosition(40+(motor->getTamWidth()/6), (motor->getTamHeight()/5)+10*40);
-    if(Guardar::Instance()->getResolucion()==720){
-        miResult->setPosition(40+(motor->getTamWidth()/6), (motor->getTamHeight()/5)+10*40);
-    }
-    else{
-        miResult->setPosition(60+(motor->getTamWidth()/6), (motor->getTamHeight()/5)+10*50+100);
-    }
+			if (res[i][0] == Guardar::Instance()->getNombre()) {
+				nombres[i]->setColor(255, 230, 0);
+				niveles[i]->setColor(255, 230, 0);
+				monedas[i]->setColor(255, 230, 0);
+				muertes[i]->setColor(255, 230, 0);
+				estoy_en_ranking = true;
+			}
+			else {
+				nombres[i]->setColor(255, 255, 255);
+				niveles[i]->setColor(255, 255, 255);
+				monedas[i]->setColor(255, 255, 255);
+				muertes[i]->setColor(255, 255, 255);
+			}
+
+		}
+
+
+		std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio))) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes";
+
+		std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
+		string pos_mio = res2[0][3] + ". " + Guardar::Instance()->getNombre() + "          " + res2[0][0] + " niveles         " + res2[0][1] + " secretos         " + res2[0][2] + " muertes";
+		miResult->setTexto(pos_mio);
+		miResult->setPosition(40 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + 10 * 40);
+		if (Guardar::Instance()->getResolucion() == 720) {
+			miResult->setPosition(40 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + 10 * 40);
+		}
+		else {
+			miResult->setPosition(60 + (motor->getTamWidth() / 6), (motor->getTamHeight() / 5) + 10 * 50 + 100);
+		}
+	}
     
 }
 

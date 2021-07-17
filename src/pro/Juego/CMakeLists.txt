@@ -9,7 +9,7 @@ add_subdirectory(ej_modulos)
 add_subdirectory(Motor)
 
 #Opciones a pasar al compilador de C++
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall")
 #Se desea generar un ejecutable, se especifica donde está el main
 #y ficheros que aporten código que no sean librerias o subcarpetas 
 add_executable(TheFirstShape main.cpp favicon.rc)
@@ -21,17 +21,18 @@ target_link_libraries(TheFirstShape libModulos)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 #Para usar SFML
+set(SFML_ROOT "C:/SFML")
 find_package(SFML REQUIRED system window graphics network audio)
 if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
     target_link_libraries(TheFirstShape ${SFML_LIBRARIES})
 endif()
 
-find_package(MYSQL)
-if (MYSQL_FOUND)
-    include_directories(${MYSQL_INCLUDE_DIR})
-    target_link_libraries(TheFirstShape ${MYSQL_LIBRARIES})
-endif()
+#find_package(MYSQL)
+#if (MYSQL_FOUND)
+    #include_directories(${MYSQL_INCLUDE_DIR})
+    #target_link_libraries(TheFirstShape ${MYSQL_LIBRARIES})
+#endif()
 #target_link_libraries(TheFirstShape mysqlclient)
 
 # Copy dlls to build directory
