@@ -180,7 +180,7 @@ void Ranking::input(){
 
 void Ranking::actualiza_ranking(){
 
-    std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes limit 10";
+    std::string consult = "select * from usuario order by niveles desc, monedas desc, muertes, nombre limit 10";
     std::string** res = Conexion::Instance()->select_bd(consult, 10); 
 
 	if (res != NULL) {
@@ -242,21 +242,32 @@ void Ranking::actualiza_ranking(){
 			}
 		}
 
-		std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, (select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio))) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes";
+        /*
+		std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio,nombre as nombreMio ,(select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes=muertesMio AND nombre<nombreMio))) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes, nombre";*/
+
+        cout<<"Antes consultaaa\n";
+
+        std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, nombre as nombreMio, (select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes=muertesMio AND nombre<nombreMio) )) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes, nombre";
+
 
         std::string** res2 = Conexion::Instance()->select_bd(consult2, 1);
-
-        std::string pos;
+        
+        string pos;
         stringstream strstr;
 
-        
+
         if(estoy_en_ranking){
             strstr << estoy_en_ranking_int;
+            strstr >> pos;
         }
         else {
-            strstr << res2[0][3];
+            pos = ""+res2[0][4];
+
+            //strstr << res[0][4];
+            //strstr >> pos;
         }
-        strstr >> pos;
+       
+        cout<<"Posicion "<<pos<<"\n";
 
 		string pos_mio = pos + ". " + Guardar::Instance()->getNombre() + "          " + res2[0][0] + " niveles         " + res2[0][1] + " secretos         " + res2[0][2] + " muertes";
 		miResult->setTexto(pos_mio);

@@ -196,7 +196,7 @@ void Guardar::reiniciarPartida(){
         tinyxml2::XMLElement* sec3=partida->FirstChildElement("secreto3");
         sec3->SetAttribute("max",0);
         tinyxml2::XMLElement* nombre=partida->FirstChildElement("nombre");
-        nombre->SetText(" ");
+        nombre->SetText("nuevo");
 
         doc.SaveFile("Motor/save.xml");
         nivelMax = 0;

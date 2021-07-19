@@ -85,6 +85,11 @@ void PreguntarNombre::CambiarEstado(){ // Cuando seleccionamos una opcion, cambi
 //reseteo creditos y luego cambio
 	motor->getMusicaMenu()->pause();
 	motor->getMusica()->Play();
+    borrar = false;
+    insert = false;
+    compruebaNombre = false;
+    nombre_disponible = false;
+
     Partida::setEstado(AnimacionInicial::Instance());
 }
 

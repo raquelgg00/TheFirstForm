@@ -34,7 +34,7 @@ class Conexion{
         MYSQL* conectar;
         MYSQL_ROW fila;
         MYSQL_RES* resultado;
-        int filas_tabla_usuario = 4;
+        int filas_tabla_usuario = 5;
        
 };
 
