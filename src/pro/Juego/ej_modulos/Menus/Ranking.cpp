@@ -245,8 +245,7 @@ void Ranking::actualiza_ranking(){
         /*
 		std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio,nombre as nombreMio ,(select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes=muertesMio AND nombre<nombreMio))) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes, nombre";*/
 
-        cout<<"Antes consultaaa\n";
-
+     
         std::string consult2 = "select niveles as nivelesMio, monedas as monedasMio, muertes as muertesMio, nombre as nombreMio, (select (count(*)+1) from usuario where (nombre != '" + Guardar::Instance()->getNombre() + "') AND ( (niveles>nivelesMio) OR (niveles=nivelesMio AND monedas>monedasMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes<muertesMio) OR (niveles=nivelesMio AND monedas=monedasMio AND muertes=muertesMio AND nombre<nombreMio) )) as position from usuario where nombre='" + Guardar::Instance()->getNombre() + "' order by niveles desc, monedas desc, muertes, nombre";
 
 
@@ -267,7 +266,7 @@ void Ranking::actualiza_ranking(){
             //strstr >> pos;
         }
        
-        cout<<"Posicion "<<pos<<"\n";
+   
 
 		string pos_mio = pos + ". " + Guardar::Instance()->getNombre() + "          " + res2[0][0] + " niveles         " + res2[0][1] + " secretos         " + res2[0][2] + " muertes";
 		miResult->setTexto(pos_mio);
