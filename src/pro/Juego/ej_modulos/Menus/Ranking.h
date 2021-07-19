@@ -15,36 +15,35 @@
 
 class Ranking : public JuegoState {
 
-    private:
-        static Ranking* pinstance;
-        Ranking();
-        ~Ranking();
-        Ranking(const Ranking & );
-        Ranking &operator= (const Ranking & );    
-        void CambiarEstado() override;
+private:
+	static Ranking* pinstance;
+	Ranking();
+	~Ranking();
+	Ranking(const Ranking &);
+	Ranking &operator= (const Ranking &);
+	void CambiarEstado() override;
 
-        Motor *motor=NULL;
-        Texto *nombres[10];  // casillas opciones
-        Texto *niveles[10];  // casillas opciones
-        Texto *monedas[10];  // casillas opciones
-        Texto *muertes[10];  // casillas opciones
-        Texto *miResult;
-        Sprite *fondo;
-        Sprite *fondo2;
-        int num_items = 10;
-        bool conect=false;
-        bool estoy_en_ranking = false;
+	Motor *motor = NULL;
+	Texto *nombres[10];  // casillas opciones
+	Texto *niveles[10];  // casillas opciones
+	Texto *monedas[10];  // casillas opciones
+	Texto *muertes[10];  // casillas opciones
+	Texto *miResult;
+	Sprite *fondo;
+	Sprite *fondo2;
+	int num_items = 10;
+	bool conect = false;
+	bool estoy_en_ranking = false;
+	int estoy_en_ranking_int = -1;
 
-    public:
-        static Ranking* Instance(); 
-        void render(float ) override;
-        void update() override;
-        void input() override; 
-        void actualiza_ranking();
-        void setConnect(bool b){conect=b;}
+public:
+	static Ranking* Instance();
+	void render(float) override;
+	void update() override;
+	void input() override;
+	void actualiza_ranking();
+	void setConnect(bool b) { conect = b; }
 
 
 };
 #endif
-
-
